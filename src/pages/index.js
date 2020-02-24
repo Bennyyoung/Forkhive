@@ -14,14 +14,15 @@ const Home = (props) => {
       <Helmet>
         <meta
           name="BLOOM"
-          content="We specalize in Web development and Web design, Artificial Intelligence, Machine Learning and lastly DataScience"
+          content="We specalize in Web development and Web design, Artificial Intelligence, Machine Learning and lastly Data Science"
         />
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h2 style={{marginBottom: '-2px', color: 'blue'}}>Innovating Africa's tech</h2>
-          <p style={{justifyContent: 'center'}}>
-            We specalize in Web and Mobile Development, Web and Mobile Design, Artificial Intelligence, Machine Learning and Data Science
+          <h2 style={{marginTop: '-150px', color: 'blue', fontSize: '2rem', fontWeight: 'bold'}}>BloomHub</h2>
+          <h5 style={{fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold'}}>Innovating Africa</h5>
+          <p style={{ justifyContent: 'center'}}>
+            We specalize in Web and Mobile App Development, Web and Mobile App Design, Artificial Intelligence, Machine Learning and Data Science
           </p>
         </div>
       </div>
@@ -60,6 +61,9 @@ const Home = (props) => {
           <div className="col-12">
             <h2 className="title-3 text-dark mb-4">Our Features</h2>
           </div>
+
+            {/* Everything in our features could be found in the data/features.json */}
+
           {json.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
               <div className="feature">

@@ -16,7 +16,7 @@ const Team = (props) => {
             <div className="col-12">
               <h1>Meet The Team</h1>
               <p>
-                Our team of Gatsby developers, AI enthusiasts, ML Envangelists, Data Scienists and others.
+                Meet our team of Developers, AI Engineers, ML Engineers, Data Scienists and others.
               </p>
             </div>
           </div>

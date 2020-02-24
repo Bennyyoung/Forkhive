@@ -7,4 +7,5 @@ featured: true
 draft: false
 ---
 
-Well for mobile development we utilise most especially the React Native, a frontend library for writing native apps which is like saying react specifically designed for making mobile apps
+For mobile development we utilise (React Native) which is a Mobile App Development Framework that enables the development of multi-platform Android and iOS apps using native UI elements
+
