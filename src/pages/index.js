@@ -4,7 +4,11 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
-import node from '../images/node.png'
+import adobe_I from '../images/adobe_illustrator.jpg'
+import adobe_p from '../images/adobe_photoshop.jpg'
+import anaconda from '../images/anaconda.png'
+import github from '../images/github.png'
+
 import gatsby from '../images/gatsby.jpg'
 import r from '../images/r_machinelearning.jpg'
 import mern_stack from '../images/mern_stack1.jpg'
@@ -59,12 +63,29 @@ const Home = (props) => {
 
 
           <div>
-          <h3 className="title-3 text-dark mb-3">Technology stack used</h3>
+          <h3 className="title-3 text-dark mb-3">Technology stacks and IDE's used</h3>
 
             <ul style={{display: 'inline', float: 'left'}}>
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
                 <img alt="Web Technologies" width="300px" height="150px" src={gatsby} />
               </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={adobe_I} />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={adobe_p} />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={anaconda} />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={github} />
+              </li>
+
                 
               <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
                 <img alt="Web Technologies" width="300px" height="150px" src={r} />
