@@ -4,6 +4,14 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
+import node from '../images/node.png'
+import gatsby from '../images/gatsby.jpg'
+import r from '../images/r_machinelearning.jpg'
+import mern_stack from '../images/mern_stack1.jpg'
+// import jam_stack from '../images/Jam_stack.jfif'
+import react_native from '../images/react_native.jpg'
+import python from '../images/python_ml.png'
+
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -48,6 +56,35 @@ const Home = (props) => {
               </div>
             </div>
           ))}
+
+
+          <div>
+          <h3 className="title-3 text-dark mb-3">Technology stack used</h3>
+
+            <ul style={{display: 'inline', float: 'left'}}>
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={gatsby} />
+              </li>
+                
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={r} />
+              </li>
+                
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={mern_stack} />
+              </li>
+                
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={python} />
+              </li>
+                
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img alt="Web Technologies" width="300px" height="150px" src={react_native} />
+              </li>
+            </ul>
+            {/* <img alt="Web Technologies" src={jam_stack} width="1000px" /> */}
+          </div>
+
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
               View All Services

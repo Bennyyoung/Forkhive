@@ -32,7 +32,8 @@ class Header extends React.Component {
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logoMobile} />
+              {/* <img alt="Figurit Homepage" src={logoMobile} /> */}
+              <h2 style={{ color: 'blue'}}>BLOOMHub</h2>
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
