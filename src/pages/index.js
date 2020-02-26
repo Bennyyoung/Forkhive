@@ -9,7 +9,7 @@ import adobe_p from '../images/adobe_photoshop.jpg'
 import anaconda from '../images/anaconda.png'
 import github from '../images/github.png'
 
-import gatsby from '../images/gatsby.jpg'
+import gatsby from '../images/gatsby.png'
 import r from '../images/r_machinelearning.jpg'
 import mern_stack from '../images/mern_stack1.jpg'
 // import jam_stack from '../images/Jam_stack.jfif'
@@ -33,7 +33,7 @@ const Home = (props) => {
         <div className="container">
           <h2 style={{marginTop: '-150px', color: 'blue', fontSize: '2rem', fontWeight: 'bold'}}>BloomHub</h2>
           <h5 style={{fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold'}}>Innovating Africa</h5>
-          <p style={{ justifyContent: 'center'}}>
+          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem'}}>
             We specalize in Web and Mobile App Development, Web and Mobile App Design, Artificial Intelligence, Machine Learning and Data Science
           </p>
         </div>
@@ -55,7 +55,7 @@ const Home = (props) => {
                   <h2>
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
                   </h2>
-                  <p style={{justifyContent: 'center'}}>{edge.node.excerpt}</p>
+                  <p style={{justifyContent: 'center', wordSpacing: '0.2rem'}}>{edge.node.excerpt}</p>
                 </div>
               </div>
             </div>
@@ -65,42 +65,85 @@ const Home = (props) => {
           <div>
           <h3 className="title-3 text-dark mb-3">Technology stacks and IDE's used</h3>
 
-            <ul style={{display: 'inline', float: 'left'}}>
+            <ul>
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={gatsby} />
+                <img src="https://img.icons8.com/color/144/000000/javascript.png" />
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={adobe_I} />
+                <img src="https://img.icons8.com/color/144/000000/sublime-text.png" />
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={adobe_p} />
+                <img src="https://img.icons8.com/color/144/000000/visual-studio-code-2019.png" />
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={anaconda} />
+                <img src="https://img.icons8.com/color/144/000000/html-5.png" />
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={github} />
+                <img src="https://img.icons8.com/color/144/000000/css3.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/linux.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/graphql.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/sass.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+              <img src="https://img.icons8.com/color/144/000000/adobe-illustrator.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/adobe-photoshop.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                {/* <img alt="Web Technologies" width="300px" height="150px" src={anaconda} /> */}
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/github.png" />
               </li>
 
                 
               <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={r} />
+                <img src="https://img.icons8.com/color/144/000000/r.png" />
               </li>
                 
               <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={mern_stack} />
+                <img src="https://img.icons8.com/color/144/000000/mongodb.png" />
+                
               </li>
                 
               <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={python} />
+                <img src="https://img.icons8.com/color/144/000000/python.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/npm.png" />
+              </li>
+
+              <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
+                <img src="https://img.icons8.com/color/144/000000/nodejs.png" />
+
               </li>
                 
               <li style={{display: 'inline', float: 'left',padding: '0px 20px 5px 0px'}}>
-                <img alt="Web Technologies" width="300px" height="150px" src={react_native} />
+                <img src="https://img.icons8.com/color/144/000000/react-native.png" />
+              <div><br /></div>
+              </li>
+              
+              <li style={{display: 'inline', float: 'left',padding: '43px 20px 5px 0px'}}>
+                <img src={gatsby} width="120px" height="50px"/>
               </li>
             </ul>
             {/* <img alt="Web Technologies" src={jam_stack} width="1000px" /> */}
@@ -131,11 +174,11 @@ const Home = (props) => {
                   </div>
                 )}
                 <h2 className="feature-title">{edge.node.title}</h2>
-                <div style={{justifyContent: 'center'}} className="feature-content">{edge.node.description}</div>
+                <div style={{justifyContent: 'center', wordSpacing: '0.2rem'}} className="feature-content">{edge.node.description}</div>
               </div>
             </div>
           ))}
-          <p style={{textAlign: "center", fontWeight: "bold"}}>
+          <p style={{textAlign: "center", fontWeight: "bold", wordSpacing: '0.2rem'}}>
             <a href="https://drive.google.com/file/d/1uGhAn4Oa8y9aZiU3jL8Fo4QTGs1AGDY2/view?usp=sharing" style={{color: "blue"}}>Request our quote to see our pricing</a></p>
         </div>
       </div>
