@@ -7,4 +7,12 @@ featured: true
 draft: false
 ---
 
-We create websites and web apps of high quality that are highly responsive and user friendly using one of the best and fastest mobile technologies, MERN stack(MongoDB, Express, React and Node) and Gatsby which is utilised in most upcoming industries
+ We create websites and web apps of high quality that are highly responsive and user friendly using one of the best and fastest mobile technologies, MERN stack(MongoDB, Express, React and Node) and Gatsby which is utilised in most upcoming industries
+```css
+var name = 'h' 
+
+```
+
+<div> 
+    hello
+</div>
