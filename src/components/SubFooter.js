@@ -23,7 +23,7 @@ const SubFooter = props => (
             </ul>
             <ul>
               <li>
-                {/* A place to put our child companies link blom tailor */}
+                {/* A place to put our child companies link bloom tailor */}
                 {/* <a href="https://www.zerostatic.io">www.zerostatic.io</a> */}
               </li>
             </ul>

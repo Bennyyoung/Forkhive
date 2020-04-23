@@ -8,7 +8,7 @@ const Menu = (props) => {
       <ul>
         {menuLinks.map(link => (
           <li key={link.name}>
-            <Link to={link.link}>{link.name}</Link>
+            <Link to={link.link} activeClassName={link.name}>{link.name}</Link>
           </li>
         ))}
       </ul>

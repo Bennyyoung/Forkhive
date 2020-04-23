@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import logo from '../images/BloomHub💻 20200419_152923.jpg'
 
 const Footer = props => (
   <div className="footer-strip">
@@ -7,7 +8,9 @@ const Footer = props => (
       <div className="row">
         <div className="col-12">
           <div className="footer">
-            <h3 className="footer-title">{props.data.site.siteMetadata.title}</h3>
+          <Link to="/">
+            <img alt="Figurit Homepage" src={logo} style={{height: '55px', width: '58px'}} />
+          </Link>
             <ul className="footer-menu">
               <li>
                 {' '}
