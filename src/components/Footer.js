@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import logo from '../images/BloomHub💻 20200419_152923.jpg'
+import Socials from './Socials';
 
 const Footer = props => (
   <div className="footer-strip">
@@ -21,13 +22,10 @@ const Footer = props => (
                 <Link to="/contact">Contact</Link>
               </li>
               <li className="copyright">
-                ©
-{' '}
-{new Date().getFullYear()}
-{' '}
-{props.data.site.siteMetadata.title}
+                ©{' '}{new Date().getFullYear()}{' '}{props.data.site.siteMetadata.title}
               </li>
             </ul>
+              <Socials />
           </div>
         </div>
       </div>

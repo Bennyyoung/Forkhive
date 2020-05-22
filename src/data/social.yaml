@@ -1,5 +1,12 @@
-vimeo: ''
-twitter: ''
-instagram: ''
-linkedin: ''
-facebook: ''
+[
+  {"vimeo": ''},
+  {"twitter": ''},
+  {"instagram": 'https://img.icons8.com/color/48/000000/instagram-new.png'},
+  {"linkedin": ''},
+  {"facebook": ''}
+]
+
+
+
+
+
