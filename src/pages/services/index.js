@@ -24,9 +24,9 @@ const Services = (props) => {
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
-                  <h2>
+                  <h5 style={{fontWeight: 'bold'}}>
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
-                  </h2>
+                  </h5>
                   <p style={{wordSpacing: '0.2rem'}}>{edge.node.excerpt}</p>
                 </div>
               </div>

@@ -16,7 +16,7 @@ const SubFooter = props => (
                 {props.data.site.siteMetadata.contact.phone2}
                 <br />
                 <strong>Email: </strong>{' '}
-                <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
+                <a style={{textDecoration: 'none'}} href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
                   {props.data.site.siteMetadata.contact.email}
                 </a>
               </li>

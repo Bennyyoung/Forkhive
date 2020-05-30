@@ -4,7 +4,7 @@ import React from 'react'
 const Socials = (props) => {
     // const yaml = props.data.allDataYaml.edges;
     return (
-        <div>
+        <li style={{paddingBottom: '7px'}}>
                 <a href="https://www.instagram.com/bloom.com_ng/">
                 <img src="https://img.icons8.com/color/24/000000/instagram-new.png" />
                 </a>
@@ -14,7 +14,7 @@ const Socials = (props) => {
                 <a href="https://web.facebook.com/BloomHub-107730554053669/">
                 <img src="https://img.icons8.com/fluent/24/000000/twitter.png"/>
                 </a>
-        </div>
+        </li>
     );
 }
 

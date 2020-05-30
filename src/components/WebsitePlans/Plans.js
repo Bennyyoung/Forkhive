@@ -13,7 +13,7 @@ const Plans = () => {
             <StudentPlans />
             <SilverPlans />
             <PlatinumPlans /> 
-            <p style={{textAlign: 'center', fontWeight: 'bold'}}><a href = "mailto: softbloom28@gmail.com" style={{textDecoration: "none"}}>Kindly email us your plan</a> </p>
+            <p style={{textAlign: 'center'}}><a href = "mailto: softbloom28@gmail.com" style={{textDecoration: "none", fontWeight: 'bold'}}>Kindly email us your plan</a> </p>
         </div>
       </div>
     )
