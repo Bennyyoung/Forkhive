@@ -1,7 +1,7 @@
 import React from 'react'
-import StudentPlans from '../WebsitePlans/StudentPlans';
-import SilverPlans from '../WebsitePlans/SilverPlans';
-import PlatinumPlans from '../WebsitePlans/PlatinumPlans';
+import BasicPlans from './BasicPlans';
+import SilverPlans from './SilverPlans';
+import PlatinumPlans from './PlatinumPlans';
 
 const Plans = () => {
     return (
@@ -10,10 +10,10 @@ const Plans = () => {
           <div className="col-12">
             <h2 className="title-3 text-dark mb-4" style={{textAlign: "center"}}><strong>Website Plans</strong></h2>
           </div>
-            <StudentPlans />
+            <BasicPlans />
             <SilverPlans />
             <PlatinumPlans /> 
-            <p style={{textAlign: 'center'}}><a href = "mailto: softbloom28@gmail.com" style={{textDecoration: "none", fontWeight: 'bold'}}>Kindly email us your plan</a> </p>
+            <p style={{textAlign: 'center'}}><a href = "mailto: softbloom28@gmail.com" style={{textDecoration: "none", fontWeight: 'bold'}}>Kindly email us your customised plan</a></p>
         </div>
       </div>
     )

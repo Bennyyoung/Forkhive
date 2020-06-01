@@ -4,7 +4,7 @@ import { usePaystackPayment, PaystackButton, PaystackConsumer } from 'react-pays
 const config = {
     reference: (new Date()).getTime(),
     email: "softbloom28@gmail.com",
-    amount: 4350000,
+    amount: 4850000,
     publicKey: 'pk_live_b89ba11c211333da9fe52c29a28072d7b15acf8f',
 };
 
@@ -14,7 +14,7 @@ const PaystackHookExample = () => {
         <div style={{cursor: 'pointer'}} onClick={() => {
             initializePayment()
         }} className="button button-primary mt-2">
-            Pay
+            Pay ₦48,500
         </div>
     );
 };

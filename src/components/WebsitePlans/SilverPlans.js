@@ -6,7 +6,7 @@ const SilverPlans = () => {
     return (
         <div className="col-12 col-md-6 col-lg-4 mb-2">
               <div className="feature">
-              <h2 className="feature-title">Silver Plan ₦43,500</h2>
+              <h2 className="feature-title">Silver Plan ₦48,500</h2>
                 <SilverPlanServices />
                 <SilverPayment />
             </div>

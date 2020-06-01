@@ -34,6 +34,12 @@ const SilverPlanServices = () => {
                     </tr>
                     <hr />
 
+                    <tr style={{marginTop: '-20px'}}>
+                        <td>Website maintenance fee</td>
+                        <td style={{color:'grey', fontWeight: 'bold'}}>5,000/yr </td>     
+                    </tr>
+                    <hr />
+
                     <tr>
                     <td>SEO setup</td>
                         <td style={{color:'grey', fontWeight: 'bold'}}>32,000</td>

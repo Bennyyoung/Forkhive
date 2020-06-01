@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StudentPlanServices = () => {
+const BasicPlanServices = () => {
     return (
         <div>
             <table>
@@ -35,6 +35,12 @@ const StudentPlanServices = () => {
                     </tr>
                     <hr />
 
+                    <tr style={{marginTop: '-20px'}}>
+                        <td>Website maintenance fee</td>
+                        <td style={{color:'grey', fontWeight: 'bold'}}>5,000/yr </td>     
+                    </tr>
+                    <hr />
+
                     <tr>
                     <td><del>SEO setup</del></td>
                         <td style={{color:'grey', fontWeight: 'bold'}}>-</td>
@@ -46,6 +52,7 @@ const StudentPlanServices = () => {
                         <td style={{color:'grey', fontWeight: 'bold'}}>-</td>
                     </tr>
                     <hr />
+
 
                     <tr>
                     <td>Free SSL/TLS certificate</td> 
@@ -62,4 +69,4 @@ const StudentPlanServices = () => {
     )
 }
 
-export default StudentPlanServices
+export default BasicPlanServices
