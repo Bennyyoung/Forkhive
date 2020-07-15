@@ -31,7 +31,7 @@ const Contact = props => (
         
                 <div className="container-contact100">
                         <div>
-                          <form 
+                          {/* <form 
                           name="contact-form"
                           className="wrap-contact100"
                           method="post"
@@ -77,7 +77,20 @@ const Contact = props => (
                               </button>
                             </div>
                           </form>
-            
+             */}
+
+                  <form name="Contact Form" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="Contact Form" />
+                        <div>
+                          <label>Your Email:</label>
+                          <input type="email" name="email" />
+                        </div>
+                        <div>
+                          <label>Message:</label>
+                          <textarea name="message" />
+                        </div>
+                        <button type="submit">Send</button>
+                      </form>
                           <div className="contact100-more flex-col-c-m" style={{backgroundImage: `url("${bg}")`}}>
                             <div className="flex-w size1 p-b-47">
                                         <div className="txt1 p-r-25">
