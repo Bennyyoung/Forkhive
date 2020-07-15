@@ -26,6 +26,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-messenger-customer-chat": "^0.7.2",
     "react-paystack": "^3.0.0"
   },
   "devDependencies": {

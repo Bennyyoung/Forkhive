@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Link from 'gatsby-plugin-transition-link';
-import logo from '../images/BloomHub💻 20200419_152923.jpg'
+import logo from '../images/new_logo.jpg'
 import Socials from './Socials';
 
 const Footer = props => (

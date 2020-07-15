@@ -6,6 +6,7 @@ import Layout from '../layouts/index';
 import Call from '../components/Call';
 import TeckStack from '../components/TechStack'
 import Plans from '../components/WebsitePlans/Plans';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -69,6 +70,10 @@ const Home = (props) => {
           <div className="row justify-content-center">
             <div className="col-12">
               <h2 className="title-3 text-dark mb-4" style={{ textAlign: "center" }}><strong>Our Features</strong></h2>
+            <MessengerCustomerChat
+              pageId="107730554053669"
+              appId="281696259640056"
+            />
             </div>
 
             {/* Everything in our features could be found in the data/features.json */}
@@ -88,10 +93,8 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="col-12 text-center">
-
-        </div>
         <Plans />
+
       </Layout>
     );
 };
