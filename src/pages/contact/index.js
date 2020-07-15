@@ -30,14 +30,15 @@ const Contact = props => (
         </div>
         
                 <div className="container-contact100">
-                        <div 
-                        name="contact-form"
-                        className="wrap-contact100"
-                        method="post"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        >
-                          <form className="contact100-form validate-form">
+                        <div>
+                          <form 
+                          name="contact-form"
+                          className="wrap-contact100"
+                          method="post"
+                          data-netlify="true"
+                          data-netlify-honeypot="bot-field"
+                          className="contact100-form validate-form"
+                          >
                             <span className="contact100-form-title">
                               Send Us A Message
                             </span>
