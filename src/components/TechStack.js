@@ -1,5 +1,8 @@
 import React from 'react'
 import gatsby from '../images/gatsby.png'
+import { Icon, InlineIcon } from '@iconify/react';
+import netlifyIcon from '@iconify/icons-logos/netlify';
+import gatsbyIcon from '@iconify/icons-cib/gatsby';
 
 
 const TechStack = () => {
@@ -7,38 +10,6 @@ const TechStack = () => {
         <div>
           <h2 className="title-3 text-dark mb-3" style={{textAlign: "center"}}><strong>Current TechStack</strong></h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            {/* Indicators */}
-            {/* <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol> */}
-
-              {/* Wrapper for slides */}
-
-            {/* <div className="carousel-inner" role="listbox">
-            <div className="item active">
-              <img src="https://img.icons8.com/color/144/000000/javascript.png" />
-            </div>
-
-            <div className="item">
-              <img src="https://img.icons8.com/color/144/000000/javascript.png" />
-            </div>
-
-            <div className="item">
-              <img src="https://img.icons8.com/color/144/000000/javascript.png" />
-            </div>
-          </div> */}
-
-          {/* Left and right controls */}
-          {/* <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a className="left carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> */}
 
           </div>
               {/* 48px, 96px, 144px, 240px and 480px are the pixels size */}
@@ -46,6 +17,11 @@ const TechStack = () => {
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 0px 0px'}}>
                 <img src="https://img.icons8.com/color/96/000000/javascript.png" />
               <h6><strong>JAVASCRIPT</strong></h6>
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '0px 20px 0px -3px'}}>
+                <Icon icon={netlifyIcon} width="90px" height="90px" />
+              <h6><strong>NETLIFY</strong></h6>
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '0px 20px 0px 0px'}}>
@@ -146,7 +122,7 @@ const TechStack = () => {
               </li>
 
               <li style={{display: 'inline', float: 'left', padding: '5px 20px 0px 0px'}}>
-                <img src="https://symbols.getvecta.com/stencil_81/10_gatsbyjs-icon.a098870e9e.svg" width="90px" height="90px"/>
+                <Icon icon={gatsbyIcon} width="90px" height="90px" />
                 <h6><strong>GATSBY</strong></h6>
               </li>
             </ul>

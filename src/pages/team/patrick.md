@@ -12,5 +12,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Patrick Ubong is a React Developer venturing into Gatsby and has a knowledge of Backend using Node and Express
+    Patrick is a React Developer with knowledge of gatsby.
 </p>

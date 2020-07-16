@@ -11,5 +11,5 @@ twitterurl: ' https://twitter.com/EffiongBenjami2'
 weight: 2
 ---
 <p style='text-align: justify;'>
-    Effiong Benjamin has worked with React, React Native, Gatsby, Kali Linux, ML and AI and has a sound knowledge of the tech industry and its business operation
+    Effiong Benjamin is a Data scientist, Gatsby Developer and uses Netlify. He also has a sound knowledge of the tech industry and its business operation.
 </p>

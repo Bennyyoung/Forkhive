@@ -41,6 +41,12 @@ const BasicPlanServices = () => {
                     </tr>
                     <hr />
 
+                    <tr style={{marginTop: '-20px'}}>
+                        <td>Developers fee</td>
+                        <td style={{color:'grey', fontWeight: 'bold'}}>50,000 </td>     
+                    </tr>
+                    <hr />
+
                     <tr>
                     <td><del>SEO setup</del></td>
                         <td style={{color:'grey', fontWeight: 'bold'}}>-</td>

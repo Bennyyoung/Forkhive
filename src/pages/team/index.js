@@ -56,11 +56,6 @@ const Team = (props) => {
                           {edge.node.frontmatter.twitterurl}
                         </a>
                       </li>
-                      <li style={{paddingBottom: '4px'}}> 
-                        <a target="_blank" href={edge.node.frontmatter.githuburl}>
-                          {edge.node.frontmatter.githuburl}
-                        </a>
-                      </li>
                       <li><b>Email:</b>
                         <a href={`mailto: ${edge.node.frontmatter.email}`}>{edge.node.frontmatter.email}</a>
                       </li>
@@ -97,7 +92,6 @@ export const query = graphql`
             jobtitle
             linkedinurl
             twitterurl
-            githuburl
             email
           }
         }

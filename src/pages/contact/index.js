@@ -2,11 +2,11 @@ import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 import Call from '../../components/Call';
-import './css/main.css'
-import './css/util.css'
-import './fonts/font-awesome-4.7.0/css/font-awesome.min.css'
-import './fonts/Linearicons-Free-v1.0.0/icon-font.min.css'
-import bg from './images/bg-01.jpg'
+import './index.css'
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 
 const Contact = props => (
   <Layout bodyClass="page-contact">
@@ -21,130 +21,50 @@ const Contact = props => (
       </div>
     </div>
 
-
-
     <div className="container">
       <div className="row">
-        <div className="col-12" style={{paddingBottom: '10px'}}>
+        <div className="col-12" style={{paddingBottom: '20px'}}>
           <Call button={false} />
         </div>
-        
-                <div className="container-contact100">
-                        <div>
-                          {/* <form 
-                          name="contact-form"
-                          className="wrap-contact100"
-                          method="post"
-                          data-netlify="true"
-                          data-netlify-honeypot="bot-field"
-                          className="contact100-form validate-form"
-                          >
-                            <span className="contact100-form-title">
-                              Send Us A Message
-                            </span>
-            
-                            <label className="label-input100" for="first-name">Tell us your name *</label>
-                            <div className="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-                              <input id="first-name" className="input100" type="text" name="first-name" placeholder="First name" />
-                              <span className="focus-input100"></span>
-                            </div>
-                            <div className="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-                              <input className="input100" type="text" name="last-name" placeholder="Last name" />
-                              <span className="focus-input100"></span>
-                            </div>
-            
-                            <label className="label-input100" for="email">Enter your email *</label>
-                            <div className="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                              <input id="email" className="input100" type="text" name="email" placeholder="Eg. example@email.com" />
-                              <span className="focus-input100"></span>
-                            </div>
-            
-                            <label className="label-input100" for="phone">Enter phone number</label>
-                            <div className="wrap-input100">
-                              <input id="phone" className="input100" type="text" name="phone" placeholder="Eg. +234 907 846 7458" />
-                              <span className="focus-input100"></span>
-                            </div>
-            
-                            <label className="label-input100" for="message">Message *</label>
-                            <div className="wrap-input100 validate-input" data-validate = "Message is required">
-                              <textarea id="message" className="input100" name="message" placeholder="Write us a message"></textarea>
-                              <span className="focus-input100"></span>
-                            </div>
-            
-                            <div className="container-contact100-form-btn">
-                              <button className="contact100-form-btn">
-                                Send Message
-                              </button>
-                            </div>
-                          </form>
-             */}
+    </div><br />
+    <div style={{margin:"0", paddingBottom: '80px'}}>
+                <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you">
+                      <h3 className="mt-4">Send Us A Message</h3>
+                      <p type="Full name:">
+                        <input placeholder="Write your name here.."  required name="form-name"></input>
+                      </p>
+                      <p type="Email:">
+                        <input placeholder="Let us know how to contact you back.." required name="form-name"></input>
+                      </p>
+                      <p type="Phone number:">
+                        <input placeholder="Let us talk.." required name="form-name"></input>
+                      </p>
+                      <p type="Message:">
+                        <textarea style={{width: '100%', height: '300px'}} placeholder="What would you like to tell us.." required name="form-name"></textarea>
+                      </p>
+                      
+                      <div style={{content:'Hi',position:'absolute', background:'#1C3ED3', color:'#fff', width:'340px', padding:'16px 4px 16px 10px', borderRadius:'6px', fontSize:'13px',boxShadow:'10px 10px 40px -14px #000'}}>
+                        <span></span> <FontAwesomeIcon icon={faPhone} /> +234 805 782 6599 |
+                        <span></span> <FontAwesomeIcon icon={faEnvelopeOpen} /><a href="mailto:softbloom28@gmail.com" style={{textDecoration: 'none', color: 'white', paddingLeft: '5px'}}>softbloom28@gmail.com</a>
+                      </div>
+                      <button type="submit">Send Message</button>
+                </form>
 
-                  <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you">
-                        <input type="hidden" name="form-name" value="Contact Form" />
-                        <div>
-                          <label>Your Email:</label>
-                          <input type="email" name="email" />
-                        </div>
-                        <div>
-                          <label>Message:</label>
-                          <textarea name="message" />
-                        </div>
-                        <button type="submit">Send</button>
-                      </form>
-                          <div className="contact100-more flex-col-c-m" style={{backgroundImage: `url("${bg}")`}}>
-                            <div className="flex-w size1 p-b-47">
-                                        <div className="txt1 p-r-25">
-                                            <span className="lnr lnr-map-marker"></span>
-                                        </div>
-            
-                                    <div className="flex-col size2">
-                                        <span className="txt1 p-b-20">
-                                            Address
-                                        </span>
-            
-                                        <span className="txt2">
-                                            No 5 Weli Crescent St, PortHarcourt, Rumaugholu, Nigeria.
-                                        </span>
-                                    </div>
-                                </div>    
-                    
-            
-                        <div className="dis-flex size1 p-b-47">
-                      <div className="txt1 p-r-25">
-                        <span className="lnr lnr-phone-handset"></span>
-                      </div>
-            
-                      <div className="flex-col size2">
-                        <span className="txt1 p-b-20">
-                          Lets Talk
-                        </span>
-            
-                        <span className="txt3">
-                          +234 805 782 6599
-                        </span>
-                      </div>
-                    </div>
-            
-                        <div className="dis-flex size1 p-b-47">
-                      <div className="txt1 p-r-25">
-                        <span className="lnr lnr-envelope"></span>
-                      </div>
-            
-                      <div className="flex-col size2">
-                        <span className="txt1 p-b-20">
-                          General Support
-                        </span>
-            
-                        <span className="txt3">
-                         softbloom28@gmail.com
-                        </span>
-                      </div>
-                    </div>
-                            </div>
-                        </div>
-                        </div>
-        
-        <div className="col-8">
+                {/* <form class="form">
+  <h2>CONTACT US</h2>
+  <p type="Name:"><input placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+  <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+  <button>Send Message</button>
+  <div>
+    <span class="fa fa-phone"></span>001 1023 567
+    <span class="fa fa-envelope-o"></span> contact@company.com
+  </div>
+</form> */}
+
+    </div>
+                          
+      <div className="col-8">
           <h4 className="mt-4">Business Hours</h4>
           <table className="table table-sm opening-hours-table">
             <tbody>
@@ -188,7 +108,6 @@ const Contact = props => (
           </table>
         </div>
       </div>
-    </div>
 
   </Layout>
 );
