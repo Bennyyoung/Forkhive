@@ -28,7 +28,7 @@ const Contact = props => (
         </div>
     </div><br />
     <div style={{margin:"0", paddingBottom: '80px'}}>
-                <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you">
+                <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
                       <h3 className="mt-4">Send Us A Message</h3>
                       <p type="Full name:">
                         <input placeholder="Write your name here.."  required name="form-name"></input>
