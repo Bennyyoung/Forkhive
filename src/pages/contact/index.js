@@ -28,19 +28,25 @@ const Contact = props => (
         </div>
     </div><br />
     <div style={{margin:"0", paddingBottom: '80px'}}>
-                <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
+                <form 
+                  name="contact-form" 
+                  method="post" 
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field" 
+                  action="/thank-you"
+                  >
                       <h3 className="mt-4">Send Us A Message</h3>
                       <p type="Full name:">
-                        <input placeholder="Write your name here.."  required name="form-name"></input>
+                        <input placeholder="Write your name here.." type="text" required name="name"></input>
                       </p>
                       <p type="Email:">
-                        <input placeholder="Let us know how to contact you back.." required name="form-name"></input>
+                        <input placeholder="Let us know how to contact you back.." type="email" required name="email"></input>
                       </p>
                       <p type="Phone number:">
-                        <input placeholder="Let us talk.." required name="form-name"></input>
+                        <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone"></input>
                       </p>
                       <p type="Message:">
-                        <textarea style={{width: '100%', height: '300px'}} placeholder="What would you like to tell us.." required name="form-name"></textarea>
+                        <textarea style={{width: '100%', height: '300px'}} type="text" placeholder="What would you like to tell us.." required name="message"></textarea>
                       </p>
                       
                       <div style={{content:'Hi',position:'absolute', background:'#1C3ED3', color:'#fff', width:'340px', padding:'16px 4px 16px 10px', borderRadius:'6px', fontSize:'13px',boxShadow:'10px 10px 40px -14px #000'}}>
