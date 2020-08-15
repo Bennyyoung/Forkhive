@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
 
 const PlatinumPlanServices = () => {
     return (
@@ -36,13 +37,13 @@ const PlatinumPlanServices = () => {
 
                         <tr style={{marginTop: '-20px'}}>
                           <td>Website maintenance fee</td>
-                          <td style={{color:'grey', fontWeight: 'bold'}}>5,000/yr </td>     
+                          <td style={{color:'grey', fontWeight: 'bold'}}>24,000/yr </td>     
                         </tr>
                         <hr />
 
                         <tr style={{marginTop: '-20px'}}>
-                            <td>Developers fee</td>
-                            <td style={{color:'grey', fontWeight: 'bold'}}>50,000 </td>     
+                            <td>Development time</td>
+                            <td style={{color:'grey', fontWeight: 'bold'}}>45,000 </td>     
                         </tr>
                         <hr />
 
@@ -52,11 +53,24 @@ const PlatinumPlanServices = () => {
                         </tr>
                         <hr />
 
-                        <tr>
-                        <td>Analytics</td>
-                          <td style={{color:'grey', fontWeight: 'bold'}}>40,000/yr</td>
-                        </tr>
-                        <hr />
+                    <tr>
+                    <td>
+                <a data-tip>    
+                            Analytics
+                            <ReactTooltip aria-haspopup='true' role='example'>
+                                <h3>How Analytics works</h3>
+                                <p style={{textAlign: 'justify', wordSpacing: '0.2rem'}}>
+                                  Data for Analytics comes from a Content Delivery Network (CDN) <br /> server logs.
+                                  Since there's no client-side code involved, the <br /> performance of your site doesn't suffer.
+                                  This also means that <br /> data integrity isn't affected when your visitors use ad blockers or <br /> disable JavaScript.
+                                  Because site activity is tracked anonymously <br /> without cookies or personally identifying 
+                                  information, Analytics <br /> is fully GDPR compliant.</p>
+                            </ReactTooltip>
+                </a>
+                    </td>
+                        <td style={{color:'grey', fontWeight: 'bold'}}>40,000/yr</td>
+                    </tr>
+                    <hr />
 
                         <tr>
                         <td>Free SSL/TLS certificate</td>

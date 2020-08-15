@@ -5,7 +5,7 @@ date: 2019-12-29T15:09:08+10:00
 draft: false
 image: '/team/patrick.jpg'
 jobtitle: ' Co-founder and COO'
-email: ' yubee121@gmail.com'
+email: ' patrickubongkingsley@gmail.com  '
 linkedinurl: ' https://www.linkedin.com/in/patrick-ubong-16759019a/'
 twitterurl: ' https://twitter.com/iamyubee'
 weight: 2

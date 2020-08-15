@@ -49,10 +49,10 @@ const Contact = props => (
                         <textarea style={{width: '100%', height: '300px'}} type="text" placeholder="What would you like to tell us.." required name="message"></textarea>
                       </p>
                       
-                      <div style={{content:'Hi',position:'absolute', background:'#1C3ED3', color:'#fff', width:'340px', padding:'16px 4px 16px 10px', borderRadius:'6px', fontSize:'13px',boxShadow:'10px 10px 40px -14px #000'}}>
+                      {/* <div style={{content:'Hi',position:'absolute', background:'#1C3ED3', color:'#fff', width:'340px', padding:'16px 4px 16px 10px', borderRadius:'6px', fontSize:'13px',boxShadow:'10px 10px 40px -14px #000'}}>
                         <span></span> <FontAwesomeIcon icon={faPhone} /> +234 805 782 6599 |
                         <span></span> <FontAwesomeIcon icon={faEnvelopeOpen} /><a href="mailto:softbloom28@gmail.com" style={{textDecoration: 'none', color: 'white', paddingLeft: '5px'}}>softbloom28@gmail.com</a>
-                      </div>
+                      </div> */}
                       <button type="submit">Send Message</button>
                 </form>
 
