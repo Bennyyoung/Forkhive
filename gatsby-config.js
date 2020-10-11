@@ -51,7 +51,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-typescript-css-modules',
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-build-date`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
