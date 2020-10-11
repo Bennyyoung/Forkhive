@@ -1,5 +1,5 @@
 import React from 'react'
-import gatsby from '../images/gatsby.png'
+import rapid_miner from '../images/rapid-miner.jpg'
 import { Icon, InlineIcon } from '@iconify/react';
 import netlifyIcon from '@iconify/icons-logos/netlify';
 import gatsbyIcon from '@iconify/icons-cib/gatsby';
@@ -124,6 +124,11 @@ const TechStack = () => {
               <li style={{display: 'inline', float: 'left', padding: '5px 20px 0px 0px'}}>
                 <Icon icon={gatsbyIcon} width="90px" height="90px" />
                 <h6><strong>GATSBY</strong></h6>
+              </li>
+
+              <li style={{display: 'inline', float: 'left', padding: '5px 20px 0px 0px'}}>
+                <img src={rapid_miner} width="210px" height="90px" />
+                <h6><strong>RAPID MINER</strong></h6>
               </li>
             </ul>
           </div>

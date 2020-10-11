@@ -18,15 +18,15 @@ const Home = (props) => {
         <Helmet>
           <meta
             name="BLOOM"
-            content="We specalize in Web development and Web design, Artificial Intelligence, Machine Learning and lastly Data Science"
+            content="We specialize in Web development and Web design, Artificial Intelligence, Machine Learning and lastly Data Science"
           />
         </Helmet>
         <div className="intro pb-4">
           <div className="container">
             <h2 style={{ marginTop: '-150px', color: 'blue', fontSize: '2rem', fontWeight: 'bold' }}>BloomHub</h2>
-            <h5 style={{ fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold' }}>Innovating Africa</h5>
+            <h5 style={{ fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
             <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>
-              We specalize in Web and Mobile App Development, Web and Mobile App Design, Artificial Intelligence, Machine Learning and Data Science
+              We specialize in Web and Mobile App Development, Web and Mobile App Design, Artificial Intelligence, Machine Learning and Data Science
           </p>
           </div>
         </div>

@@ -19,6 +19,18 @@ module.exports = {
         link: '/services',
       },
       {
+        name: 'About',
+        link: '/about',
+      },
+      // {
+      //   name: 'Blogs',
+      //   link: '/blog',
+      // },
+      {
+        name: 'Career',
+        link: '/career',
+      },
+      {
         name: 'Team',
         link: '/team',
       },
@@ -39,6 +51,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-typescript-css-modules',
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-build-date`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
