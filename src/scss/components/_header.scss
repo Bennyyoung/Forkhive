@@ -1,5 +1,10 @@
 .header {
   height: 55px;
+  // position: fixed;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   color: $primary;
   background-color: #ffffff;
   display: flex;

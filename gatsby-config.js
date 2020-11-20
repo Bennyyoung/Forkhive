@@ -22,6 +22,10 @@ module.exports = {
         name: 'About',
         link: '/about',
       },
+      {
+        name: 'Works',
+        link: '/our-works',
+      },
       // {
       //   name: 'Blogs',
       //   link: '/blog',
@@ -87,5 +91,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: /\.inline\.svg$/,
+    //     }
+    //   }
+    // },
   ],
 };

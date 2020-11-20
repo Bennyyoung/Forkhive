@@ -1,0 +1,19 @@
+.page-contact {
+    background-image: url('../images/undraw_contact_us.inline.svg');
+    background-repeat: no-repeat;
+    background-position: 49px -10px;
+    @include media-breakpoint-up(sm) {
+        background-size: 90%;
+        background-position: 159px -40px;
+      }
+      @include media-breakpoint-up(md) {
+        background-size: 70%;
+        background-position: 100% -50px;
+      }
+      @include media-breakpoint-up(lg) {
+        background-size: 70%;
+        background-position: 130% -20px;
+      }
+  }
+
+
