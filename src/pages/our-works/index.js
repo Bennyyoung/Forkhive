@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactTinyLink } from 'react-tiny-link'
+// import { ReactTinyLink } from 'react-tiny-link'
 import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 
@@ -20,7 +20,7 @@ export default function index() {
                 <div className="card-group" style={{ margin: '10px', padding: '5px'}}>
                     <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
                         <div className="card-body">
-                            <ReactTinyLink
+                            {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="URL Bookmark Manager"
@@ -30,12 +30,12 @@ export default function index() {
                                 minLine={1}
                                 url="https://ben-angular-urlbookmarkmanager2.stackblitz.io"
 
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
                         <div className="card-body">
-                            <ReactTinyLink
+                            {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="HippoDocs"
@@ -44,12 +44,12 @@ export default function index() {
                                 maxLine={2}
                                 minLine={1}
                                 url="https://ben-angular-hippodocs.stackblitz.io"
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
                         <div className="card-body">
-                            <ReactTinyLink
+                            {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="Heart Matters Foundation"
@@ -57,7 +57,7 @@ export default function index() {
                                 maxLine={2}
                                 minLine={1}
                                 url="https://heartmatters.netlify.app/"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ export default function index() {
                 
                     <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
                         <div className="card-body" >
-                            <ReactTinyLink
+                            {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="SYLVIA-GOLD PROPERTIES - creating happy landlords"
@@ -73,20 +73,20 @@ export default function index() {
                                 maxLine={2}
                                 minLine={1}
                                 url="https://www.sylviagoldproperties.com/properties.html"
-                            />
+                            /> */}
                         </div>
                     </div>
 
                     <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
                         <div className="card-body" >
-                            <ReactTinyLink
+                            {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="Hi, I'm Tolu Afilaka"
                                 description="A COMEDIAN AND CURRENCY TRADER"
                                 
                                 url="http://toluafilaka.herokuapp.com/"
-                            />
+                            /> */}
                         </div>
                     </div>
                 
