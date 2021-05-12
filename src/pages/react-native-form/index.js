@@ -26,13 +26,14 @@ const ReactNativeForm = props => (
    <div style={{ margin: "0", paddingBottom: '80px' }}>
     <form
      className="container"
-     name="react-developer-application-form"
+     name="react-native-developer-application-form"
      method="POST"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
      action="/thank-you"
     >
-     <input type="hidden" name="form-name" value="react-developer-application-form" />
+     
+     <input type="hidden" name="form-name" value="react-native-developer-application-form" />
      <h3 className="mt-4">SUBMIT YOUR APPLICATION</h3>
      <p type="Resume/CV:">
       <input placeholder="ATTACH RESUME/CV" name="resume" type="file" required />
@@ -51,19 +52,19 @@ const ReactNativeForm = props => (
      </p>
      <h6><strong>LINKS</strong></h6>
      <p type="LinkedIn URL">
-      <input type="url" required name="urls[LinkedIn]"></input>
+      <input type="url" placeholder="https://example.com" required name="url[LinkedIn]"></input>
      </p>
      <p type="Twitter URL">
-      <input type="url" required name="url[Twitter]"></input>
+      <input type="url" placeholder="https://example.com" required name="url[Twitter]"></input>
      </p>
      <p type="GitHub URL">
-      <input type="url" required name="url[Github]"></input>
+      <input type="url" placeholder="https://example.com" required name="url[Github]"></input>
      </p>
      <p type="Portfolio URL">
-      <input type="url" required name="url[Portfolio]"></input>
+      <input type="url" placeholder="https://example.com" required name="url[Portfolio]"></input>
      </p>
      <p type="Other website">
-      <input type="text" required name="url[Other]"></input>
+      <input type="text" placeholder="https://example.com" required name="url[Other]"></input>
      </p>
      <h6><strong>ADDITIONAL INFORMATION</strong></h6>
      <p>
