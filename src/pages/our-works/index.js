@@ -4,23 +4,23 @@ import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 
 export default function index() {
-    return (
-        <Layout bodyClass="our-works">
-            <SEO title="Our-Works" />
+ return (
+  <Layout bodyClass="our-works">
+   <SEO title="Our-Works" />
 
-           
 
-                <div className="col-12" style={{ padding: '4rem 0 3rem 6rem' }}>
-                    <h1 style={{ textAlign: "left", color: 'blue'}}>Our Works</h1>
-                    <p style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
-                        A showcase of our works
+
+   <div className="col-12" style={{ padding: '4rem 0 3rem 6rem' }}>
+    <h1 style={{ textAlign: "left", color: 'blue' }}>Our Works</h1>
+    <p style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
+     A showcase of our works
                     </p>
-                </div>
+   </div>
 
-                <div className="card-group" style={{ margin: '10px', padding: '5px'}}>
-                    <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
-                        <div className="card-body">
-                            {/* <ReactTinyLink
+   <div className="card-group" style={{ margin: '10px', padding: '5px' }}>
+    <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
+     <div className="card-body">
+      {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="URL Bookmark Manager"
@@ -31,11 +31,11 @@ export default function index() {
                                 url="https://ben-angular-urlbookmarkmanager2.stackblitz.io"
 
                             /> */}
-                        </div>
-                    </div>
-                    <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
-                        <div className="card-body">
-                            {/* <ReactTinyLink
+     </div>
+    </div>
+    <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
+     <div className="card-body">
+      {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="HippoDocs"
@@ -45,11 +45,11 @@ export default function index() {
                                 minLine={1}
                                 url="https://ben-angular-hippodocs.stackblitz.io"
                             /> */}
-                        </div>
-                    </div>
-                    <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
-                        <div className="card-body">
-                            {/* <ReactTinyLink
+     </div>
+    </div>
+    <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
+     <div className="card-body">
+      {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="Heart Matters Foundation"
@@ -58,14 +58,14 @@ export default function index() {
                                 minLine={1}
                                 url="https://heartmatters.netlify.app/"
                             /> */}
-                        </div>
-                    </div>
-                </div>
+     </div>
+    </div>
+   </div>
 
-                
-                    <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
-                        <div className="card-body" >
-                            {/* <ReactTinyLink
+
+   <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
+    <div className="card-body" >
+     {/* <ReactTinyLink
                                 cardSize="small"
                                 showGraphic={true}
                                 header="SYLVIA-GOLD PROPERTIES - creating happy landlords"
@@ -74,34 +74,22 @@ export default function index() {
                                 minLine={1}
                                 url="https://www.sylviagoldproperties.com/properties.html"
                             /> */}
-                        </div>
-                    </div>
+    </div>
+   </div>
 
-                    <div className="card" style={{ float: 'left', margin: '16px 9px'}}>
-                        <div className="card-body" >
-                            {/* <ReactTinyLink
-                                cardSize="small"
-                                showGraphic={true}
-                                header="Hi, I'm Tolu Afilaka"
-                                description="A COMEDIAN AND CURRENCY TRADER"
-                                
-                                url="http://toluafilaka.herokuapp.com/"
-                            /> */}
-                        </div>
-                    </div>
-                
+   <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
+    <div className="card-body" >
+     {/* <ReactTinyLink
+      cardSize="small"
+      showGraphic={true}
+      header="Hi, I'm Tolu Afilaka"
+      description="A COMEDIAN AND CURRENCY TRADER"
 
-
-
-
-
-
-
-
-
-
-
-        </Layout>
-    )
+      url="http://toluafilaka.herokuapp.com/"
+     /> */}
+    </div>
+   </div>
+  </Layout>
+ )
 }
 

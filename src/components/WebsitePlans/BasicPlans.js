@@ -6,7 +6,7 @@ const BasicPlans = () => {
     return (
         <div className="col-12 col-md-2 col-lg-4 mb-2">
             <div className="feature">
-                <h2 className="feature-title"><strong>Student - ₦43,500</strong></h2>
+                <h2 className="feature-title"><strong>Basic - ₦50,000</strong></h2>
                 <BasicPlanServices />
                 <BasicPayment />
             </div>

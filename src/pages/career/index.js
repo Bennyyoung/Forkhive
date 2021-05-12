@@ -4,118 +4,87 @@ import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 
 const Career = (props) => {
-    const career = props.data.allMarkdownRemark.edges
-    return (
-        <Layout bodyClass="page-career">
-            <SEO title="Career" />
+ const career = props.data.allMarkdownRemark.edges
+ return (
+  <Layout bodyClass="page-career">
+   <SEO title="Career" />
 
-            <div className="col-12" style={{ padding: '4rem 0 3rem 7rem' }}>
-                <h2 className="title-3 text-dark mb-3" style={{ textAlign: "left" }}><strong>Want To Join Us</strong></h2>
-                <p style={{ textAlign: "left", wordSpacing: '0.2rem' }}>THE MOST SKILLS NEEDED RIGHT NOW</p>
-                <div className="call-box-bottom">
-                    <Link to="/contact" className="button">
-                        Join now
-                    </Link>
-                </div>
-            </div>
+   <div className="col-12" style={{ padding: '4rem 0 3rem 7rem' }}>
+    <h2 className="title-3 text-dark mb-3" style={{ textAlign: "left" }}><strong>Want To Join Us</strong></h2>
+    <p style={{ textAlign: "left", wordSpacing: '0.2rem' }}>THE MOST SKILLS NEEDED RIGHT NOW</p>
+    <div className="call-box-bottom">
+     <br />
+     <br />
+    </div>
+   </div>
 
-            <div className="container pt-8 pt-md-10">
-                <div className="row justify-content-start">
-                    <div className="col-12">
+   <div className="container pt-8 pt-md-10">
+    <div className="row justify-content-start">
+     <div className="col-12">
+     </div>
 
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">REACT NATIVE</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
+     <div class="section">
+      <div className="center">
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">REACT/GATSBY DEVELOPER</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
+       <h2 className="title-3 text-dark mb-3">Open Roles</h2>
+      </div>
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">UI/UX DESIGNER</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
+      <div className="container content">
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">COPY WRITER</h5>
-                                        <p clasName="card-text">Junior</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">NODE DEVELOPER</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
+       <table className="table table-bordered table-hover" style={{width: '100%'}}>
+        <thead className="thead-dark">
+         <tr>
+          <th scope="col">Role</th>
+          <th scope="col">Nature of Work</th>
+          <th scope="col">Full Description</th>
+         </tr>
+        </thead>
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">GRAPHQL</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
+        <tbody>
 
-                            <div className="col-sm-6">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 style={{ fontWeight: 'bold' }} className="card-title">DATA SCIENTIST, AI AND ML ENGINEERS</h5>
-                                        <p clasName="card-text">Senior</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+         <tr>
+          <td ><strong>React Native</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/react-native" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
 
-                </div>
-            </div>
+         <tr>
+          <td ><strong>MERN/MEAN Stack Developer</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/mern-stack" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
 
-            {/* background Image with writeup start */}
-            {/* Writeup  - find your dream job at bloomhub, want to join data scientist and ML Engineers */}
-            {/* background Image with writeup end */}
+         <tr>
+          <td ><strong>React Developer</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/react-developer" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
 
-            {/* Image left and write-up right */}
+         <tr>
+          <td ><strong>React Firebase Developer</strong></td>
+          <td> Remote(Nigeria Timezones)</td>
+          <td><Link to="/react-firebase-developer" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
 
-            <div className="container pb-6">
-                <div className="row">
-                    {career.map(edge => (
-                        <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
-                            <div className="card service service-teaser">
-                                <div className="card-content">
-                                    {/* <span>{edge.node.frontmatter.date}</span> */}
-                                    {/* <p style={{wordSpacing: '0.2rem'}}>{edge.node.excerpt}</p> */}
-                                    {/* <Link style={{textDecoration: 'none', fontWeight: '700', fontSize: '15px'}} to={edge.node.frontmatter.path}>Read More »</Link> */}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+         <tr>
+          <td ><strong>Data Scientist, AI and ML Engineers</strong></td>
+          <td> Remote(Nigeria Timezones)</td>
+          <td><Link to="/datascience" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
 
-        </Layout>
-    );
+    </div>
+    <div style={{ textAlign: 'center', margin: '40px 0' }}>
+     <p >Sorry, we are not seeking interns at this time ☹️</p>
+    </div>
+   </div>
+
+  </Layout>
+ );
 }
 
 export const query = graphql`
