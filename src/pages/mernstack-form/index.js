@@ -51,16 +51,16 @@ const MernStackForm = props => (
      </p>
      <h6><strong>LINKS</strong></h6>
      <p type="LinkedIn URL">
-      <input type="url" placeholder="https://example.com" required name="url[LinkedIn]"></input>
+      <input type="text" placeholder="https://example.com" required name="url[LinkedIn]"></input>
      </p>
      <p type="Twitter URL">
-      <input type="url" placeholder="https://example.com" required name="url[Twitter]"></input>
+      <input type="text" placeholder="https://example.com" required name="url[Twitter]"></input>
      </p>
      <p type="GitHub URL">
-      <input type="url" placeholder="https://example.com" required name="url[Github]"></input>
+      <input type="text" placeholder="https://example.com" required name="url[Github]"></input>
      </p>
      <p type="Portfolio URL">
-      <input type="url" placeholder="https://example.com" required name="url[Portfolio]"></input>
+      <input type="text" placeholder="https://example.com" required name="url[Portfolio]"></input>
      </p>
      <p type="Other website">
       <input type="text" placeholder="https://example.com" required name="url[Other]"></input>
