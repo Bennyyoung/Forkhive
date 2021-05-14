@@ -66,10 +66,9 @@ export default function ReactNativeForm() {
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
-      enctype='multipart/form-data'
       action="/thank-you"
       autocomplete="on"
+      onSubmit={handleSubmit}
      >
 
       <input type="hidden" name="form-name" value="react-native-developer-application-form" />

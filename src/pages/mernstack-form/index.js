@@ -15,6 +15,8 @@ function encode(data) {
 }
 
 export default function MernStackForm() {
+ const [state, setState] = useState({})
+
  const handleChange = (e) => {
   setState({ ...state, [e.target.name]: e.target.value })
  }
