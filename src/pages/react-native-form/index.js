@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
-import { Link } from 'gatsby'; 
+import { Link } from 'gatsby';
 
 
 const ReactNativeForm = props => (
@@ -9,7 +9,7 @@ const ReactNativeForm = props => (
   <SEO title="React Native Developer Form" />
   <div className="intro intro-small">
    <div className="container">
-   <Link to="/react-native" className="button">
+    <Link to="/react-native" className="button">
      Lets go back
   </Link>
     <div className="row">
@@ -30,10 +30,12 @@ const ReactNativeForm = props => (
      method="POST"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
+     data-netlify-recaptcha="true"
      action="/thank-you"
      autocomplete="on"
+     enctype='multipart/form-data'
     >
-     
+
      <input type="hidden" name="form-name" value="react-native-developer-application-form" />
      <h3 className="mt-4">SUBMIT YOUR APPLICATION</h3>
      <p type="Resume/CV:">
@@ -71,6 +73,7 @@ const ReactNativeForm = props => (
      <p>
       <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment"></textarea>
      </p>
+     <div data-netlify-recaptcha="true"></div>
      <button type="submit">SUBMIT APPLICATION</button>
     </form>
 

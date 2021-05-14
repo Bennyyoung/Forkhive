@@ -29,8 +29,10 @@ const DataScienceForm = props => (
      method="post"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
+     data-netlify-recaptcha="true"
      action="/thank-you"
      autocomplete="on"
+     enctype='multipart/form-data'
     >
      <input type="hidden" name="form-name" value="datascience-application-form" />
 
@@ -70,6 +72,7 @@ const DataScienceForm = props => (
      <p>
       <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment"></textarea>
      </p>
+     <div data-netlify-recaptcha="true"></div>
      <button type="submit">SUBMIT APPLICATION</button>
     </form>
 

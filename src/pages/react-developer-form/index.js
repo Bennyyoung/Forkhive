@@ -29,8 +29,10 @@ const ReactDeveloperForm = props => (
      method="post"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
+     data-netlify-recaptcha="true"
      action="/thank-you"
      autocomplete="on"
+     enctype='multipart/form-data'
     >
      <input type="hidden" name="form-name" value="react-developer-application-form" />
 

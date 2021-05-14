@@ -29,8 +29,10 @@ const ReactFirebaseDeveloperForm = props => (
      method="post"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
+     data-netlify-recaptcha="true"
      action="/thank-you"
      autocomplete="on"
+     enctype='multipart/form-data'
     >
      <input type="hidden" name="form-name" value="react-firebase-developer-application-form" />
      <h3 className="mt-4">SUBMIT YOUR APPLICATION</h3>
@@ -69,6 +71,7 @@ const ReactFirebaseDeveloperForm = props => (
      <p>
       <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment"></textarea>
      </p>
+     <div data-netlify-recaptcha="true"></div>
      <button type="submit">SUBMIT APPLICATION</button>
     </form>
 
