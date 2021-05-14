@@ -18,9 +18,13 @@ export default function DataScienceForm() {
  const [state, setState] = useState({})
 
 
- const handleChange = (e) => { setState({ ...state, [e.target.name]: e.target.value }) }
+ const handleChange = (e) => {
+  setState({ ...state, [e.target.name]: e.target.value })
+ }
 
- const handleAttachment = (e) => { setState({ ...state, [e.target.name]: e.target.files[0] }) }
+ const handleAttachment = (e) => {
+  setState({ ...state, [e.target.name]: e.target.files[0] })
+ }
 
  const handleSubmit = (e) => {
   e.preventDefault()
@@ -65,7 +69,7 @@ export default function DataScienceForm() {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
       action="/thank-you"
       autocomplete="on"
       onSubmit={handleSubmit}
