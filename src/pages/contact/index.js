@@ -68,7 +68,7 @@ export default function Contact() {
      >
       <h3 className="mt-4">Send Us A Message</h3>
       <p type="Full name:">
-       <input placeholder="Write your name here.." type="text" required name="full name"></input>
+       <input placeholder="Write your name here.." type="text" required name="full name" onChange={handleChange}></input>
       </p>
       <p type="Email:">
        <input placeholder="Let us know how to contact you back.." type="email" required name="email" onChange={handleChange} ></input>
