@@ -149,5 +149,3 @@ export default function ReactFirebaseDeveloperForm() {
   </Layout>
  )
 }
-
-export default ReactFirebaseDeveloperForm;

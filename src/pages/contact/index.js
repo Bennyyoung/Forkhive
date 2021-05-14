@@ -7,7 +7,7 @@ import { navigate } from 'gatsby-link';
 
 
 
-export default function Conact() {
+export default function Contact() {
  const [state, setState] = useState({})
 
 
@@ -115,4 +115,3 @@ export default function Conact() {
  )
 }
 
-export default Contact;

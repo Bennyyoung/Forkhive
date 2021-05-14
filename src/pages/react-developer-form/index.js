@@ -150,5 +150,3 @@ export default function ReactDeveloperForm() {
   </Layout>
  )
 }
-
-export default ReactDeveloperForm;
