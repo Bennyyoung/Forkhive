@@ -106,7 +106,7 @@ export default function DataScienceForm() {
       </p>
       <h6><strong>ADDITIONAL INFORMATION</strong></h6>
       <p>
-       <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment"></textarea>
+       <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment" onChange={handleChange}></textarea>
       </p>
       <div data-netlify-recaptcha="true"></div>
       <button type="submit">SUBMIT APPLICATION</button>
