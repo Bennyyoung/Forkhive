@@ -5,7 +5,15 @@ import Call from '../../components/Call';
 import './index.css'
 import { navigate } from 'gatsby-link';
 
+function encode(data) {
+ const formData = new FormData()
 
+ for (const key of Object.keys(data)) {
+  formData.append(key, data[key])
+ }
+
+ return formData
+}
 
 export default function Contact() {
  const [state, setState] = useState({})
