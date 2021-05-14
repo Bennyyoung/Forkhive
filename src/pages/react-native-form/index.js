@@ -52,19 +52,19 @@ const ReactNativeForm = props => (
      </p>
      <h6><strong>LINKS</strong></h6>
      <p type="LinkedIn URL">
-      <input type="url" placeholder="https://example.com" required name="url[LinkedIn]"></input>
+      <input type="url" placeholder="https://example.com" required name="LinkedIn URL" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
      </p>
      <p type="Twitter URL">
-      <input type="url" placeholder="https://example.com" required name="url[Twitter]"></input>
+      <input type="url" placeholder="https://example.com" required name="Twitter URL" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
      </p>
      <p type="GitHub URL">
-      <input type="url" placeholder="https://example.com" required name="url[Github]"></input>
+      <input type="url" placeholder="https://example.com" required name="GitHub URL" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
      </p>
      <p type="Portfolio URL">
-      <input type="url" placeholder="https://example.com" required name="url[Portfolio]"></input>
+      <input type="url" placeholder="https://example.com" required name="Portfolio URL" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
      </p>
      <p type="Other website">
-      <input type="text" placeholder="https://example.com" required name="url[Other]"></input>
+      <input type="text" placeholder="https://example.com" required name="Other website" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
      </p>
      <h6><strong>ADDITIONAL INFORMATION</strong></h6>
      <p>

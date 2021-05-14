@@ -23,7 +23,7 @@ function PriceComparisonTable() {
 
        <i className="fa fa-question-circle"></i>
        </a>
-        <ReactTooltip id="socialMedia" type="success">
+        <ReactTooltip style={{maxWidth: '95%'}} id="socialMedia" type="success">
          <p>Get found on social media</p>
         </ReactTooltip>
        </td>
@@ -35,8 +35,8 @@ function PriceComparisonTable() {
        <td><a data-tip data-for="ssl_tsl">SSL/TLS Certificate
         <i className="fa fa-question-circle"> </i>
        </a>
-        <ReactTooltip id="ssl_tsl" type="success">
-         <p>If your site has a login or accepts<br /> form submissions, HTTPS is essential for <br /> your users’ security and privacy. Google search results<br /> prioritize sites with HTTPS enabled</p>
+        <ReactTooltip style={{maxWidth: '95%'}} id="ssl_tsl" type="success">
+         <p style={{maxWidth: '95%'}}>If your site has a login or accepts<br /> form submissions, HTTPS is essential for <br /> your users’ security and privacy. Google search results<br /> prioritize sites with HTTPS enabled</p>
         </ReactTooltip>
        </td>
        <td><i className="fa fa-check"></i></td>
