@@ -30,6 +30,7 @@ const ReactFirebaseDeveloperForm = props => (
      data-netlify="true"
      data-netlify-honeypot="bot-field"
      action="/thank-you"
+     autocomplete="on"
     >
      <input type="hidden" name="form-name" value="react-firebase-developer-application-form" />
      <h3 className="mt-4">SUBMIT YOUR APPLICATION</h3>
