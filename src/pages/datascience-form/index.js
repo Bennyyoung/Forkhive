@@ -38,7 +38,6 @@ export default function DataScienceForm() {
   })
    .then(() => navigate(form.getAttribute('action')))
    .catch((error) => alert(error))
-
  }
 
  return (
@@ -69,7 +68,6 @@ export default function DataScienceForm() {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      // data-netlify-recaptcha="true"
       action="/thank-you"
       autocomplete="on"
       onSubmit={handleSubmit}
