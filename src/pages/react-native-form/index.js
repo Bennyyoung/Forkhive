@@ -157,39 +157,39 @@ export default function ReactNativeForm() {
       </p>
       <h6><strong>Attend to the days you would be available and fill in hours available (24hr 🕒 System)</strong></h6>
       <p>Monday 🕒</p>
-      <input type="time" name="Start Time on Mon" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Mon" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Mon" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Mon" />
 
       <p>Tuesday 🕒</p>
-      <input type="time" name="Start Time on Tue" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Tue" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Tue" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Tue" />
 
       <p>Wednesday 🕒</p>
-      <input type="time" name="Start Time on Wed" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Wed" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Wed" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Wed" />
 
       <p>Thursday 🕒</p>
-      <input type="time" name="Start Time on Thur" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Thur" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Thur" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Thur" />
 
       <p>Friday 🕒</p>
-      <input type="time" name="Start Time on Fri" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Fri" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Fri" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Fri" />
 
       <p>Saturday 🕒</p>
-      <input type="time" name="Start Time on Sat" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Sat" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Sat" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Sat" />
 
       <p>Sunday 🕒</p>
-      <input type="time" name="Start Time on Sun" value="09:00" />
+      <input type="time" onChange={handleChange} name="Start Time on Sun" />
       <label for="time">To </label>
-      <input type="time" name="Stop Time on Sun" value="18:00" />
+      <input type="time" onChange={handleChange} name="Stop Time on Sun" />
 
       <h6><strong>LINKS 🌐</strong></h6>
       <p type="LinkedIn URL 🌐">
