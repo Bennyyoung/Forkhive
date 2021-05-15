@@ -72,40 +72,119 @@ export default function MernStackForm() {
       <input type="hidden" name="form-name" value="mernstack-application-form" />
 
       <h3 className="mt-4">SUBMIT YOUR APPLICATION</h3>
-      <p type="Resume/CV:">
-       <input placeholder="ATTACH RESUME/CV" name="resume" type="file" required onChange={handleAttachment} />
+      <p type="Today's Date: 📅">
+       <input type="date" required onChange={handleChange} name="Date Applied"></input>
       </p>
-      <p type="Full name:">
-       <input type="text" onChange={handleChange} name="name"></input>
+      <p type="Upload your picture: 🧑">
+       <input placeholder="ATTACH RESUME/CV" name="Picture" type="file" required onChange={handleAttachment} />
       </p>
-      <p type="Email:">
-       <input type="email" onChange={handleChange} name="email"></input>
+      <p type="Resume/CV: 📂">
+       <input placeholder="ATTACH RESUME/CV" name="Resume/CV" type="file" required onChange={handleAttachment} />
       </p>
-      <p type="Phone number:">
-       <input type="number" onChange={handleChange} name="phone"></input>
+      <p type="Full name: 📛">
+       <input type="text" required onChange={handleChange} name="Full name"></input>
       </p>
-      <p type="Current company">
-       <input type="text" onChange={handleChange} name="org"></input>
+      <p type="Email: 📧">
+       <input type="email" required onChange={handleChange} name="Email"></input>
       </p>
-      <h6><strong>LINKS</strong></h6>
-      <p type="LinkedIn URL">
-       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"></input>
+      <p type="Phone number: 📞">
+       <input type="number" required onChange={handleChange} name="Phone"></input>
       </p>
-      <p type="Twitter URL">
-       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Twitter URL"></input>
+      <p type="DOB: 📅">
+       <input type="date" required onChange={handleChange} name="DOB"></input>
       </p>
-      <p type="GitHub URL">
+      <p type="Address: 🏡">
+       <input type="text" required onChange={handleChange} name="Address"></input>
+      </p>
+      <p type="City: 🏙️">
+       <input type="text" required onChange={handleChange} name="City"></input>
+      </p>
+      <p type="State: 🏙️">
+       <select required onChange={handleChange} name="State">
+        <option disabled selected>--Select State--</option>
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwa Ibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bauchi">Bauchi</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Benue">Benue</option>
+        <option value="Borno">Borno</option>
+        <option value="Cross Rive">Cross River</option>
+        <option value="Delta">Delta</option>
+        <option value="Ebonyi">Ebonyi</option>
+        <option value="Edo">Edo</option>
+        <option value="Ekiti">Ekiti</option>
+        <option value="Enugu">Enugu</option>
+        <option value="FCT">Federal Capital Territory</option>
+        <option value="Gombe">Gombe</option>
+        <option value="Imo">Imo</option>
+        <option value="Jigawa">Jigawa</option>
+        <option value="Kaduna">Kaduna</option>
+        <option value="Kano">Kano</option>
+        <option value="Katsina">Katsina</option>
+        <option value="Kebbi">Kebbi</option>
+        <option value="Kogi">Kogi</option>
+        <option value="Kwara">Kwara</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Nasarawa">Nasarawa</option>
+        <option value="Niger">Niger</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Ondo">Ondo</option>
+        <option value="Osun">Osun</option>
+        <option value="Oyo">Oyo</option>
+        <option value="Plateau">Plateau</option>
+        <option value="Rivers">Rivers</option>
+        <option value="Sokoto">Sokoto</option>
+        <option value="Taraba">Taraba</option>
+        <option value="Yobe">Yobe</option>
+        <option value="Zamfara">Zamfara</option>
+       </select>
+      </p>
+      <p type="When are you able to begin work? 📅">
+       <input type="date" required onChange={handleChange} name="Start Date"></input>
+      </p>
+      <p type="Are you available to work overtime [Yes/No]:">
+       <input type="text" required onChange={handleChange} name="Overtime Work"></input>
+      </p>
+
+      <p type="Are you legally eligible to work in Nigeria (🇳🇬)? Yes/No">
+       <input type="text" required onChange={handleChange} name="Eligible"></input>
+      </p>
+      <p type="Current company: 🏢">
+       <input type="text" onChange={handleChange} name="Current Company before applying"></input>
+      </p>
+      <h6><strong>Attend to the days you would be available and fill in hours available (24hr 🕒 System)</strong></h6>
+      <p>Monday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Mon" />
+      <p>Tuesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Tue" />
+      <p>Wednesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Wed" />
+      <p>Thursday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Thur" />
+      <p>Friday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sat" />
+      <p>Saturday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Fri" />
+      <p>Sunday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sun" />
+
+      <h6><strong>LINKS 🌐</strong></h6>
+      <p type="LinkedIn URL 🌐">
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="LinkedIn URL"></input>
+      </p>
+      <p type="Twitter URL 🌐">
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Twitter URL"></input>
+      </p>
+      <p type="GitHub URL 🌐">
        <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Github URL"></input>
       </p>
-      <p type="Portfolio URL">
+      <p type="Portfolio URL 🌐">
        <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Portfolio URL"></input>
       </p>
-      <p type="Other website">
+      <p type="Other website 🌐">
        <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Other website"></input>
       </p>
-      <h6><strong>ADDITIONAL INFORMATION</strong></h6>
+      <h6><strong>ADDITIONAL INFORMATION 🛈</strong></h6>
       <p>
        <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Add a cover letter or anything else you want to share." name="comment" onChange={handleChange}></textarea>
+      </p>
+      <p>
+       I authorize you to verify the information listed above. I certify that the information contained in this employment application is accurate and truthful. I understand that providing false information on this application may be grounds for not offering me employment or for the termination of my employment at any point in the future.
       </p>
       <div data-netlify-recaptcha="true"></div>
       <button type="submit">SUBMIT APPLICATION</button>
