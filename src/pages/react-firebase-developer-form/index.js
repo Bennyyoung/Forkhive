@@ -155,13 +155,40 @@ export default function ReactFirebaseDeveloperForm() {
        <input type="text" onChange={handleChange} name="Current Company before applying"></input>
       </p>
       <h6><strong>Attend to the days you would be available and fill in hours available (24hr 🕒 System)</strong></h6>
-      <p>Monday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Mon" />
-      <p>Tuesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Tue" />
-      <p>Wednesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Wed" />
-      <p>Thursday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Thur" />
-      <p>Friday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sat" />
-      <p>Saturday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Fri" />
-      <p>Sunday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sun" />
+      <p>Monday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Mon" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Mon" />
+
+      <p>Tuesday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Tue" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Tue" />
+
+      <p>Wednesday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Wed" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Wed" />
+
+      <p>Thursday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Thur" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Thur" />
+
+      <p>Friday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Fri" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Fri" />
+
+      <p>Saturday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Sat" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Sat" />
+
+      <p>Sunday 🕒</p>
+      <input type="time" onChange={handleChange} name="Start Time on Sun" />
+      <label for="time">To </label>
+      <input type="time" onChange={handleChange} name="Stop Time on Sun" />
 
       <h6><strong>LINKS 🌐</strong></h6>
       <p type="LinkedIn URL 🌐">
@@ -187,7 +214,8 @@ export default function ReactFirebaseDeveloperForm() {
        I authorize you to verify the information listed above. I certify that the information contained in this employment application is accurate and truthful. I understand that providing false information on this application may be grounds for not offering me employment or for the termination of my employment at any point in the future.
       </p>
       <div data-netlify-recaptcha="true"></div>
-      <button type="submit">SUBMIT APPLICATION</button>
+      <button style={{marginLeft: '20px'}} type=" submit">SUBMIT APPLICATION &nbsp;</button> 
+      <button type="reset">RESET</button>
      </form>
 
     </div>
