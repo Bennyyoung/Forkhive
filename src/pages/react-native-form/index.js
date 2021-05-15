@@ -89,7 +89,7 @@ export default function ReactNativeForm() {
        <input type="email" required onChange={handleChange} name="Email"></input>
       </p>
       <p type="Phone number: 📞">
-       <input type="number" required onChange={handleChange} name="Phone"></input>
+       <input type="tel" required onChange={handleChange} name="Phone"></input>
       </p>
       <p type="DOB: 📅">
        <input type="date" required onChange={handleChange} name="DOB"></input>
@@ -156,13 +156,40 @@ export default function ReactNativeForm() {
        <input type="text" onChange={handleChange} name="Current Company before applying"></input>
       </p>
       <h6><strong>Attend to the days you would be available and fill in hours available (24hr 🕒 System)</strong></h6>
-      <p>Monday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Mon" />
-      <p>Tuesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Tue" />
-      <p>Wednesday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Wed" />
-      <p>Thursday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Thur" />
-      <p>Friday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sat" />
-      <p>Saturday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Fri" />
-      <p>Sunday 🕒</p><input type="text" required placeholder="00:00 : 24:00" pattern="0(1:30:00|1:[012][0-9]:[0-5][0-9]|0:[0-5][0-9]:[0-5][0-9])" name="Time available on Sun" />
+      <p>Monday 🕒</p>
+      <input type="time" name="Start Time on Mon" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Mon" value="18:00" />
+
+      <p>Tuesday 🕒</p>
+      <input type="time" name="Start Time on Tue" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Tue" value="18:00" />
+
+      <p>Wednesday 🕒</p>
+      <input type="time" name="Start Time on Wed" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Wed" value="18:00" />
+
+      <p>Thursday 🕒</p>
+      <input type="time" name="Start Time on Thur" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Thur" value="18:00" />
+
+      <p>Friday 🕒</p>
+      <input type="time" name="Start Time on Fri" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Fri" value="18:00" />
+
+      <p>Saturday 🕒</p>
+      <input type="time" name="Start Time on Sat" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Sat" value="18:00" />
+
+      <p>Sunday 🕒</p>
+      <input type="time" name="Start Time on Sun" value="09:00" />
+      <label for="time">To </label>
+      <input type="time" name="Stop Time on Sun" value="18:00" />
 
       <h6><strong>LINKS 🌐</strong></h6>
       <p type="LinkedIn URL 🌐">
@@ -188,7 +215,8 @@ export default function ReactNativeForm() {
        I authorize you to verify the information listed above. I certify that the information contained in this employment application is accurate and truthful. I understand that providing false information on this application may be grounds for not offering me employment or for the termination of my employment at any point in the future.
       </p>
       <div data-netlify-recaptcha="true"></div>
-      <button type="submit">SUBMIT APPLICATION</button>
+      <button style={{marginLeft: '20px'}} type=" submit">SUBMIT APPLICATION &nbsp;</button> 
+      <button type="reset">RESET</button>
      </form>
 
     </div>
