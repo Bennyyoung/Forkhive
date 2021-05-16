@@ -50,15 +50,33 @@ const Career = (props) => {
          </tr>
 
          <tr>
+          <td ><strong>Team Manager</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/teammanager" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
+
+         <tr>
           <td ><strong>MERN/MEAN Stack Developer</strong></td>
           <td >Remote(Nigeria Timezones)</td>
           <td><Link to="/mern-stack" style={{textDecoration: 'none'}}>View Role</Link></td>
          </tr>
 
          <tr>
+          <td ><strong>UI/UX</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/uiux" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
+
+         <tr>
           <td ><strong>React Developer</strong></td>
           <td >Remote(Nigeria Timezones)</td>
           <td><Link to="/react-developer" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
+
+         <tr>
+          <td ><strong>Project Manager</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/projectmanager" style={{textDecoration: 'none'}}>View Role</Link></td>
          </tr>
 
          <tr>
