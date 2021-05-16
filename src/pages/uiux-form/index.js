@@ -62,7 +62,7 @@ export default function UIUX() {
     </Link>
      <div className="row">
       <div className="col-12">
-       <h1>Team Manager</h1>
+       <h1>UI UX</h1>
       </div>
      </div>
     </div>
@@ -82,7 +82,7 @@ export default function UIUX() {
       autocomplete="on"
       onSubmit={handleSubmit}
      >
-      <input type="hidden" name="form-name" value="team-manager-application-form" />
+      <input type="hidden" name="form-name" value="uiux-application-form" />
 
       <h3 className="mt-4">SUBMIT YOUR APPLICATION 📂</h3>
       <p type="Today's Date: 📅">
@@ -227,7 +227,7 @@ export default function UIUX() {
        I authorize you to verify the information listed above. I certify that the information contained in this employment application is accurate and truthful. I understand that providing false information on this application may be grounds for not offering me employment or for the termination of my employment at any point in the future.
       </p>
       <div data-netlify-recaptcha="true"></div>
-      <button style={{marginLeft: '20px'}} type=" submit">SUBMIT APPLICATION &nbsp;</button> 
+      <button style={{ marginLeft: '20px' }} type=" submit">SUBMIT APPLICATION &nbsp;</button>
       <button type="reset">RESET</button>
      </form>
 
