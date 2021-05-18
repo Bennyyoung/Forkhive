@@ -205,13 +205,13 @@ export default function DataScienceForm() {
 
       <h6><strong>LINKS 🌐</strong></h6>
       <p type="LinkedIn URL 🌐">
-       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="LinkedIn URL"></input>
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:[\w]+\.)?linkedin\.com\/company\/(?P<company_permalink>[A-z0-9-\.]+)\/?" name="LinkedIn URL"></input>
       </p>
       <p type="Twitter URL 🌐">
-       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Twitter URL"></input>
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:[A-z]+\.)?twitter\.com\/@?(?P<username>[A-z0-9_]+)\/status\/(?P<tweet_id>[0-9]+)\/?" name="Twitter URL"></input>
       </p>
       <p type="GitHub URL 🌐">
-       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Github URL"></input>
+       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:www\.)?github\.com\/(?P<login>[A-z0-9_-]+)\/(?P<repo>[A-z0-9_-]+)\/?" name="Github URL"></input>
       </p>
       <p type="Portfolio URL 🌐">
        <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Portfolio URL"></input>
@@ -227,7 +227,7 @@ export default function DataScienceForm() {
        I authorize you to verify the information listed above. I certify that the information contained in this employment application is accurate and truthful. I understand that providing false information on this application may be grounds for not offering me employment or for the termination of my employment at any point in the future.
       </p>
       <div data-netlify-recaptcha="true"></div>
-      <button style={{marginLeft: '20px'}} type=" submit">SUBMIT APPLICATION &nbsp;</button> 
+      <button style={{ marginLeft: '20px' }} type=" submit">SUBMIT APPLICATION &nbsp;</button>
       <button type="reset">RESET</button>
      </form>
 

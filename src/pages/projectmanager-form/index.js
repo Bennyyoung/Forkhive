@@ -205,13 +205,13 @@ export default function ProjectManagerForm() {
 
       <h6><strong>LINKS 🌐</strong></h6>
       <p type="LinkedIn URL 🌐">
-       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="LinkedIn URL"></input>
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:[\w]+\.)?linkedin\.com\/company\/(?P<company_permalink>[A-z0-9-\.]+)\/?" name="LinkedIn URL"></input>
       </p>
       <p type="Twitter URL 🌐">
-       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Twitter URL"></input>
+       <input type="url" required placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:[A-z]+\.)?twitter\.com\/@?(?P<username>[A-z0-9_]+)\/status\/(?P<tweet_id>[0-9]+)\/?" name="Twitter URL"></input>
       </p>
       <p type="GitHub URL 🌐">
-       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Github URL"></input>
+       <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="(?:https?:)?\/\/(?:www\.)?github\.com\/(?P<login>[A-z0-9_-]+)\/(?P<repo>[A-z0-9_-]+)\/?" name="Github URL"></input>
       </p>
       <p type="Portfolio URL 🌐">
        <input type="url" placeholder="https://example.com" onChange={handleChange} pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="Portfolio URL"></input>
