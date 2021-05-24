@@ -1,5 +1,5 @@
 import React from 'react'
-// import { ReactTinyLink } from 'react-tiny-link'
+import { ReactTinyLink } from 'react-tiny-link'
 import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 
@@ -20,44 +20,33 @@ export default function index() {
    <div className="card-group" style={{ margin: '10px', padding: '5px' }}>
     <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
      <div className="card-body">
-      {/* <ReactTinyLink
-                                cardSize="small"
-                                showGraphic={true}
-                                header="URL Bookmark Manager"
-                                description="The URL Bookmark manager allows you to save and organize your content on 
-                                            your local storage."
-                                maxLine={2}
-                                minLine={1}
-                                url="https://ben-angular-urlbookmarkmanager2.stackblitz.io"
+      <ReactTinyLink
+      style={{textDecoration: 'none'}}
+       cardSize="large"
+       showGraphic={true}
+       width="400px"
+       header="School Management System"
+       description="A school management system to record staffs, students and expenses"
+       maxLine={4}
+       minLine={1}
+       url="https://skms.netlify.app/"
+      />
+     </div>
+    </div>
 
-                            /> */}
-     </div>
-    </div>
     <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
      <div className="card-body">
-      {/* <ReactTinyLink
-                                cardSize="small"
-                                showGraphic={true}
-                                header="HippoDocs"
-                                description="HippoDocs is a PDF Conversion API for dynamic generation of PDF from system provided 
-                                            or user provided templates."
-                                maxLine={2}
-                                minLine={1}
-                                url="https://ben-angular-hippodocs.stackblitz.io"
-                            /> */}
-     </div>
-    </div>
-    <div className="card" style={{ float: 'left', margin: '16px 9px' }}>
-     <div className="card-body">
-      {/* <ReactTinyLink
-                                cardSize="small"
-                                showGraphic={true}
-                                header="Heart Matters Foundation"
-                                description="THE ENCYLOPEDIA OF RELATIONSHIP MATTERS"
-                                maxLine={2}
-                                minLine={1}
-                                url="https://heartmatters.netlify.app/"
-                            /> */}
+      <ReactTinyLink
+      style={{textDecoration: 'none'}}
+       cardSize="large"
+       showGraphic={true}
+       width="400px"
+       header="League of friends"
+       description="League of friends is a Nigerian social media service and image sharing designed to create status or class for people in form of discussion groups based on your interest"
+       maxLine={4}
+       minLine={1}
+       url="https://leagueoffriends.vercel.app"
+      />
      </div>
     </div>
    </div>

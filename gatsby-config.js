@@ -5,8 +5,8 @@ module.exports = {
     title: 'BLOOMHub',
     description: 'BLOOMHub',
     contact: {
-      phone1: '+234 805 782 6599',
-      phone2: '+234 907 846 7458',
+      phone1: '+234 703 164 2200',
+      phone2: '+234 903 295 0887',
       email: 'softbloom28@gmail.com',
     },
     menuLinks: [
@@ -22,10 +22,10 @@ module.exports = {
         name: 'About',
         link: '/about',
       },
-      // {
-      //   name: 'Works',
-      //   link: '/our-works',
-      // },
+       {
+         name: 'Works',
+         link: '/our-works',
+       },
       // {
       //   name: 'Blogs',
       //   link: '/blog',
