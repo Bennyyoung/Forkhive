@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link } from 'gatsby';
+import SEO from '../../components/SEO';
+import Layout from '../../layouts/index';
+import PriceComparisonTable from '../../components/PriceComparisonTable'
+
+
+
+const Mernstack = () => (
+    <Layout bodyClass="page-pricing">
+        <SEO title="Pricing" />
+        <div className="col-12" style={{ padding: '4rem 0 3rem 6rem' }}>
+            <h1 style={{ textAlign: "left", color: 'blue' }}>Pricing</h1>
+            <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
+                Price comparison Table
+     </h5>
+            <h4 style={{ textAlign: "center" }}><strong>Know what you are paying for</strong></h4>
+        </div>
+
+        <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>
+            <PriceComparisonTable />
+        </div>
+
+    </Layout>
+);
+
+
+export default Mernstack;

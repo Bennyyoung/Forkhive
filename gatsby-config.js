@@ -15,6 +15,10 @@ module.exports = {
         link: '/',
       },
       {
+        name: 'Pricing',
+        link: '/pricing',
+      },
+      {
         name: 'Services',
         link: '/services',
       },
