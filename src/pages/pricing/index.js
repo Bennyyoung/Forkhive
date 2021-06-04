@@ -18,6 +18,7 @@ const Mernstack = () => (
         </div>
 
         <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>
+            <p>Before building a website for your business, it is important to know the costs involved. This will ensure you budget adequately for the project. Some business owners think building a website is a one-off thing. You just build it and you go to sleep. However, there are fixed costs and recurrent costs involved in building a business website.</p>
             <PriceComparisonTable />
         </div>
 

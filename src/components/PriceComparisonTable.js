@@ -156,8 +156,8 @@ function PriceComparisonTable() {
                         </tr>
                         <tr>
                             <td><b>Price Range</b></td>
-                            <td><b>NGN35,000 - NGN75,000 </b>(Prices are subject to the complexity of the project and nature of the market)</td>
-                            <td><b>NGN75,000 and above </b>(Prices are subject to the complexity of the project and nature of the market)</td>
+                            <td><b>NGN35,000 - NGN75,000 </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
+                            <td><b>NGN75,000 and above </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
                         </tr>
                         <tr>
                             <td></td>
