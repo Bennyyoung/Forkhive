@@ -12,8 +12,8 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th>Features</th>
-                            <th>Basic (For Personal Use)</th>
-                            <th>Pro (For Business Use)</th>
+                            <th>Basic Plan (Suitable for Budget Applications)</th>
+                            <th>Pro Plan (Suitable for Medium to Enterprise Applications)</th>
                         </tr>
                     </thead>
 
