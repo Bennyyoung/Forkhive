@@ -14,7 +14,7 @@ const Mernstack = () => (
             <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
                 Price comparison Table
      </h5>
-            <h4 style={{ textAlign: "center" }}><strong>Know what you are paying for</strong></h4>
+            <h4 style={{ textAlign: "center" }}><strong>Pricing Built For Businesses Of All Sizes</strong></h4>
         </div>
 
         <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>

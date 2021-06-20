@@ -12,8 +12,8 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th>Features</th>
-                            <th>Basic Plan (Suitable for Budget Applications)</th>
-                            <th>Pro Plan (Suitable for Medium to Enterprise Applications)</th>
+                            <th>Basic Plan (Suitable for Budget Applications) - <b>NGN35,000 - NGN75,000 </b></th>
+                            <th>Pro Plan (Suitable for Medium to Enterprise Applications) - <b>NGN75,000 and above </b></th>
                         </tr>
                     </thead>
 
