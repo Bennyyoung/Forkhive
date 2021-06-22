@@ -119,7 +119,7 @@ export default function Contact() {
             <label>
               Starting Date:
             </label>
-            <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project Start Date"></input>
+            <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project Start Date"></input><br />
 
             <label>
               Finishing Date:
