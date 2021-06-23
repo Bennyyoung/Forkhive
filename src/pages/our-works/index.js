@@ -3,7 +3,7 @@ import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 import lof_home_screenshot from './lof_homepage_screenshot.jpg'
 import sunrise_home_screenshot from './sunrise_homepage_screenshot.jpg'
-import beebah_cakes from './beebah_cakes_snip.jpg'
+import beebah_cakes_snip from './beebah_cakes_snip.jpg'
 
 
 export default function index() {
@@ -55,7 +55,7 @@ export default function index() {
             <h5><strong>Cakes and Confectionery</strong></h5>
             <a href="https://beebahcakes.netlify.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
               <div className="card">
-                <img src={beebah_cakes} width="320px" height="180px" className="card-img-top" alt="..." />
+                <img src={beebah_cakes_snip} width="320px" height="180px" className="card-img-top" alt="..." />
                 <div className="card-body" style={{ padding: '5px' }}>
                   <h5 className="card-title">Beebah cakes</h5>
                   <p className="card-text">At Beebah cakes they sell a lot of delicious cakes for your events</p>
