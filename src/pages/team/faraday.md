@@ -12,5 +12,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Apanisile Adeola is role is to identify, diagnose and rectify any issues in computer hardware, software, services, and applications.
+    Apanisile Adeola role is to identify, diagnose and rectify any issues in computer hardware, software, services, and applications.
 </p>
