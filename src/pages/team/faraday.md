@@ -8,7 +8,6 @@ jobtitle: 'IT Supports Engineer'
 email: ' adexconly@gmail.com'
 linkedinurl: ' https://www.linkedin.com/in/adeola-apanisile-b38230182'
 twitterurl: ' https://twitter.com/tech_faraday?s=09'
-github: 'https://github.com/AdeolaFaraday'
 weight: 2
 ---
 
