@@ -17,15 +17,15 @@ const Home = (props) => {
       <Helmet>
         <meta
           name="BLOOM"
-          content="We specialize in Web development and Web design, Artificial Intelligence, Machine Learning and lastly Data Science"
+          content=" We are a Software Company, focused on Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
         />
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h2 style={{ marginTop: '-150px', color: 'blue', fontSize: '2rem', fontWeight: 'bold' }}>BloomHub</h2>
+          <h2 style={{ marginTop: '-145px', color: 'blue', fontSize: '2rem', fontWeight: 'bold' }}>BloomHub</h2>
           <h5 style={{ fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
-          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>
-            We specialize in Web and Mobile App Development, Web and Mobile App Design, Artificial Intelligence, Machine Learning and Data Science
+          <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
+            We are a Software Company, focused on Development <b>(Web and Mobile)</b>, Design <b>(Web and Mobile)</b> and Data Science <b>(AI and ML)</b> to help build your startup ideas and team.
           </p>
         </div>
       </div>
@@ -33,6 +33,33 @@ const Home = (props) => {
       <div className="container pb-0">
         <Call button />
       </div>
+
+      <div style={{ padding: "10px 0px 0 0px" }}>
+        <div className="text-center" style={{ display: "inline-block", width: "35%" }}>
+          <h2><strong>Our Works</strong></h2>
+          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Look at our exceptional works</p>
+          <Link className="button button-primary mt-2" to="/our-works">
+            Our Works
+          </Link>
+        </div>
+        <div className="text-center" style={{ display: "inline-block", width: "30%" }}>
+          <h2><strong>Pricing</strong></h2>
+          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Pricing built for businesses of all sizes</p>
+          <Link className="button button-primary mt-2" to="/pricing">
+            Pricing
+          </Link>
+        </div>
+        <div className="text-center" style={{ display: "inline-block", width: "35%" }}>
+          <h2><strong>Career</strong></h2>
+          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>The most needed skill right now</p>
+          <Link className="button button-primary mt-2" to="/career">
+            Career
+          </Link>
+        </div>
+
+      </div>
+
+
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">

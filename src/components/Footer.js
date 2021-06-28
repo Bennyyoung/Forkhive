@@ -22,8 +22,8 @@ const Footer = props => (
                 {' '}
                 <Link style={{textDecoration: 'none'}} to="/contact">Contact</Link>
               </li>
-              <li className="copyright">
-                ©{' '}{new Date().getFullYear()}{' '}{props.data.site.siteMetadata.title}
+              <li className="copyright" style={{fontSize: '13px'}}>
+                ©{' '}{new Date().getFullYear()}{' '}{props.data.site.siteMetadata.title}. All rights reserved
               </li>
               <Socials />
             </ul>
