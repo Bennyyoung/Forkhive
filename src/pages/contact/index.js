@@ -82,20 +82,18 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <h3 className="mt-4">Your request</h3>
-            <input type="radio" style={{ width: '10%' }} id="create" name="Create a product" value="Create a product" onChange={handleCreateChange} />Create a product
-
-            {/* <label for="create" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }}>
-              Create a product
-            </label> */}
-            <br />
-
-            <input type="radio" style={{ width: '10%' }} id="enhance" name="Enhance your team" value="Enhance your team" onChange={handleEnhanceChange} />Enhance your team
-
-            {/* <label for="enhance" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
-              Enhance your team
-            </label><br /> */}
-
-            <input type="radio" style={{ width: '10%' }} id="training" name="Training" value="Training" onChange={handleTrainingChange} />Training
+            <label className="container">Create a product
+              <input type="checkbox" onChange={handleChange} name="Create a product" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container">Enhance your team
+              <input type="checkbox" onChange={handleChange} name="Enhance your team" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container">Training
+              <input type="checkbox" onChange={handleChange} name="Training" />
+              <span className="checkmark"></span>
+            </label>
 
             {/* <label for="training" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
               Training
@@ -122,19 +120,19 @@ export default function Contact() {
             <p type="Phone number:">
               <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" onChange={handleChange} ></input>
             </p>
-            <p type="Budget"></p>
-            <div>
+            <p type="Budget">
               <select required onChange={handleChange}>
-                <option value selected="selected">---</option>
-                <option value>Less than  ₦20,000</option>
-                <option value> ₦20,000 -  ₦40,000</option>
-                <option value> ₦40,000 -  ₦60,000</option>
-                <option value> ₦60,000 -  ₦80,000</option>
-                <option value> ₦80,000 -  ₦100,000</option>
-                <option value>More than  ₦100,000</option>
-                <option value>Not determined</option>
+                <option name="---" value selected="selected" onChange={handleChange}>---</option>
+                <option name="Less than  ₦20,000" value onChange={handleChange}>Less than  ₦20,000</option>
+                <option name="₦20,000 -  ₦40,000" value onChange={handleChange}> ₦20,000 -  ₦40,000</option>
+                <option name="₦40,000 -  ₦60,000" value onChange={handleChange}> ₦40,000 -  ₦60,000</option>
+                <option name="₦60,000 -  ₦80,000" value onChange={handleChange}> ₦60,000 -  ₦80,000</option>
+                <option name="₦80,000 -  ₦100,000" value onChange={handleChange}> ₦80,000 -  ₦100,000</option>
+                <option name="More than  ₦100,000" value onChange={handleChange}>More than  ₦100,000</option>
+                <option name="Not determined" value onChange={handleChange}>Not determined</option>
               </select>
-            </div>
+
+            </p>
             <label>
               Starting Date:
             </label>
@@ -152,27 +150,27 @@ export default function Contact() {
             <p type="For the Training (Only for those undergoing the training)">
 
               <label className="container">Basic Web Design
-                <input type="checkbox" onChange={handleChange} name="Basic Web Design"/>
+                <input type="checkbox" onChange={handleChange} name="Basic Web Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Basic UX Design
-                <input type="checkbox" onChange={handleChange} name="Basic UX Design"/>
+                <input type="checkbox" onChange={handleChange} name="Basic UX Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">HTML and CSS
-                <input type="checkbox" onChange={handleChange} name="HTML and CSS"/>
+                <input type="checkbox" onChange={handleChange} name="HTML and CSS" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">JavaScript (React)
-                <input type="checkbox" onChange={handleChange} name="JavaScript (React)"/>
+                <input type="checkbox" onChange={handleChange} name="JavaScript (React)" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Azure ML
-                <input type="checkbox" onChange={handleChange} name="Azure ML"/>
+                <input type="checkbox" onChange={handleChange} name="Azure ML" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Python
-                <input type="checkbox" onChange={handleChange} name="Python"/>
+                <input type="checkbox" onChange={handleChange} name="Python" />
                 <span className="checkmark"></span>
               </label>
             </p>
