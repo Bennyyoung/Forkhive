@@ -17,10 +17,22 @@ function encode(data) {
 
 export default function Contact() {
   const [state, setState] = useState({})
-
+  const [create, setCreate] = useState('');
+  const [enhance, setEnhance] = useState('');
+  const [training, setTraining] = useState('')
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleCreateChange = (e) => {
+    setCreate({ ...create, [e.target.name]: e.target.value })
+  }
+  const handleEnhanceChange = (e) => {
+    setEnhance({ ...enhance, [e.target.name]: e.target.value })
+  }
+  const handleTrainingChange = (e) => {
+    setTraining({ ...training, [e.target.name]: e.target.value })
   }
   const handleAttachment = (e) => {
     setState({ ...state, [e.target.name]: e.target.files[0] })
@@ -69,18 +81,25 @@ export default function Contact() {
             autocomplete="on"
             onSubmit={handleSubmit}
           >
-            <h3 className="mt-4">Let's create together</h3>
-            <input type="radio" style={{ width: '10%' }} id="create" required name="Create a product" value="Create a product" onChange={handleChange} />
+            <h3 className="mt-4">Your request</h3>
+            <input type="radio" style={{ width: '10%' }} id="create" name="Create a product" value="Create a product" onChange={handleCreateChange} />Create a product
 
-            <label for="create" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }}>
+            {/* <label for="create" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }}>
               Create a product
-            </label><br />
+            </label> */}
+            <br />
 
-            <input type="radio" style={{ width: '10%' }} id="enhance" name="Enhance your team" value="Enhance your team" required onChange={handleChange} />
+            <input type="radio" style={{ width: '10%' }} id="enhance" name="Enhance your team" value="Enhance your team" onChange={handleEnhanceChange} />Enhance your team
 
-            <label for="enhance" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
+            {/* <label for="enhance" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
               Enhance your team
-            </label>
+            </label><br /> */}
+
+            <input type="radio" style={{ width: '10%' }} id="training" name="Training" value="Training" onChange={handleTrainingChange} />Training
+
+            {/* <label for="training" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
+              Training
+            </label> */}
 
             {/* <input type="radio" id="html" name="fav_language" value="HTML" />
             <label for="html">HTML</label>
@@ -126,9 +145,38 @@ export default function Contact() {
             </label>
             <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project End Date"></input>
 
-            <p type="Attach a file: 📂">
-              <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" required onChange={handleAttachment} />
+            <p type="Attach a file (CV) Not mandatory: 📂">
+              <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" onChange={handleAttachment} />
             </p>
+
+            <p type="For the Training (Only for those undergoing the training)">
+
+              <label className="container">Basic Web Design
+                <input type="checkbox" onChange={handleChange} name="Basic Web Design"/>
+                <span className="checkmark"></span>
+              </label>
+              <label className="container">Basic UX Design
+                <input type="checkbox" onChange={handleChange} name="Basic UX Design"/>
+                <span className="checkmark"></span>
+              </label>
+              <label className="container">HTML and CSS
+                <input type="checkbox" onChange={handleChange} name="HTML and CSS"/>
+                <span className="checkmark"></span>
+              </label>
+              <label className="container">JavaScript (React)
+                <input type="checkbox" onChange={handleChange} name="JavaScript (React)"/>
+                <span className="checkmark"></span>
+              </label>
+              <label className="container">Azure ML
+                <input type="checkbox" onChange={handleChange} name="Azure ML"/>
+                <span className="checkmark"></span>
+              </label>
+              <label className="container">Python
+                <input type="checkbox" onChange={handleChange} name="Python"/>
+                <span className="checkmark"></span>
+              </label>
+            </p>
+
 
             <p type="Message (Brief description of your needs): ">
               <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Brief description of your needs" required name="message" onChange={handleChange} ></textarea>
@@ -138,7 +186,7 @@ export default function Contact() {
             <button type="submit">Hire Us</button><br />
           </form>
 
-          <p style={{paddingTop: '20px'}}>Or send us an email to&nbsp;<a href="mailto:softbloom28@gmail.com">softbloom28@gmail.com</a></p>
+          <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:softbloom28@gmail.com">softbloom28@gmail.com</a></p>
 
         </div>
 

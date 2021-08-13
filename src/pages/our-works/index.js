@@ -19,54 +19,89 @@ export default function index() {
 
       <div className="container">
         <div className="row">
-          <div className="col">
-            <h5><strong>A social network</strong></h5>
-            <a href="https://leagueoffriends.vercel.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
-              <div className="card">
-                <img src={lof_home_screenshot} width="320px" height="180px" className="card-img-top" alt="..." />
-                <div className="card-body" style={{ padding: '5px' }}>
-                  <h5 className="card-title">League of friends</h5>
-                  <p className="card-text">League of friends is a Nigerian social media<br /> service and image sharing designed to create<br /> status or class for people in form of discussion<br /> groups based on your interest</p>
+          <div className="col-md-4">
+            <div className="work-box" style={{height: '10px'}}>
+              <h5 style={{color: '#1c3ed3'}}><strong>A social network</strong></h5>
+              <a href="https://leagueoffriends.vercel.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
+                <div className="work-img">
+                  <img src={lof_home_screenshot} className="img-fluid" alt="..." />
                 </div>
-                <div className="card-footer" style={{ padding: '5px' }}>
-                  <small className="text-muted"><a href="https://leagueoffriends.vercel.app/">https://leagueoffriends.vercel.app/</a></small>
+
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h5>League of friends</h5>
+
+                      <div className="more">
+                        <p>League of friends is a Nigerian social media service and image sharing designed to create status or class for people in form of discussion groups based on your interest</p>
+
+                        <span className="category">Web App</span>
+                        <span className="date">- 24 April 2021 </span>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
-          <div className="col">
-            <h5><strong>School management system</strong></h5>
-            <a href="https://skms.netlify.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
-              <div className="card">
-                <img src={sunrise_home_screenshot} width="410px" height="180px" className="card-img-top" alt="..." />
-                <div className="card-body" style={{ padding: '5px' }}>
-                  <h5 className="card-title">Sunrise Keepers School Management<br /> System</h5>
-                  <p className="card-text">A school management system to record staffs,<br /> students and expenses</p>
+
+          <div className="col-md-4">
+
+            <div className="work-box">
+              <h5 style={{color: '#1c3ed3'}}><strong>School management system</strong></h5>
+              <a href="https://skms.netlify.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
+                <div className="work-img">
+                  <img src={sunrise_home_screenshot} className="img-fluid" alt="..." />
                 </div>
-                <div className="card-footer" style={{ padding: '5px' }}>
-                  <small className="text-muted"><a href="https://skms.netlify.app">https://skms.netlify.app/</a></small>
+
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h5>Sunrise Keepers School Management System</h5>
+
+                      <div className="more">
+                        <p>A school management system to record staffs, students and expenses</p>
+
+                        <span className="category">Web App</span>
+                        <span className="date"> - 23 Feb 2021</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+
           </div>
 
-          <div className="col">
-            <h5><strong>Cakes and Confectionery</strong></h5>
-            <a href="https://beebahcakes.netlify.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
-              <div className="card">
-                <img src={beebah_cakes_screenshot} width="320px" height="180px" className="card-img-top" alt="..." />
-                <div className="card-body" style={{ padding: '5px' }}>
-                  <h5 className="card-title">Beebah cakes</h5>
-                  <p className="card-text">At Beebah cakes they sell a lot of delicious cakes for your events</p>
-                </div>
-                <div className="card-footer" style={{ padding: '5px' }}>
-                  <small className="text-muted"><a href="https://beebahcakes.netlify.app/">https://beebahcakes.netlify.app/</a></small>
-                </div>
-              </div>
-            </a>
-          </div>
+          <div className="col-md-4">
 
+            <div className="work-box">
+              <h5 style={{color: '#1c3ed3'}}><strong>Cakes and Confectionery</strong></h5>
+              <a href="https://beebahcakes.netlify.app/" style={{ textDecoration: 'none', color: 'black', cursor: 'hover' }}>
+                <div className="work-img">
+                  <img src={beebah_cakes_screenshot} className="img-fluid" alt="..." />
+                </div>
+
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h5>Beebah cakes</h5>
+
+                      <div className="more">
+                        <p>At Beebah cakes they sell a lot of delicious cakes for your events</p>
+
+                        <span className="category">Web App</span>
+                        <span className="date"> - 21 June 2021</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

@@ -6,3 +6,4 @@ p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#
 button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:1px solid #1C3ED3;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
 button:hover{background:#1C3ED3;color:#fff}
 /* span{margin:0 5px 0 15px} */
+
