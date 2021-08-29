@@ -46,7 +46,7 @@ export default function PHPLARAVELDeveloperForm() {
    <SEO title="PHP LARAVEL Developer Form" />
    <div className="intro intro-small">
     <div className="container">
-     <Link to="/php-laravel-developer" className="button">
+     <Link to="/php-laravel" className="button">
       Lets go back
     </Link>
      <div className="row">

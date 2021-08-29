@@ -57,7 +57,7 @@ const Career = (props) => {
          <tr>
           <td ><strong>PHP LARAVEL Native</strong></td>
           <td >Remote(Nigeria Timezones)</td>
-          <td><Link to="/php-laravel-developer" style={{textDecoration: 'none'}}>View Role</Link></td>
+          <td><Link to="/php-laravel" style={{textDecoration: 'none'}}>View Role</Link></td>
          </tr>
 
          <tr>

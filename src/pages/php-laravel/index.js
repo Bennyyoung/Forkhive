@@ -17,7 +17,7 @@ const PhpLaravelDeveloper = () => (
    </div>
   </div>
   <div style={{ textAlign: 'center', marginTop: '-50px', paddingBottom: '-2px' }}>
-   <Link to="/php-laravel-developer-form" className="button">
+   <Link to="/php-laravel-form" className="button">
     APPLY FOR THIS JOB
   </Link>
   </div>
