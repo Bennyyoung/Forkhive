@@ -54,6 +54,11 @@ const Career = (props) => {
           <td >Remote(Nigeria Timezones)</td>
           <td><Link to="/teammanager" style={{textDecoration: 'none'}}>View Role</Link></td>
          </tr>
+         <tr>
+          <td ><strong>PHP LARAVEL Native</strong></td>
+          <td >Remote(Nigeria Timezones)</td>
+          <td><Link to="/php-laravel-developer" style={{textDecoration: 'none'}}>View Role</Link></td>
+         </tr>
 
          <tr>
           <td ><strong>MERN/MEAN Stack Developer</strong></td>
