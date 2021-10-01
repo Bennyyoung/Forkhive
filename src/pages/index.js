@@ -1,15 +1,28 @@
-import React from 'react';
+import React, from 'react';
 import { graphql, withPrefix, Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import Helmet f
+rom 'react-helmet';
+
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
-import TeckStack from '../components/TechStack'
+import TeckStack from
+ '../components/TechStack'
+
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import ReactGa from 'react-ga'
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
+
+  useEffect(() => {
+    ReactGa.initialize('G-7TJLF1LZS2')
+
+    ReactGa.pageView('/')
+
+  },[])
+
 
   return (
     <Layout bodyClass="page-home">
