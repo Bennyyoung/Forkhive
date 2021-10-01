@@ -1,7 +1,6 @@
-import React, from 'react';
+import React, {useEffect} from 'react';
 import { graphql, withPrefix, Link } from 'gatsby';
-import Helmet f
-rom 'react-helmet';
+import Helmet from 'react-helmet';
 
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
@@ -19,7 +18,8 @@ const Home = (props) => {
   useEffect(() => {
     ReactGa.initialize('G-7TJLF1LZS2')
 
-    ReactGa.pageView('/')
+    // To report page view
+    ReactGa.pageview(window.location.pathname + window.location.search)
 
   },[])
 
