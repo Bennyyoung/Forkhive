@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "author": "Robert Austin <rob@jugglerdigital.com>",
   "license": "MIT",
+  "engines": {
+    "node": "13.7.0",
+    "npm": "7.19.1"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

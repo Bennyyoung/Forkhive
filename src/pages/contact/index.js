@@ -122,14 +122,14 @@ export default function Contact() {
             </p>
             <p type="Budget">
               <select required onChange={handleChange}>
-                <option name="---" value selected="selected" onChange={handleChange}>---</option>
-                <option name="Less than  ₦20,000" value onChange={handleChange}>Less than  ₦20,000</option>
-                <option name="₦20,000 -  ₦40,000" value onChange={handleChange}> ₦20,000 -  ₦40,000</option>
-                <option name="₦40,000 -  ₦60,000" value onChange={handleChange}> ₦40,000 -  ₦60,000</option>
-                <option name="₦60,000 -  ₦80,000" value onChange={handleChange}> ₦60,000 -  ₦80,000</option>
-                <option name="₦80,000 -  ₦100,000" value onChange={handleChange}> ₦80,000 -  ₦100,000</option>
-                <option name="More than  ₦100,000" value onChange={handleChange}>More than  ₦100,000</option>
-                <option name="Not determined" value onChange={handleChange}>Not determined</option>
+                <option name="---" selected="selected" onChange={handleChange}>---</option>
+                <option name="Less than  ₦20,000" onChange={handleChange}>Less than  ₦20,000</option>
+                <option name="₦20,000 -  ₦40,000" onChange={handleChange}> ₦20,000 -  ₦40,000</option>
+                <option name="₦40,000 -  ₦60,000" onChange={handleChange}> ₦40,000 -  ₦60,000</option>
+                <option name="₦60,000 -  ₦80,000" onChange={handleChange}> ₦60,000 -  ₦80,000</option>
+                <option name="₦80,000 -  ₦100,000" onChange={handleChange}> ₦80,000 -  ₦100,000</option>
+                <option name="More than  ₦100,000" onChange={handleChange}>More than  ₦100,000</option>
+                <option name="Not determined" onChange={handleChange}>Not determined</option>
               </select>
 
             </p>
@@ -183,9 +183,7 @@ export default function Contact() {
 
             <button type="submit">Hire Us</button><br />
           </form>
-
           <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:softbloom28@gmail.com">softbloom28@gmail.com</a></p>
-
         </div>
 
 
@@ -225,4 +223,3 @@ export default function Contact() {
     </Layout >
   )
 }
-
