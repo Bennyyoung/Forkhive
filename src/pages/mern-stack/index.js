@@ -25,7 +25,7 @@ const Mernstack = () => (
   </div>
 
   <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>
-   <p>Bloomhub is hiring Mern/Mean stack developers to help make private communication simple. If you care about code quality as much as you care about user privacy, you should fit right in. This role is an opportunity to have an immediate impact while working closely with a talented team to solve challenging problems and ship new features to millions of users.</p>
+   <p>Forkhive is hiring Mern/Mean stack developers to help make private communication simple. If you care about code quality as much as you care about user privacy, you should fit right in. This role is an opportunity to have an immediate impact while working closely with a talented team to solve challenging problems and ship new features to millions of users.</p>
 
    <div><strong>Developer job description</strong></div>
    <p>We are looking for a Mern stack developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a product is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required
@@ -52,12 +52,12 @@ const Mernstack = () => (
 
    <div><strong>Benefits</strong></div>
    <ul>
-    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Bloomhub gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
+    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Forkhive gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
     <li>Feel good about what you do. We believe in solving real problems, working with integrity, and sharing that work (and code) with the team.</li>
     <li>We're stable and capable of focusing on what is best for users without distractions.</li>
    </ul>
    <div>
-    <i>Bloomhub is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
+    <i>Forkhive is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
    </div>
 
    <div style={{ textAlign: 'center', margin: '40px 0' }}>

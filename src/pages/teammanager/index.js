@@ -23,7 +23,7 @@ const TeamManager = () => (
   </div>
 
   <div className="container" style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-   <p>Bloomhub is looking for a qualified team leader to manage our team and provide effective guidance. You will be responsible for supervising, managing and motivating team members on a daily basis.
+   <p>Forkhive is looking for a qualified team leader to manage our team and provide effective guidance. You will be responsible for supervising, managing and motivating team members on a daily basis.
 
    As a team leader, you will be the contact point for all team members, so your communication skills should be excellent. You should also be able to act proactively to ensure smooth team operations and effective collaboration.
 
@@ -59,12 +59,12 @@ const TeamManager = () => (
 
    <div><strong>Benefits</strong></div>
    <ul>
-    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Bloomhub gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
+    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Forkhive gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
     <li>Feel good about what you do. We believe in solving real problems, working with integrity, and sharing that work (and code) with the team.</li>
     <li>We're stable and capable of focusing on what is best for users without distractions.</li>
    </ul>
    <div>
-    <i>Bloomhub is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
+    <i>Forkhive is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
    </div>
    <div style={{ textAlign: 'center', margin: '40px 0' }}>
     <Link to="/datascience-form" className="button">

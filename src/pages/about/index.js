@@ -9,7 +9,7 @@ const About = (props) => {
     return (
         <Layout bodyClass="page-about">
             <SEO title="About"/>
-            {/* <img style={{padding: '0px 120px'}} src="https://res.cloudinary.com/bloomhub/image/upload/c_scale,h_488,w_1100/v1602346526/about-pic-1_ap8izp.jpg"/> */}
+            {/* <img style={{padding: '0px 120px'}} src="https://res.cloudinary.com/Forkhive/image/upload/c_scale,h_488,w_1100/v1602346526/about-pic-1_ap8izp.jpg"/> */}
             <div className="intro">
                 <div className="container" style={{padding: '0px 120px'}}>
                     <div className="row">

@@ -93,7 +93,7 @@ function PriceComparisonTable() {
                                 24/7 Support <i className="fa fa-question-circle"></i>
                             </a>
                                 <ReactTooltip id="support" type="success">
-                                    <p>Friendly Bloomhub Guides are standing by to answer your questions. Call +234 703 164 2200.</p>
+                                    <p>Friendly Forkhive Guides are standing by to answer your questions. Call +234 703 164 2200.</p>
                                 </ReactTooltip>
                             </td>
                             <td><i className="fa fa-check"></i></td>

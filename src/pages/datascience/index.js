@@ -25,7 +25,7 @@ const Datascience = () => (
   </div>
 
   <div className="container" style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-   <p>Bloomhub is looking for a Data Scientist to analyze large amounts of raw information to find patterns that will help improve our company. We will rely on you to build data products to extract valuable business insights.
+   <p>Forkhive is looking for a Data Scientist to analyze large amounts of raw information to find patterns that will help improve our company. We will rely on you to build data products to extract valuable business insights.
 
    In this role, you should be highly analytical with a knack for analysis, math and statistics. Critical thinking and problem-solving skills are essential for interpreting data. We also want to see a passion for machine-learning and research.
 
@@ -60,12 +60,12 @@ Your goal will be to help our company analyze trends to make better decisions.</
 
    <div><strong>Benefits</strong></div>
    <ul>
-    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Bloomhub gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
+    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Forkhive gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
     <li>Feel good about what you do. We believe in solving real problems, working with integrity, and sharing that work (and code) with the team.</li>
     <li>We're stable and capable of focusing on what is best for users without distractions.</li>
    </ul>
    <div>
-    <i>Bloomhub is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
+    <i>Forkhive is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
    </div>
    <div style={{ textAlign: 'center', margin: '40px 0' }}>
     <Link to="/datascience-form" className="button">

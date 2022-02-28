@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
 import MenuMobile from './MenuMobile';
-import logo from '../images/new_logo.jpg'
+import logo from '../images/forkhive_logo.jpeg'
 
 class Header extends React.Component {
   constructor(props) {
@@ -25,8 +25,8 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logo} style={{height: '55px', width: '58px'}} />
-              {/* <h2 style={{ color: 'blue'}}>BLOOMHub</h2> */}
+              <img alt="Figurit Homepage" src={logo} />
+              {/* <h2 style={{ color: '#EBA937'}}>Forkhive</h2> */}
             </Link>
           </div>
           <div className="logo-mobile">

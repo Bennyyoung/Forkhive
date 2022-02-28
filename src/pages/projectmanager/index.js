@@ -58,12 +58,12 @@ Management</li>
 
    <div><strong>Benefits</strong></div>
    <ul>
-    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Bloomhub gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
+    <li>You can work anywhere within Nigeria timezones. Whether it’s your restaurant or your living room, Forkhive gives you the flexibility to work wherever you will be most effective. We travel somewhere new once a quarter so that everyone can meet up in person.</li>
     <li>Feel good about what you do. We believe in solving real problems, working with integrity, and sharing that work (and code) with the team.</li>
     <li>We're stable and capable of focusing on what is best for users without distractions.</li>
    </ul>
    <div>
-    <i>Bloomhub is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
+    <i>Forkhive is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, national origin, religion, sex, age.</i>
    </div>
    <div style={{ textAlign: 'center', margin: '40px 0' }}>
     <Link to="/datascience-form" className="button">

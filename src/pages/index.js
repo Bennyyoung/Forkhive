@@ -29,14 +29,14 @@ const Home = (props) => {
       <SEO title="Home" />
       <Helmet>
         <meta
-          name="BLOOM"
+          name="Forkhive"
           content=" We are a Software Company, focused on Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
         />
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h2 style={{ marginTop: '-145px', color: 'blue', fontSize: '2rem', fontWeight: 'bold' }}>BloomHub</h2>
-          <h5 style={{ fontStyle: 'italic', color: 'blue', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
+          <h2 style={{ marginTop: '-145px', color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}>Forkhive</h2>
+          <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
             We are a Software Company, focused on Development <b>(Web and Mobile)</b>, Design <b>(Web and Mobile)</b> and Data Science <b>(AI and ML)</b> to help build your startup ideas and team.
           </p>

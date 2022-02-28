@@ -12,7 +12,7 @@ const PaystackHookExample = () => {
     const initializePayment = usePaystackPayment(config);
     return (
         <div>
-            <button style={{color: 'white', backgroundColor: '#1c3ed3', padding: '5px 10px', borderRadius: '8px'}} onClick={() => {
+            <button style={{color: 'white', backgroundColor: '#eba937', padding: '5px 10px', borderRadius: '8px'}} onClick={() => {
                 initializePayment()
             }}>Pay</button>
         </div>

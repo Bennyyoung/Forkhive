@@ -10,7 +10,7 @@ const Mernstack = () => (
     <Layout bodyClass="page-pricing">
         <SEO title="Pricing" />
         <div className="col-12" style={{ padding: '4rem 0 3rem 6rem' }}>
-            <h1 style={{ textAlign: "left", color: 'blue' }}>Pricing</h1>
+            <h1 style={{ textAlign: "left", color: '#EBA937' }}>Pricing</h1>
             <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
                 Price comparison Table
      </h5>

@@ -2,8 +2,8 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'BLOOMHub',
-    description: 'BLOOMHub',
+    title: 'Forkhive',
+    description: 'Forkhive',
     contact: {
       phone1: '+234 703 164 2200',
       phone2: '+234 903 295 0887',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Link from 'gatsby-plugin-transition-link';
-import logo from '../images/new_logo.jpg'
+import logo from '../images/forkhive_logo.jpeg'
 import Socials from './Socials';
 
 const Footer = props => (
@@ -11,7 +11,7 @@ const Footer = props => (
         <div className="col-12">
           <div className="footer">
           <Link to="/">
-            <img alt="Figurit Homepage" src={logo} style={{height: '55px', width: '58px'}} />
+            <img alt="Figurit Homepage" src={logo} style={{height: '3rem', width: '7rem'}} />
           </Link>
             <ul className="footer-menu">
               <li>
