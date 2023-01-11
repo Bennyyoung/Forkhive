@@ -24,7 +24,7 @@
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^4.8.0",
     "gatsby-transformer-json": "^4.8.0",
-    "gatsby-transformer-remark": "^5.8.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-typescript-css-modules": "^1.0.14",
     "gatsby-transformer-yaml": "^4.8.0",
     "react": "^17.0.2",
