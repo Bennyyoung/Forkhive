@@ -57,7 +57,6 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-typescript-css-modules',
     `gatsby-plugin-transition-link`,
     {
       resolve: 'gatsby-source-filesystem',

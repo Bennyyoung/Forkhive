@@ -23,7 +23,7 @@ const Career = (props) => {
      <div className="col-12">
      </div>
 
-     <div class="section">
+     <div className="section">
       <div className="center">
 
        <h2 className="title-3 text-dark mb-3">Open Roles</h2>

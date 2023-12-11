@@ -22,8 +22,8 @@ const About = (props) => {
             
             <div className="container pb-6">
                 <div className="row">
-                    {about.map(edge => (
-                        <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+                    {about.map((edge, index) => (
+                        <div key={index} className="col-12 col-md-4 mb-1">
                             <div className="card service">
                                 <div className="card-content">
                                     <h5 style={{fontWeight: 'bold'}}>{edge.node.frontmatter.title}</h5>
