@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "author": "Benjamin Effiong <benjamineffiong124@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "20.10.0",
+    "npm": "10.2.3"
+  },
   "scripts": {
     "develop": "rm -rf .cache && gatsby develop",
     "start": "npm run develop",
