@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactTooltip from 'react-tooltip'
+import { Tooltip } from 'react-tooltip'
 
 const PlatinumPlanServices = () => {
  return (
@@ -57,7 +57,7 @@ const PlatinumPlanServices = () => {
     <td>
      <a data-tip>
       Analytics
-                            <ReactTooltip aria-haspopup='true' role='example'>
+                            <Tooltip aria-haspopup='true' role='example'>
        <h3>How Analytics works</h3>
        <p style={{ textAlign: 'justify', wordSpacing: '0.2rem' }}>
         Data for Analytics comes from a Content Delivery Network (CDN) <br /> server logs.
@@ -65,7 +65,7 @@ const PlatinumPlanServices = () => {
                                   This also means that <br /> data integrity isn't affected when your visitors use ad blockers or <br /> disable JavaScript.
                                   Because site activity is tracked anonymously <br /> without cookies or personally identifying
                                   information, Analytics <br /> is fully GDPR compliant.</p>
-      </ReactTooltip>
+      </Tooltip>
      </a>
     </td>
     <td style={{ color: 'grey', fontWeight: 'bold' }}>40,000/yr</td>

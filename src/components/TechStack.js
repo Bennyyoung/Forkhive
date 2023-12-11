@@ -9,7 +9,7 @@ const TechStack = () => {
     return (
         <div>
           <h2 className="title-3 text-dark mb-3" style={{textAlign: "center"}}><strong>Your vision is built with</strong></h2>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
           </div>
               {/* 48px, 96px, 144px, 240px and 480px are the pixels size */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactTooltip from 'react-tooltip';
+import { Tooltip } from 'react-tooltip';
 
 const BasicPlanServices = () => {
  return (
@@ -59,9 +59,9 @@ const BasicPlanServices = () => {
        <del>
         Analytics
                         </del>
-       <ReactTooltip id='global' aria-haspopup='true' role='example'>
+       <Tooltip id='global' aria-haspopup='true' role='example'>
         <p>Not available in this plan</p>
-       </ReactTooltip>
+       </Tooltip>
       </td>
       <td style={{ color: 'grey', fontWeight: 'bold' }}>-</td>
      </tr>

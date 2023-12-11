@@ -78,7 +78,7 @@ export default function Contact() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             action="/thank-you"
-            autocomplete="on"
+            autoComplete="on"
             onSubmit={handleSubmit}
           >
             <h3 className="mt-4">Your request</h3>
@@ -121,8 +121,8 @@ export default function Contact() {
               <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" onChange={handleChange} ></input>
             </p>
             <p type="Budget">
-              <select required onChange={handleChange}>
-                <option name="---" selected="selected" onChange={handleChange}>---</option>
+              <select defaultValue={'select'} required onChange={handleChange}>
+                <option name="---" onChange={handleChange}>---</option>
                 <option name="Less than  ₦20,000" onChange={handleChange}>Less than  ₦20,000</option>
                 <option name="₦20,000 -  ₦40,000" onChange={handleChange}> ₦20,000 -  ₦40,000</option>
                 <option name="₦40,000 -  ₦60,000" onChange={handleChange}> ₦40,000 -  ₦60,000</option>
