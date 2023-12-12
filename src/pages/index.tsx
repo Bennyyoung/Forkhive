@@ -1,17 +1,46 @@
 import React, {useEffect} from 'react';
-import { graphql, withPrefix, Link } from 'gatsby';
+import { graphql, withPrefix, Link, PageProps } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
-import TeckStack from
- '../components/TechStack'
+import TeckStack from '../components/TechStack'
+// @ts-ignore
+import MessengerCustomerChat from 'react-messenger-customer-chat'; 
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 import ReactGa from 'react-ga'
 
-const Home = (props) => {
+interface IHome extends PageProps {
+  data: {
+    allMarkdownRemark: {
+      edges: Array<{
+        node: {
+          id: string;
+          frontmatter: {
+            path: string;
+            title: string;
+            date: string;
+          }
+          excerpt: string
+        }
+      }>
+    },
+    allFeaturesJson: {
+      edges: Array<{
+        node: {
+          id: string;
+          title: string;
+          description: string;
+          image: string;
+        }
+      }>
+    }
+  }
+}
+
+const Home: React.FC<IHome> = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
 
@@ -26,7 +55,7 @@ const Home = (props) => {
 
   return (
     <Layout bodyClass="page-home">
-      <SEO title="Home" />
+      <SEO title="Home" meta={[]} keywords={[]} />
       <Helmet>
         <meta
           name="Forkhive"
