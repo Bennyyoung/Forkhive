@@ -65,7 +65,7 @@ export const query = graphql`
   query TestimonialsQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/testimonials/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC }}
     ) {
       edges {
         node {

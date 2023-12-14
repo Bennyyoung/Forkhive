@@ -30,106 +30,138 @@ const Form: React.FC<IForm> = ({ handleSubmit, handleChange, handleAttachment, n
                     <p>
                         <input type="date" required onChange={handleChange} name="Date Applied"></input>
                     </p>
-                    <label>
-                        Upload your picture: 🧑
-                        <input placeholder="ATTACH RESUME/CV" name="Picture" type="file" required onChange={handleAttachment} />
-                    </label>
+                    <div>
+                        <label>
+                            Upload your picture: 🧑
+                            <input placeholder="ATTACH RESUME/CV" name="Picture" type="file" required onChange={handleAttachment} />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Resume/CV: 🧑
+                            <input placeholder="ATTACH RESUME/CV" name="Resume/CV" type="file" required onChange={handleAttachment} />
+                        </label>
 
-                    <label>
-                        Resume/CV: 🧑
-                        <input placeholder="ATTACH RESUME/CV" name="Resume/CV" type="file" required onChange={handleAttachment} />
-                    </label>
+                    </div>
 
-                    <label>
-                        Full name: 📛
-                        <input type="text" required onChange={handleChange} name="Full name" />
-                    </label>
+                    <div>
+                        <label>
+                            Full name: 📛
+                            <input type="text" required onChange={handleChange} name="Full name" />
+                        </label>
+                    </div>
 
-                    <label>
-                        Email: 📧
-                        <input type="email" required onChange={handleChange} name="Email" />
-                    </label>
+                    <div>
+                        <label>
+                            Email: 📧
+                            <input type="email" required onChange={handleChange} name="Email" />
+                        </label>
+                    </div>
 
-                    <label>
-                        Phone number: 📞
-                        <input type="number" required onChange={handleChange} name="Phone" />
-                    </label>
+                    <div>
+                        <label>
+                            Phone number: 📞
+                            <input type="number" required onChange={handleChange} name="Phone" />
+                        </label>
+                    </div>
 
-                    <label>
-                        DOB: 📅
-                        <input type="date" required onChange={handleChange} name="DOB" />
-                    </label>
+                    <div>
+                        <label>
+                            DOB: 📅
+                            <input type="date" required onChange={handleChange} name="DOB" />
+                        </label>
+                    </div>
 
-                    <label>
-                        Address: 🏡
-                        <input type="text" required onChange={handleChange} name="Address" />
-                    </label>
+                    <div>
 
-                    <label>
-                        Address: 🏡
-                        <input type="text" required onChange={handleChange} name="City" />
-                    </label>
+                        <label>
+                            Address: 🏡
+                            <input type="text" required onChange={handleChange} name="Address" />
+                        </label>
+                    </div>
 
-                    <label>
-                        State: 🏙️
-                        <select required onChange={handleChange} name="State">
-                            <option disabled selected>--Select State--</option>
-                            <option value="Abia">Abia</option>
-                            <option value="Adamawa">Adamawa</option>
-                            <option value="Akwa Ibom">Akwa Ibom</option>
-                            <option value="Anambra">Anambra</option>
-                            <option value="Bauchi">Bauchi</option>
-                            <option value="Bayelsa">Bayelsa</option>
-                            <option value="Benue">Benue</option>
-                            <option value="Borno">Borno</option>
-                            <option value="Cross Rive">Cross River</option>
-                            <option value="Delta">Delta</option>
-                            <option value="Ebonyi">Ebonyi</option>
-                            <option value="Edo">Edo</option>
-                            <option value="Ekiti">Ekiti</option>
-                            <option value="Enugu">Enugu</option>
-                            <option value="FCT">Federal Capital Territory</option>
-                            <option value="Gombe">Gombe</option>
-                            <option value="Imo">Imo</option>
-                            <option value="Jigawa">Jigawa</option>
-                            <option value="Kaduna">Kaduna</option>
-                            <option value="Kano">Kano</option>
-                            <option value="Katsina">Katsina</option>
-                            <option value="Kebbi">Kebbi</option>
-                            <option value="Kogi">Kogi</option>
-                            <option value="Kwara">Kwara</option>
-                            <option value="Lagos">Lagos</option>
-                            <option value="Nasarawa">Nasarawa</option>
-                            <option value="Niger">Niger</option>
-                            <option value="Ogun">Ogun</option>
-                            <option value="Ondo">Ondo</option>
-                            <option value="Osun">Osun</option>
-                            <option value="Oyo">Oyo</option>
-                            <option value="Plateau">Plateau</option>
-                            <option value="Rivers">Rivers</option>
-                            <option value="Sokoto">Sokoto</option>
-                            <option value="Taraba">Taraba</option>
-                            <option value="Yobe">Yobe</option>
-                            <option value="Zamfara">Zamfara</option>
-                        </select>
-                    </label>
-                    <label>
-                        When are you able to begin work? 📅
-                        <input type="date" required onChange={handleChange} name="Start Date"></input>
-                    </label>
-                    <label>
-                        Are you available to work overtime [Yes/No]:
-                        <input type="text" required onChange={handleChange} name="Overtime Work"></input>
-                    </label>
+                    <div>
 
-                    <label>
-                        Are you legally eligible to work in Nigeria (🇳🇬)? Yes/No
-                        <input type="text" required onChange={handleChange} name="Eligible"></input>
-                    </label>
-                    <label>
-                        Current company: 🏢
-                        <input type="text" onChange={handleChange} name="Current Company before applying"></input>
-                    </label>
+                        <label>
+                            Address: 🏡
+                            <input type="text" required onChange={handleChange} name="City" />
+                        </label>
+                    </div>
+
+                    <div>
+
+                        <label>
+                            State: 🏙️
+                            <select required onChange={handleChange} name="State">
+                                <option disabled selected>--Select State--</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross Rive">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="FCT">Federal Capital Territory</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            When are you able to begin work? 📅
+                            <input type="date" required onChange={handleChange} name="Start Date"></input>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            Are you available to work overtime [Yes/No]:
+                            <input type="text" required onChange={handleChange} name="Overtime Work"></input>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            Are you legally eligible to work in Nigeria (🇳🇬)? Yes/No
+                            <input type="text" required onChange={handleChange} name="Eligible"></input>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            Current company: 🏢
+                            <input type="text" onChange={handleChange} name="Current Company before applying"></input>
+                        </label>
+                    </div>
 
                     <h6><strong>Attend to the days you would be available and fill in hours available (24hr 🕒 System)</strong></h6>
                     <p>Monday 🕒</p>

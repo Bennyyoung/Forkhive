@@ -1,112 +1,161 @@
-const path = require('path');
+import path from 'path';
+import { GatsbyNode } from 'gatsby'
+
+interface GraphqlData {
+  services: {
+    edges: Array<{
+      node: {
+        id: string
+        frontmatter: {
+          path: string
+          title: string
+          data: string
+        }
+        excerpt: string
+      }
+    }>
+  },
+  team: {
+    edges: Array<{
+      node: {
+        id: string
+        frontmatter: {
+          path: string
+          title: string
+          data: string
+        }
+        excerpt: string
+      }
+    }>
+  },
+  testimonials: {
+    edges: Array<{
+      node: {
+        id: string
+        frontmatter: {
+          path: string
+          title: string
+          data: string
+        }
+        excerpt: string
+      }
+    }>
+  },
+}
 
 // Create pages from markdown files
-exports.createPages = ({ graphql, actions }) => {
- const { createPage } = actions;
- return new Promise<void>((resolve, reject) => {
-  resolve(
-   graphql(
-    `
-          query {
-            services: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/services/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  frontmatter {
-                    path
-                    title
-                    date(formatString: "DD MMMM YYYY")
-                  }
-                  excerpt
-                }
+
+const createPages: GatsbyNode['createPages'] = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+
+  try {
+    const result = await graphql<GraphqlData>(
+      `
+      query {
+        services: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/services/" } }
+          sort: { frontmatter: { date: DESC }}
+        ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                path
+                title
+                date(formatString: "DD MMMM YYYY")
               }
-            }
-            team: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/team/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  frontmatter {
-                    path
-                    title
-                    date(formatString: "DD MMMM YYYY")
-                  }
-                  excerpt
-                }
-              }
-            }
-            testimonials: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/testimonials/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  frontmatter {
-                    path
-                    title
-                    date(formatString: "DD MMMM YYYY")
-                  }
-                  excerpt
-                }
-              }
+              excerpt
             }
           }
-        `,
-   ).then((result) => {
-    result.data.services.edges.forEach(({ node }) => {
-     const component = path.resolve('src/templates/service.js');
-     createPage({
-      path: node.frontmatter.path,
-      component,
-      context: {
-       id: node.id,
-      },
-     });
-    });
-    result.data.team.edges.forEach(({ node }) => {
-     const component = path.resolve('src/templates/team.js');
-     createPage({
-      path: node.frontmatter.path,
-      component,
-      context: {
-       id: node.id,
-      },
-     });
-    });
-    result.data.testimonials.edges.forEach(({ node }) => {
-     const component = path.resolve('src/templates/testimonial.js');
-     createPage({
-      path: node.frontmatter.path,
-      component,
-      context: {
-       id: node.id,
-      },
-     });
-    });
-    resolve();
-   }),
-  );
- });
+        }
+        team: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/team/" } }
+          sort: { frontmatter: { date: DESC }}
+        ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                path
+                title
+                date(formatString: "DD MMMM YYYY")
+              }
+              excerpt
+            }
+          }
+        }
+        testimonials: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/testimonials/" } }
+          sort: { frontmatter: { date: DESC }}
+        ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                path
+                title
+                date(formatString: "DD MMMM YYYY")
+              }
+              excerpt
+            }
+          }
+        }
+      }
+    `
+    )
+
+    if (result && result.data) {
+      result.data.services.edges.forEach(({ node }) => {
+        const component = path.resolve('src/templates/service.tsx');
+        createPage({
+          path: node.frontmatter.path,
+          component,
+          context: {
+            id: node.id,
+          },
+        });
+      });
+      result.data.team.edges.forEach(({ node }) => {
+        const component = path.resolve('src/templates/team.tsx');
+        createPage({
+          path: node.frontmatter.path,
+          component,
+          context: {
+            id: node.id,
+          },
+        });
+      });
+      result.data.testimonials.edges.forEach(({ node }) => {
+        const component = path.resolve('src/templates/testimonial.tsx');
+        createPage({
+          path: node.frontmatter.path,
+          component,
+          context: {
+            id: node.id,
+          },
+        });
+      });
+    }
+  } catch (error) {
+    console.error('Error creating pages', error)
+  }
+
 };
+
+export { createPages }
 
 // Customizing webpack 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
- if (stage === "build-html") {
-  actions.setWebpackConfig({
-   module: {
-    rules: [
-     {
-      test: /bad-module/,
-      use: loaders.null(),
-     },
-    ],
-   },
-  })
- }
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bad-module/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
 }

@@ -139,7 +139,7 @@ export const query = graphql`
     query CareerQuery {
         allMarkdownRemark(
             filter: { fileAbsolutePath:  {regex: "/career/" } }
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC }}
         ) {
             edges {
                 node {

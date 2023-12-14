@@ -99,7 +99,7 @@ export const query = graphql`
   query TeamQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/team/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC }}
     ) {
       edges {
         node {
