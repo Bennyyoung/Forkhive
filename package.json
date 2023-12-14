@@ -39,6 +39,7 @@
     "react-ga": "^3.3.1",
     "react-helmet": "^6.1.0",
     "react-messenger-customer-chat": "^0.8.0",
+    "react-paystack": "^4.0.3",
     "react-tiny-link": "^3.6.1",
     "react-tooltip": "^5.25.0",
     "sass": "^1.69.5"

@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 import { Link } from 'gatsby';
 import { navigate } from 'gatsby-link';
 import Form from '../../components/Modules/Form/Form';
 import { IForm } from '../../components/Interface/Form/IForm';
+import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttachment';
 import { IHandleChange } from '../../components/Interface/Form/IHandleChange';
 import { IHandleSubmit } from '../../components/Interface/Form/IHandleSubmit';
-import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttachment';
 import encode from '../../utils/encode';
 
-export default function UIUX() {
+export default function ReactFirebaseDeveloperForm() {
   const [state, setState] = useState<IForm>({})
 
   const handleChange = (e: IHandleChange) => {
@@ -44,27 +44,27 @@ export default function UIUX() {
   }
 
   return (
-    <Layout bodyClass="page-uiux-form">
-      <SEO title="UIUX Form" meta={[]} keywords={[]} />
+    <Layout bodyClass="page-react-firebase-developer-form">
+      <SEO title="React Firebase Developer Form" meta={[]} keywords={[]} />
       <div className="intro intro-small">
         <div className="container">
-          <Link to="/uiux" className="button">
+          <Link to="/react-firebase-developer" className="button">
             Lets go back
           </Link>
           <div className="row">
             <div className="col-12">
-              <h1>UI UX</h1>
+              <h1>React Firebase Developer</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <Form 
+      <Form
         handleSubmit={handleSubmit}
         handleChange={handleChange}
         handleAttachment={handleAttachment}
-        name={'uiux-application-form'}
+        name={'react-firebase-developer-application-form'}
       />
     </Layout>
   )
-};
+}

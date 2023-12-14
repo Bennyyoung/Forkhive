@@ -13,7 +13,7 @@ interface ILayout {
 const Layout: React.FC<ILayout> = (props) => {
   return (
     <>
-      <SEO />
+      <SEO meta={[]} keywords={[]} />
       <div className={`page${props.bodyClass ? ` ${props.bodyClass}` : ''}`}>
         <div id="wrapper" className="wrapper">
           <Header />
