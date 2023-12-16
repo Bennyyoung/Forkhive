@@ -7,16 +7,19 @@
   }
   .card-header {
     display: flex;
+    align-items: center;
     .card-header-left {
-      flex: 0;
+      flex: 1;
     }
     .card-header-right {
       flex: 1;
     }
     img {
       margin-right: 10px;
-      width: 100px;
       border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
     }
     h2.card-title {
       font-family: $font-family-heading;

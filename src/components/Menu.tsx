@@ -1,27 +1,24 @@
 import React from 'react';
-import { graphql, StaticQuery, Link, PageProps } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
 interface MenuLinks {
   name: string
   link: string
 }
 
-interface SiteMetadata {
-  menuLinks: MenuLinks[]
-}
-
-interface SiteData {
-  site: {
-    siteMetadata: SiteMetadata
-  }
-}
-
-interface IMenu extends PageProps {
-  data: SiteData
-}
-
-const Menu: React.FC<IMenu> = (props) => {
-  const { menuLinks } = props.data.site.siteMetadata || { menuLinks : []};
+const Menu = () => {
+  const data = useStaticQuery(graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        menuLinks {
+          name
+          link
+        }
+      }
+    }
+  }`)
+  const { menuLinks } = data.site.siteMetadata || { menuLinks : []};
   return (
     <div id="main-menu" className="main-menu">
       <ul>
@@ -35,20 +32,4 @@ const Menu: React.FC<IMenu> = (props) => {
   );
 };
 
-export default (props: PageProps) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            menuLinks {
-              name
-              link
-            }
-          }
-        }
-      }
-    `}
-    render={(queryData: SiteData) => <Menu data={queryData} {...props} />}
-  />
-);
+export default Menu

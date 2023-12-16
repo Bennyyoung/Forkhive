@@ -9,7 +9,9 @@
   },
   "scripts": {
     "develop": "rm -rf .cache && gatsby develop",
+    "watch:ts": "tsc --watch",
     "start": "npm run develop",
+    "start:dev": "npm run watch:ts & npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"

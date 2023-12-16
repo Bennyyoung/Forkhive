@@ -1,5 +1,5 @@
 interface IForm {
-    [key: string]: string | File | null
+    [key: string]: string | File | Blob | null; "form-name"?: any
 }
 
-export { IForm }
+export type { IForm }

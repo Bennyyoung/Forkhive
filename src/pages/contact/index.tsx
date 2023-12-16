@@ -4,57 +4,47 @@ import Layout from '../../layouts/index';
 import Call from '../../components/Call';
 import './index.css'
 import { navigate } from 'gatsby-link';
-
-function encode(data) {
-  const formData = new FormData()
-
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
-  }
-
-  return formData
-}
+import { IForm } from '../../components/Interface/Form/IForm';
+import encode from '../../utils/encode';
+import { IHandleChange } from '../../components/Interface/Form/IHandleChange';
+import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttachment';
+import { IHandleSubmit } from '../../components/Interface/Form/IHandleSubmit';
 
 export default function Contact() {
   const [state, setState] = useState({})
-  const [create, setCreate] = useState('');
-  const [enhance, setEnhance] = useState('');
-  const [training, setTraining] = useState('')
 
-  const handleChange = (e) => {
+  const handleChange = (e: IHandleChange) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
-
-  const handleCreateChange = (e) => {
-    setCreate({ ...create, [e.target.name]: e.target.value })
-  }
-  const handleEnhanceChange = (e) => {
-    setEnhance({ ...enhance, [e.target.name]: e.target.value })
-  }
-  const handleTrainingChange = (e) => {
-    setTraining({ ...training, [e.target.name]: e.target.value })
-  }
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] })
+  const handleAttachment = (e: IHandleAttachment) => {
+    setState({ ...state, [e.target.name]: e.target.files?.[0] || '' })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: IHandleSubmit) => {
     e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
+    const form = e.currentTarget
+
+    if (form) {
+      fetch('/', {
+        method: 'POST',
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...state,
+        }),
+      })
+        .then(() => {
+          const action = form.getAttribute('action')
+          if (action) {
+            navigate(action)
+          }
+        })
+        .catch((error) => alert(error))
+    }
   }
 
   return (
     <Layout bodyClass="page-contact">
-      <SEO title="Contact" />
+      <SEO title="Contact" meta={[]} keywords={[]} />
       <div className="intro intro-small">
         <div className="container">
           <div className="row">
@@ -108,31 +98,26 @@ export default function Contact() {
             <input type="radio" id="javascript" name="fav_language" value="HTML" />
             <label for="javascript">JavaScript</label> */}
 
-            <p type="Full name:">
-              <input placeholder="Write your name here.." type="text" required name="full name" onChange={handleChange}></input>
-            </p>
+            <div>
+              <p>
+                Full name
+                <input placeholder="Write your name here.." type="text" required name="full name" onChange={handleChange}></input>
+              </p>
+            </div>
+            <div>
+              <p>
+                Email
+                <input placeholder="Let us know how to contact you back.." type="email" required name="email" onChange={handleChange} ></input>
+              </p>
+            </div>
 
+            <div>
+              <p>
+                Phone number:
+                <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" onChange={handleChange} ></input>
+              </p>
+            </div>
 
-
-            <p type="Email:">
-              <input placeholder="Let us know how to contact you back.." type="email" required name="email" onChange={handleChange} ></input>
-            </p>
-            <p type="Phone number:">
-              <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" onChange={handleChange} ></input>
-            </p>
-            <p type="Budget">
-              <select defaultValue={'select'} required onChange={handleChange}>
-                <option name="---" onChange={handleChange}>---</option>
-                <option name="Less than  ₦20,000" onChange={handleChange}>Less than  ₦20,000</option>
-                <option name="₦20,000 -  ₦40,000" onChange={handleChange}> ₦20,000 -  ₦40,000</option>
-                <option name="₦40,000 -  ₦60,000" onChange={handleChange}> ₦40,000 -  ₦60,000</option>
-                <option name="₦60,000 -  ₦80,000" onChange={handleChange}> ₦60,000 -  ₦80,000</option>
-                <option name="₦80,000 -  ₦100,000" onChange={handleChange}> ₦80,000 -  ₦100,000</option>
-                <option name="More than  ₦100,000" onChange={handleChange}>More than  ₦100,000</option>
-                <option name="Not determined" onChange={handleChange}>Not determined</option>
-              </select>
-
-            </p>
             <label>
               Starting Date:
             </label>
@@ -143,11 +128,17 @@ export default function Contact() {
             </label>
             <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project End Date"></input>
 
-            <p type="Attach a file (CV) Not mandatory: 📂">
-              <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" onChange={handleAttachment} />
-            </p>
+            <div>
+              <p>
+                Attach a file (CV) Not mandatory: 📂
+                <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" onChange={handleAttachment} />
+              </p>
+            </div>
 
-            <p type="For the Training (Only for those undergoing the training)">
+            <div>
+              <p>
+              For the Training (Only for those undergoing the training)
+              </p>
 
               <label className="container">Basic Web Design
                 <input type="checkbox" onChange={handleChange} name="Basic Web Design" />
@@ -173,12 +164,14 @@ export default function Contact() {
                 <input type="checkbox" onChange={handleChange} name="Python" />
                 <span className="checkmark"></span>
               </label>
-            </p>
+            </div>
 
-
-            <p type="Message (Brief description of your needs): ">
-              <textarea style={{ width: '100%', height: '300px' }} type="text" placeholder="Brief description of your needs" required name="message" onChange={handleChange} ></textarea>
-            </p>
+            <div>
+              <p>
+              Message (Brief description of your needs):
+                <textarea style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" onChange={handleChange} ></textarea>
+              </p>
+            </div>
             <div data-netlify-recaptcha="true"></div>
 
             <button type="submit">Hire Us</button><br />

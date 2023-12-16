@@ -5,8 +5,8 @@ module.exports = {
     title: 'Forkhive',
     description: 'Forkhive',
     contact: {
-      phone1: '+234 703 164 2200',
-      phone2: '+234 903 295 0887',
+      phone1: '+234 913 863 6045',
+      phone2: '+234 701 912 7578',
       email: 'softbloom28@gmail.com',
     },
     menuLinks: [
@@ -26,10 +26,10 @@ module.exports = {
         name: 'About',
         link: '/about',
       },
-       {
-         name: 'Works',
-         link: '/our-works',
-       },
+      //  {
+      //    name: 'Works',
+      //    link: '/our-works',
+      //  },
       // {
       //   name: 'Blogs',
       //   link: '/blog',
