@@ -24,7 +24,7 @@ const Services: React.FC<IServices> = (props) => {
   return (
     <Layout bodyClass="page-services">
       <SEO title="Services" meta={[]} keywords={[]} />
-      <div className="intro">
+      <div className="intro intro-small">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -37,7 +37,7 @@ const Services: React.FC<IServices> = (props) => {
       <div className="container pb-6">
         <div className="row">
           {services.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+            <div key={edge.node.frontmatter.path} className="col-md-4 col-2 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h5 style={{fontWeight: 'bold'}}>

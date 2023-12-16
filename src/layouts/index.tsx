@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SubFooter from '../components/SubFooter';
 import '../scss/style.scss';
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 interface ILayout {
   bodyClass?: string;

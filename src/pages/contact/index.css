@@ -42,7 +42,7 @@ button {
     padding: 8px 12px;
     margin: 8px 0 0;
     font-family: 'Montserrat', sans-serif;
-    border: 1px solid #1C3ED3;
+    border: 1px solid #eba937;
     background: 0;
     color: #5a5a6e;
     cursor: pointer;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background: #1C3ED3;
+    background: #eba937;
     color: #fff
 }
 

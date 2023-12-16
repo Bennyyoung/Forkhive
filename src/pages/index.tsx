@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { graphql, withPrefix, Link, PageProps } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -7,7 +7,7 @@ import Layout from '../layouts/index';
 import Call from '../components/Call';
 import TeckStack from '../components/TechStack'
 // @ts-ignore
-import MessengerCustomerChat from 'react-messenger-customer-chat'; 
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 import ReactGa from 'react-ga'
@@ -50,7 +50,7 @@ const Home: React.FC<IHome> = (props) => {
     // To report page view
     ReactGa.pageview(window.location.pathname + window.location.search)
 
-  },[])
+  }, [])
 
 
   return (
@@ -62,9 +62,9 @@ const Home: React.FC<IHome> = (props) => {
           content=" We are a Software Company, focused on Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
         />
       </Helmet>
-      <div className="intro pb-4">
+      <div className="intro intro-small">
         <div className="container">
-          <h2 style={{ marginTop: '-145px', color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}>Forkhive</h2>
+          <h2 style={{ color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}>Forkhive</h2>
           <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
             We are a Software Company, focused on Development <b>(Web and Mobile)</b>, Design <b>(Web and Mobile)</b> and Data Science <b>(AI and ML)</b> to help build your startup ideas and team.
@@ -76,27 +76,29 @@ const Home: React.FC<IHome> = (props) => {
         <Call button={true} />
       </div>
 
-      <div style={{ padding: "10px 0px 0 0px" }}>
-        <div className="text-center" style={{ display: "inline-block", width: "35%" }}>
-          <h2><strong>Our Works</strong></h2>
-          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Look at our exceptional works</p>
-          <Link className="button button-primary mt-2" to="/our-works">
-            Our Works
-          </Link>
-        </div>
-        <div className="text-center" style={{ display: "inline-block", width: "30%" }}>
-          <h2><strong>Pricing</strong></h2>
-          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Pricing built for businesses of all sizes</p>
-          <Link className="button button-primary mt-2" to="/pricing">
-            Pricing
-          </Link>
-        </div>
-        <div className="text-center" style={{ display: "inline-block", width: "35%" }}>
-          <h2><strong>Career</strong></h2>
-          <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>The most needed skill right now</p>
-          <Link className="button button-primary mt-2" to="/career">
-            Career
-          </Link>
+      <div className='container mt-4'>
+        <div className='row'>
+          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+            <h2><strong>Our Works</strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Look at our exceptional works</p>
+            <Link className="button button-primary mt-2" to="/our-works">
+              Our Works
+            </Link>
+          </div>
+          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+            <h2><strong>Pricing</strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>Pricing built for businesses of all sizes</p>
+            <Link className="button button-primary mt-2" to="/pricing">
+              Pricing
+            </Link>
+          </div>
+          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+            <h2><strong>Career</strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>The most needed skill right now</p>
+            <Link className="button button-primary mt-2" to="/career">
+              Career
+            </Link>
+          </div>
         </div>
 
       </div>
@@ -148,7 +150,7 @@ const Home: React.FC<IHome> = (props) => {
 
           {/* Everything in our features could be found in the data/features.json */}
           {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
+            <div key={edge.node.id} className="col-12 col-md-4 col-lg-4 mb-2">
               <div className="feature" style={{ color: "black" }}>
                 {edge.node.image && (
                   <div className="feature-image">

@@ -24,13 +24,18 @@ const Career: React.FC<ICareer> = (props) => {
         <Layout bodyClass="page-career">
             <SEO title="Career" meta={[]} keywords={[]} />
 
-            <div className="col-12" style={{ padding: '4rem 0 3rem 7rem' }}>
-                <h2 className="title-3 text-dark mb-3" style={{ textAlign: "left" }}><strong>Want To Join Us</strong></h2>
-                <p style={{ textAlign: "left", wordSpacing: '0.2rem' }}>THE MOST SKILLS NEEDED RIGHT NOW</p>
-                <div className="call-box-bottom">
-                    <br />
-                    <br />
+            <div className='intro intro-small'>
+                <div className='container'>
+                    <div className="col-12">
+                        <h2 className="title-3 mb-3" style={{ textAlign: "left", color: '#eba937' }}><strong>Want To Join Us</strong></h2>
+                        <p style={{ textAlign: "left", wordSpacing: '0.2rem' }}>THE MOST SKILLS NEEDED RIGHT NOW</p>
+                        <div className="call-box-bottom">
+                            <br />
+                            <br />
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
             <div className="container pt-8 pt-md-10">

@@ -30,7 +30,7 @@ const Team: React.FC<ITeam> = (props) => {
   return (
     <Layout bodyClass="page-teams">
       <SEO title="Team" meta={[]} keywords={[]} />
-      <div className="intro">
+      <div className="intro intro-small">
         <div className="container">
           <div className="row">
             <div className="col-12">
