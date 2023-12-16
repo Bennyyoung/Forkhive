@@ -9,38 +9,57 @@ import encode from '../../utils/encode';
 import { IHandleChange } from '../../components/Interface/Form/IHandleChange';
 import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttachment';
 import { IHandleSubmit } from '../../components/Interface/Form/IHandleSubmit';
+import { useForm, ValidationError } from '@formspree/react';
+import ThankYouPage from '../thank-you';
 
 export default function Contact() {
-  const [state, setState] = useState({})
-
-  const handleChange = (e: IHandleChange) => {
-    setState({ ...state, [e.target.name]: e.target.value })
+  const [state, handleSubmit] = useForm("mdoqnkzo");
+  if (state.succeeded) {
+    return (
+      <Layout bodyClass="page-contact">
+        <SEO title="Contact" meta={[]} keywords={[]} />
+        <div className="intro intro-small">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <h1>Contact</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+       <ThankYouPage />
+      </Layout>
+    );
   }
-  const handleAttachment = (e: IHandleAttachment) => {
-    setState({ ...state, [e.target.name]: e.target.files?.[0] || '' })
-  }
 
-  const handleSubmit = (e: IHandleSubmit) => {
-    e.preventDefault()
-    const form = e.currentTarget
+  // const handleChange = (e: IHandleChange) => {
+  //   setState({ ...state, [e.target.name]: e.target.value })
+  // }
+  // const handleAttachment = (e: IHandleAttachment) => {
+  //   setState({ ...state, [e.target.name]: e.target.files?.[0] || '' })
+  // }
 
-    if (form) {
-      fetch('/', {
-        method: 'POST',
-        body: encode({
-          'form-name': form.getAttribute('name'),
-          ...state,
-        }),
-      })
-        .then(() => {
-          const action = form.getAttribute('action')
-          if (action) {
-            navigate(action)
-          }
-        })
-        .catch((error) => alert(error))
-    }
-  }
+  // const handleSubmit = (e: IHandleSubmit) => {
+  //   e.preventDefault()
+  //   const form = e.currentTarget
+
+  //   if (form) {
+  //     fetch('/', {
+  //       method: 'POST',
+  //       body: encode({
+  //         'form-name': form.getAttribute('name'),
+  //         ...state,
+  //       }),
+  //     })
+  //       .then(() => {
+  //         const action = form.getAttribute('action')
+  //         if (action) {
+  //           navigate(action)
+  //         }
+  //       })
+  //       .catch((error) => alert(error))
+  //   }
+  // }
 
   return (
     <Layout bodyClass="page-contact">
@@ -63,25 +82,19 @@ export default function Contact() {
         </div><br />
         <div style={{ margin: "0", paddingBottom: '80px' }}>
           <form
-            name="contact-form"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/thank-you"
-            autoComplete="on"
             onSubmit={handleSubmit}
           >
             <h3 className="mt-4">Your request</h3>
             <label className="container">Create a product
-              <input type="checkbox" onChange={handleChange} name="Create a product" />
+              <input type="checkbox" name="Create a product" />
               <span className="checkmark"></span>
             </label>
             <label className="container">Enhance your team
-              <input type="checkbox" onChange={handleChange} name="Enhance your team" />
+              <input type="checkbox" name="Enhance your team" />
               <span className="checkmark"></span>
             </label>
             <label className="container">Training
-              <input type="checkbox" onChange={handleChange} name="Training" />
+              <input type="checkbox" name="Training" />
               <span className="checkmark"></span>
             </label>
 
@@ -101,80 +114,80 @@ export default function Contact() {
             <div>
               <p>
                 Full name
-                <input placeholder="Write your name here.." type="text" required name="full name" onChange={handleChange}></input>
+                <input placeholder="Write your name here.." type="text" required name="full name"></input>
               </p>
             </div>
             <div>
               <p>
                 Email
-                <input placeholder="Let us know how to contact you back.." type="email" required name="email" onChange={handleChange} ></input>
+                <input placeholder="Let us know how to contact you back.." type="email" required name="email" ></input>
               </p>
             </div>
 
             <div>
               <p>
                 Phone number:
-                <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" onChange={handleChange} ></input>
+                <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" ></input>
               </p>
             </div>
 
             <label>
               Starting Date:
             </label>
-            <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project Start Date"></input><br />
+            <input style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
 
             <label>
               Finishing Date:
             </label>
-            <input style={{ width: '50%' }} type="date" required onChange={handleChange} name="Project End Date"></input>
+            <input style={{ width: '50%' }} type="date" required name="Project End Date"></input>
 
             <div>
               <p>
                 Attach a file (CV) Not mandatory: 📂
-                <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" onChange={handleAttachment} />
+                <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
               </p>
             </div>
 
             <div>
               <p>
-              For the Training (Only for those undergoing the training)
+                For the Training (Only for those undergoing the training)
               </p>
 
               <label className="container">Basic Web Design
-                <input type="checkbox" onChange={handleChange} name="Basic Web Design" />
+                <input type="checkbox" name="Basic Web Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Basic UX Design
-                <input type="checkbox" onChange={handleChange} name="Basic UX Design" />
+                <input type="checkbox" name="Basic UX Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">HTML and CSS
-                <input type="checkbox" onChange={handleChange} name="HTML and CSS" />
+                <input type="checkbox" name="HTML and CSS" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">JavaScript (React)
-                <input type="checkbox" onChange={handleChange} name="JavaScript (React)" />
+                <input type="checkbox" name="JavaScript (React)" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Azure ML
-                <input type="checkbox" onChange={handleChange} name="Azure ML" />
+                <input type="checkbox" name="Azure ML" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Python
-                <input type="checkbox" onChange={handleChange} name="Python" />
+                <input type="checkbox" name="Python" />
                 <span className="checkmark"></span>
               </label>
             </div>
 
             <div>
               <p>
-              Message (Brief description of your needs):
-                <textarea style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" onChange={handleChange} ></textarea>
+                Message (Brief description of your needs):
+                <textarea style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" ></textarea>
               </p>
             </div>
             <div data-netlify-recaptcha="true"></div>
 
-            <button type="submit">Hire Us</button><br />
+            <button type="submit" disabled={state.submitting}>Hire Us</button><br />
           </form>
           <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:forkhivetech@gmail.com">forkhivetech@gmail.com</a></p>
         </div>
