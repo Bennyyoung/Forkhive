@@ -34,10 +34,10 @@ module.exports = {
       //   name: 'Blogs',
       //   link: '/blog',
       // },
-      {
-        name: 'Career',
-        link: '/career',
-      },
+      // {
+      //   name: 'Career',
+      //   link: '/career',
+      // },
       {
         name: 'Team',
         link: '/team',
