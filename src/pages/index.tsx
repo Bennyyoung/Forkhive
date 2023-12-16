@@ -73,7 +73,7 @@ const Home: React.FC<IHome> = (props) => {
       </div>
 
       <div className="container pb-0">
-        <Call button />
+        <Call button={true} />
       </div>
 
       <div style={{ padding: "10px 0px 0 0px" }}>

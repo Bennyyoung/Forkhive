@@ -3,10 +3,11 @@ path: '/team/benji'
 title: 'Benjamin Effiong'
 date: 2019-12-29T15:09:08+10:00
 draft: false
-image: '/team/benji.jpg'
+image: '/team/benjie.jpg'
 jobtitle: 'Founder and CEO'
+subtitle: 'Senior Frontend Software Engineer (React-TS, JS)'
 email: ' benjamineffiong124@yahoo.com'
-linkedinurl: ' https://linkedin.com/in/effiong-benjamin-b4963512a'
+linkedinurl: ' https://linkedin.com/in/benjamin-effiong-react'
 twitterurl: ' https://twitter.com/EffiongBenjami2'
 weight: 2
 ---

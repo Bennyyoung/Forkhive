@@ -53,7 +53,7 @@ const Career: React.FC<ICareer> = (props) => {
                                         <th scope="col">Role</th>
                                         <th scope="col">Nature of Work</th>
                                         <th scope="col">Full Description</th>
-                                        <th scope="col">Weekly Pay</th>
+                                        {/* <th scope="col">Weekly Pay</th> */}
                                     </tr>
                                 </thead>
 
@@ -61,64 +61,64 @@ const Career: React.FC<ICareer> = (props) => {
 
                                     <tr>
                                         <td ><strong>React Native</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/react-native" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>Team Manager</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/teammanager" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
                                     <tr>
                                         <td ><strong>PHP LARAVEL Native</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/php-laravel" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>MERN/MEAN Stack Developer</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/mern-stack" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>UI/UX</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/uiux" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>React Developer</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/react-developer" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>Project Manager</strong></td>
-                                        <td >Remote(Nigeria Timezones)</td>
+                                        <td >Remote (Nigeria Timezones)</td>
                                         <td><Link to="/projectmanager" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>React Firebase Developer</strong></td>
-                                        <td> Remote(Nigeria Timezones)</td>
+                                        <td> Remote (Nigeria Timezones)</td>
                                         <td><Link to="/react-firebase-developer" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
 
                                     <tr>
                                         <td ><strong>Data Scientist, AI and ML Engineers</strong></td>
-                                        <td> Remote(Nigeria Timezones)</td>
+                                        <td> Remote (Nigeria Timezones)</td>
                                         <td><Link to="/datascience" style={{ textDecoration: 'none' }}>View Role</Link></td>
-                                        <td >NGN5,000</td>
+                                        {/* <td >NGN5,000</td> */}
                                     </tr>
                                 </tbody>
                             </table>

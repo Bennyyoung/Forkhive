@@ -2,4 +2,4 @@ import React, { useState, useEffect } from 'react';
 
 type IHandleChange = React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
 
-export { IHandleChange }
+export type { IHandleChange }

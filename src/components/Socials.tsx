@@ -1,5 +1,4 @@
 import React from 'react'
-// import { graphql, StaticQuery } from "gatsby"
 
 const Socials = () => {
     // const yaml = props.data.allDataYaml.edges;
