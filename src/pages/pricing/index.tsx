@@ -7,12 +7,16 @@ import PriceComparisonTable from '../../components/PriceComparisonTable'
 const Mernstack = () => (
     <Layout bodyClass="page-pricing">
         <SEO title="Pricing" meta={[]} keywords={[]} />
-        <div className="col-12" style={{ padding: '4rem 0 3rem 6rem' }}>
-            <h1 style={{ textAlign: "left", color: '#EBA937' }}>Pricing</h1>
-            <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
-                Price comparison Table
-     </h5>
-            <h4 style={{ textAlign: "center" }}><strong>Pricing Built For Businesses Of All Sizes</strong></h4>
+        <div className='intro intro-small'>
+            <div className='container'>
+                <div className="col-12">
+                    <h1 style={{ textAlign: "left", color: '#EBA937' }}>Pricing</h1>
+                    <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
+                        Price comparison Table
+                    </h5>
+                    <h4 style={{ textAlign: "center" }}><strong>Pricing Built For Businesses Of All Sizes</strong></h4>
+                </div>
+            </div>
         </div>
 
         <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>

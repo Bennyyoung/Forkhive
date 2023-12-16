@@ -176,7 +176,7 @@ export default function Contact() {
 
             <button type="submit">Hire Us</button><br />
           </form>
-          <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:softbloom28@gmail.com">softbloom28@gmail.com</a></p>
+          <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:forkhivetech@gmail.com">forkhivetech@gmail.com</a></p>
         </div>
 
 

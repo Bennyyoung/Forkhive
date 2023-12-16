@@ -13,8 +13,26 @@
 
 .col-md-4 {
   -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
+  flex: 1 1 33.333333%;
   max-width: 33.333333%;
+}
+
+@media screen and (max-width: 768px) {
+  /* Additional styling for smaller screens */
+  .col-md-4 {
+    -ms-flex: 0 0 50%;
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Additional styling for larger screens */
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 1 1 33.333333%;
+    max-width: 33.333333%;
+  }
 }
 
 

@@ -3,7 +3,7 @@ import { usePaystackPayment, PaystackButton, PaystackConsumer } from 'react-pays
 
 const config = {
     reference: String((new Date()).getTime()),
-    email: "softbloom28@gmail.com",
+    email: "forkhivetech@gmail.com",
     amount: 20000,
     publicKey: 'pk_live_b89ba11c211333da9fe52c29a28072d7b15acf8f',
 };

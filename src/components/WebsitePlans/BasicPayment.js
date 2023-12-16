@@ -3,21 +3,21 @@ import { usePaystackPayment, PaystackButton, PaystackConsumer } from 'react-pays
 
 const FullPaymentConfig = {
     reference: (new Date()).getTime(),
-    email: "softbloom28@gmail.com",
+    email: "forkhivetech@gmail.com",
     amount: 4350000,
     publicKey: 'pk_live_b89ba11c211333da9fe52c29a28072d7b15acf8f',
 };
 
 const Pay60PercentConfig = {
     reference: (new Date()).getTime(),
-    email: "softbloom28@gmail.com",
+    email: "forkhivetech@gmail.com",
     amount: 2610000,
     publicKey: 'pk_live_b89ba11c211333da9fe52c29a28072d7b15acf8f',
 };
 
 const Pay40PercentConfig = {
     reference: (new Date()).getTime(),
-    email: "softbloom28@gmail.com",
+    email: "forkhivetech@gmail.com",
     amount: 1710000,
     publicKey: 'pk_live_b89ba11c211333da9fe52c29a28072d7b15acf8f',
 };
