@@ -3,7 +3,7 @@ path: '/team/patrick'
 title: 'Patrick Ubong'
 date: 2019-12-29T15:09:08+10:00
 draft: false
-image: '/team/patrick.jpeg'
+image: '/team/patrick.jpg'
 jobtitle: ' Co-founder and COO'
 subtitle: 'Backend Software Engineer (Node-TS, JS)'
 email: ' patrickubongkingsley@gmail.com  '
@@ -13,5 +13,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Patrick is a Nodejs Developer.
+    Patrick is a Senior Backend Developer.
 </p>
