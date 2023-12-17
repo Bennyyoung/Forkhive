@@ -3,7 +3,7 @@ path: '/team/micheal'
 title: 'Micheal Oluwasola'
 date: 2019-12-29T15:09:08+10:00
 draft: false
-image: '/team/micheal.jpeg'
+image: '/team/micheal.jpg'
 jobtitle: 'CTO'
 subtitle: 'Senior Fullstack Software Engineer'
 email: ' mikelmessi.om@gmail.com '
