@@ -1,6 +1,6 @@
 import { PageProps, graphql } from 'gatsby';
 import React from 'react'
-import SEO from '../../components/SEO'
+import SEO from '../../components/SEO/SEO'
 import Layout from '../../layouts/index'
 
 interface IAbout extends PageProps {

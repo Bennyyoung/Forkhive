@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { graphql, withPrefix, Link, PageProps } from 'gatsby';
 import Helmet from 'react-helmet';
 
-import SEO from '../components/SEO';
+import SEO from '../components/SEO/SEO';
 import Layout from '../layouts/index';
-import Call from '../components/Call';
-import TeckStack from '../components/TechStack'
+import Call from '../components/Call/Call';
+import TeckStack from '../components/TechStack/TechStack'
 // @ts-ignore
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
@@ -59,7 +59,7 @@ const Home: React.FC<IHome> = (props) => {
       <Helmet>
         <meta
           name="Forkhive"
-          content=" We are a Software Company, focused on Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
+          content="We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
         />
       </Helmet>
       <div className="intro intro-small">
@@ -67,7 +67,7 @@ const Home: React.FC<IHome> = (props) => {
           <h2 style={{ color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}>Forkhive</h2>
           <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
-            We are a Software Company, focused on Development <b>(Web and Mobile)</b>, Design <b>(Web and Mobile)</b> and Data Science <b>(AI and ML)</b> to help build your startup ideas and team.
+          We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team.
           </p>
         </div>
       </div>
@@ -150,7 +150,7 @@ const Home: React.FC<IHome> = (props) => {
 
           {/* Everything in our features could be found in the data/features.json */}
           {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-4 col-lg-4 mb-2">
+            <div key={edge.node.id} className="col-md-4">
               <div className="feature" style={{ color: "black" }}>
                 {edge.node.image && (
                   <div className="feature-image">

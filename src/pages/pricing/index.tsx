@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import SEO from '../../components/SEO';
+import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
-import PriceComparisonTable from '../../components/PriceComparisonTable'
+import PriceComparisonTable from '../../components/PriceComparisonTable/PriceComparisonTable'
 
 const Mernstack = () => (
     <Layout bodyClass="page-pricing">
