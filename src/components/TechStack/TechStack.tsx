@@ -20,7 +20,7 @@ const TechStack = () => {
               <Tooltip
                 anchorSelect={`.grid-item_${index}`}
                 content={el.content}
-                style={{ width: '15rem' }}
+                style={{ width: '25rem' }}
               />
             </div>
           ))
@@ -31,7 +31,7 @@ const TechStack = () => {
           <Tooltip
                 anchorSelect={`.rapid-miner`}
                 content={'RapidMiner is a data science platform that provides an integrated environment for end-to-end data science and machine learning processes. It allows users to perform tasks such as data preparation, machine learning modeling, and deployment of predictive models. RapidMiner is designed to be user-friendly, making it accessible to a wide range of users, including data scientists, analysts, and business professionals.'}
-                style={{ width: '15rem' }}
+                style={{ width: '25rem' }}
               />
         </div>
       </div>
