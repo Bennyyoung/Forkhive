@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <div className="logo-mobile">
           <Link to="/">
-            <img alt="Figurit Homepage" src={logo} style={{ height: '55px', width: '58px' }} />
+            <img alt="Figurit Homepage" src={logo} style={{ height: '55px', width: '100px' }} />
           </Link>
         </div>
         <MenuMobile active={menuActive} />
