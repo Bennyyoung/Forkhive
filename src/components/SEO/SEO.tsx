@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import logo from "../../images/forkhive_logo.jpg"
 
 interface ISEO {
   title?: string;
@@ -15,13 +16,14 @@ const SEO: React.FC<ISEO> = props => {
   const title = props.title || data.site.siteMetadata.title
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang: props.lang || 'en',
-      }}
-      title={title}
-      titleTemplate={`%s - ${data.site.siteMetadata.title}`}
-    />
+    <>
+      <Helmet>
+        {/* data.site.siteMetadata.title */}
+        <title>{`${title}`}</title>
+        <link rel="icon" href={logo} type="image/png" sizes="36x36" />
+      </Helmet>
+
+    </>
   )
 };
 
