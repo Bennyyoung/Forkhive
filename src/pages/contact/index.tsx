@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import SEO from '../../components/SEO';
+import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
-import Call from '../../components/Call';
+import Call from '../../components/Call/Call';
 import './index.css'
 import { navigate } from 'gatsby-link';
 import { IForm } from '../../components/Interface/Form/IForm';

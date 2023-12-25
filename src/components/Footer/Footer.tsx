@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 // @ts-ignore
 import Link from 'gatsby-plugin-transition-link';
-import logo from '../images/forkhive_logo.jpeg'
-import Socials from './Socials';
+import logo from '../../images/forkhive_logo.jpeg'
+import Socials from '../Socials/Socials';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`

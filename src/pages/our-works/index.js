@@ -1,5 +1,5 @@
 import React from 'react'
-import SEO from '../../components/SEO'
+import SEO from '../../components/SEO/SEO'
 import Layout from '../../layouts/index'
 import lof_home_screenshot from './lof_homepage_screenshot.jpg'
 import sunrise_home_screenshot from './sunrise_homepage_screenshot.jpg'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
-import SEO from '../../components/SEO'
+import SEO from '../../components/SEO/SEO'
 import Layout from '../../layouts/index'
 
 interface ICareer extends PageProps {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import Menu from './Menu';
-import Hamburger from './Hamburger';
-import MenuMobile from './MenuMobile';
-import logo from '../images/forkhive_logo.jpeg'
+import Menu from '../Menu/Menu';
+import Hamburger from '../Hamburger/Hamburger';
+import MenuMobile from '../MenuMobile/MenuMobile';
+import logo from '../../images/forkhive_logo.jpeg'
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);

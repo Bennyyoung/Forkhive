@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SEO from '../../components/SEO';
+import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
 import { Link } from 'gatsby';
 import { navigate } from 'gatsby-link';
