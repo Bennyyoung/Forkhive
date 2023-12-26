@@ -10,7 +10,6 @@ const initialState: InitialState = {
 };
 
 const rootReducer = (state: InitialState = initialState, action: ActionType): InitialState => {
-    console.log('action', action.payload)
   switch (action.type) {
     case SET_DARK_MODE:
       return {

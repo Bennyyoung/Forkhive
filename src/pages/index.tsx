@@ -46,7 +46,6 @@ const Home: React.FC<IHome> = (props) => {
   const json = props.data.allFeaturesJson.edges;
   const darkMode = useSelector((state: RootState) => state.darkMode); // Accessing darkMode from Redux store
 
-  // console.log('darkMode', darkMode)
   useEffect(() => {
     ReactGa.initialize('G-7TJLF1LZS2')
 
