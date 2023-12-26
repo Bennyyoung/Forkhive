@@ -42,3 +42,9 @@
     }
   }
 }
+
+div.feature.dark-mode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
+  border: $card-border-color
+}

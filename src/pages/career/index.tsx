@@ -46,7 +46,7 @@ const Career: React.FC<ICareer> = (props) => {
                     <div className="section">
                         <div className="center">
 
-                            <h2 className="title-3 text-dark mb-3">Open Roles</h2>
+                            <h2 className="title-3 mb-3">Open Roles</h2>
                         </div>
 
                         <div className="container content">

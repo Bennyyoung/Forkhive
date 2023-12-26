@@ -7,7 +7,7 @@ import { Tooltip } from "react-tooltip";
 const TechStack = () => {
   return (
     <>
-      <h2 className="title-3 text-dark mb-3" style={{ textAlign: "center" }}><strong>Your vision is built with</strong></h2>
+      <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong>Your vision is built with</strong></h2>
 
       <div className='grid-container'>
 

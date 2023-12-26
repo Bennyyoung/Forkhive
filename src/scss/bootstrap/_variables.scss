@@ -21,6 +21,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+$card-border-color: 1px solid #eba937;
 
 $grays: () !default;
 $grays: map-merge((
@@ -143,6 +144,10 @@ $sizes: map-merge((
 
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
+
+
+$background-color-dark: #292a32;
+$background-color-light: #fbfaf8;
 
 // Links
 //

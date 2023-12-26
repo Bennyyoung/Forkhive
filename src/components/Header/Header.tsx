@@ -1,19 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import Menu from '../Menu/Menu';
 import Hamburger from '../Hamburger/Hamburger';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import logo from '../../images/forkhive_logo.jpeg'
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store'; 
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
+
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
-
   const toggleMenu = () => {
     setMenuActive((prevMenuActive) => !prevMenuActive);
   };
 
+  const darkMode = useSelector((state: RootState) => {
+    console.log('state', state)
+    return state.darkMode
+  }); // Accessing darkMode from Redux store
+    console.log('darkMode', darkMode)
+
+
   return (
-    <div className="header">
+    <div className={`header ${darkMode ? 'dark-mode' : ''}`}>
       <div className="container">
         <div className="logo">
           <Link to="/">

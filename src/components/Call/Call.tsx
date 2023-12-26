@@ -1,11 +1,15 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
 interface Call {
   button: boolean | undefined;
 }
 
+
 const Call: React.FC<Call> = (props) => {
+  const darkMode = useSelector((state: RootState) => state.darkMode)
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -22,7 +26,7 @@ const Call: React.FC<Call> = (props) => {
     }
 `)
   return (
-    <div className="call">
+    <div className={`call ${darkMode ? 'dark-mode' : ''}`}>
       <div className="call-box-top">
         <div className="call-phone">
           <strong>Phone 1: </strong>

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, createContext } from 'react';
 import SEO from '../components/SEO/SEO';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -18,6 +18,8 @@ const Layout: React.FC<ILayout> = (props) => {
       <div className={`page${props.bodyClass ? ` ${props.bodyClass}` : ''}`}>
         <div id="wrapper" className="wrapper">
           <Header />
+
+
           {props.children}
         </div>
         <Footer />

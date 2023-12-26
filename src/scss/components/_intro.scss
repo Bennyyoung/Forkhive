@@ -51,6 +51,13 @@
     }
   }
 }
+
+.intro.dark-mode {
+  p {
+    color: $background-color-light;
+  }
+}
+
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;
