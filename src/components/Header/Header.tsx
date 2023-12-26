@@ -5,7 +5,7 @@ import Hamburger from '../Hamburger/Hamburger';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import logo from '../../images/forkhive_logo.jpeg'
 import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store'; 
+import { RootState } from '../../redux/store';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 
@@ -16,10 +16,8 @@ const Header = () => {
   };
 
   const darkMode = useSelector((state: RootState) => {
-    console.log('state', state)
     return state.darkMode
   }); // Accessing darkMode from Redux store
-    console.log('darkMode', darkMode)
 
 
   return (
