@@ -13,7 +13,7 @@ const TechStack = () => {
 
         {
           techStack.map((el, index) => (
-            <div className={`grid-item grid-item_${index}`}>
+            <div key={`grid-item_${index}`} className={`grid-item grid-item_${index}`}>
               <img src={el.img} alt={el.text.toLowerCase()} />
               <h6><strong>{el.text}</strong></h6>
 
