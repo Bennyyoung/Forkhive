@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
 const DarkModeToggle = () => {
-    const storedDarkMode = localStorage.getItem('DARK_MODE')
     const darkMode = useSelector((state: RootState) => state.darkMode); // Accessing darkMode from Redux store
 
     const dispatch = useDispatch();
