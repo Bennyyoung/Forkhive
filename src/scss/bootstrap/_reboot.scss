@@ -42,9 +42,20 @@ html {
 
 // stylelint-disable selector-list-comma-newline-after
 // Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block;
 }
+
 // stylelint-enable selector-list-comma-newline-after
 
 // Body
@@ -101,10 +112,16 @@ hr {
 // By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
 // margin for easier control within type scales as it avoids margin collapsing.
 // stylelint-disable selector-list-comma-newline-after
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: $headings-margin-bottom;
 }
+
 // stylelint-enable selector-list-comma-newline-after
 
 // Reset margins on paragraphs
@@ -124,7 +141,8 @@ p {
 // 4. Duplicate behavior to the data-* attribute for our tooltip plugin
 
 abbr[title],
-abbr[data-original-title] { // 4
+abbr[data-original-title] {
+  // 4
   text-decoration: underline; // 2
   text-decoration: underline dotted; // 2
   cursor: help; // 3
@@ -173,6 +191,7 @@ b,
 strong {
   font-weight: bold; // Add the correct font weight in Chrome, Edge, and Safari
 }
+
 // stylelint-enable font-weight-notation
 
 small {
@@ -192,8 +211,13 @@ sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
 
 
 //
@@ -245,6 +269,7 @@ samp {
   font-family: monospace, monospace; // Correct the inheritance and scaling of font size in all browsers.
   font-size: 1em; // Correct the odd `em` font sizing in all browsers.
 }
+
 // stylelint-enable font-family-no-duplicate-names
 
 pre {
@@ -344,9 +369,34 @@ textarea {
   line-height: inherit;
 }
 
+textarea.dark-mode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
+}
+
 button,
 input {
   overflow: visible; // Show the overflow in Edge
+}
+
+button.dark-mode {
+  color: $background-color-light;
+
+}
+
+input.dark-mode {
+  color: $background-color-light;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator.dark-mode {
+  filter: invert(1);
+  /* Inverts the color of the calendar icon */
+}
+
+/* Styles for the date input in dark mode */
+.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: none;
+  /* Resets the filter for dark mode */
 }
 
 button,
@@ -358,7 +408,8 @@ select {
 //    controls in Android 4.
 // 2. Correct the inability to style clickable types in iOS and Safari.
 button,
-html [type="button"], // 1
+html [type="button"],
+// 1
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; // 2

@@ -1,10 +1,14 @@
 import React from 'react'
-import "./PriceComparisonTable.css"
+// import "./PriceComparisonTable.css"
 import { Link } from 'gatsby'
 import { Tooltip } from "react-tooltip";
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 // import { Tooltip } from '@material-ui/core/Tooltip';
 
+
 function PriceComparisonTable() {
+    const darkMode = useSelector((state: RootState) => state.darkMode)
     return (
         <div className="container content">
             <div className="table-responsive">
@@ -12,7 +16,7 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th>Features</th>
-                            <th>Basic Plan (Suitable for Budget Applications) - <b> ₦500, 000+ </b></th>
+                            <th>Basic Plan (Suitable for Budget Applications) - <b> ₦500,000+ </b></th>
                             <th>Pro Plan (Suitable for Medium to Enterprise Applications) - <b> ₦1million+ </b></th>
                         </tr>
                     </thead>
@@ -35,7 +39,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className='ssl_tsl'>SSL/TLS Certificate
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -66,7 +70,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="cms">CMS (Content Management System)
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -98,7 +102,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="form_">Form Submission
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -130,7 +134,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="online">Online Appointments and Reminders (Business Working hours) 
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -162,7 +166,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="database">Database Integration
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -194,7 +198,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
 
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="seo">Search Engine Optimization (SEO)
                                     {' '}<i className="fa fa-question-circle"></i>
@@ -214,7 +218,7 @@ function PriceComparisonTable() {
                             <td><b>₦500,000+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
                             <td><b>₦1million+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
                         </tr>
-                        <tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td></td>
                             <td>      <div className="call-box-bottom">
                                 <Link to="/contact" style={{ textDecoration: 'none' }} className="button">

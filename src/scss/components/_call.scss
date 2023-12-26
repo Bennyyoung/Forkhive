@@ -58,5 +58,6 @@
 
 div.call.dark-mode {
   background-color: $background-color-dark;
-  border: $card-border-color
+  border: $card-border-color;
+  color: $background-color-light;
 }
