@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, withPrefix, Link, PageProps } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -8,7 +8,8 @@ import Call from '../components/Call/Call';
 import TeckStack from '../components/TechStack/TechStack'
 // @ts-ignore
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-
+import { Provider, useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
 
 import ReactGa from 'react-ga'
 
@@ -43,7 +44,9 @@ interface IHome extends PageProps {
 const Home: React.FC<IHome> = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
+  const darkMode = useSelector((state: RootState) => state.darkMode); // Accessing darkMode from Redux store
 
+  // console.log('darkMode', darkMode)
   useEffect(() => {
     ReactGa.initialize('G-7TJLF1LZS2')
 
@@ -54,7 +57,9 @@ const Home: React.FC<IHome> = (props) => {
 
 
   return (
+
     <Layout bodyClass="page-home">
+
       <SEO title="Home" meta={[]} keywords={[]} />
       <Helmet>
         <meta
@@ -62,12 +67,12 @@ const Home: React.FC<IHome> = (props) => {
           content="We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
         />
       </Helmet>
-      <div className="intro intro-small">
+      <div className={`intro ${darkMode ? 'dark-mode' : ''} intro-small`}>
         <div className="container">
           <h2 style={{ color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}>Forkhive</h2>
           <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}>Innovating African businesses</h5>
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
-          We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team.
+            We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team.
           </p>
         </div>
       </div>
@@ -108,7 +113,7 @@ const Home: React.FC<IHome> = (props) => {
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-3" style={{ textAlign: "center" }}><strong>Our Services</strong></h2>
+            <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong>Our Services</strong></h2>
           </div>
           {markdown.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
@@ -141,7 +146,7 @@ const Home: React.FC<IHome> = (props) => {
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-4" style={{ textAlign: "center" }}><strong>Our Features</strong></h2>
+            <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong>Our Features</strong></h2>
             <MessengerCustomerChat
               pageId="107730554053669"
               appId="281696259640056"
@@ -151,7 +156,7 @@ const Home: React.FC<IHome> = (props) => {
           {/* Everything in our features could be found in the data/features.json */}
           {json.map(edge => (
             <div key={edge.node.id} className="col-md-4">
-              <div className="feature" style={{ color: "black" }}>
+              <div className={`feature ${darkMode ? 'dark-mode': ''}`}>
                 {edge.node.image && (
                   <div className="feature-image">
                     <img src={withPrefix(edge.node.image)} />
@@ -164,9 +169,6 @@ const Home: React.FC<IHome> = (props) => {
           ))}
         </div>
       </div>
-
-
-
     </Layout>
   );
 };

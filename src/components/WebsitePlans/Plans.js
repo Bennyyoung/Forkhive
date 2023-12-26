@@ -10,7 +10,7 @@ const Plans = () => {
         <div className="container pt-2">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-4" style={{textAlign: "center"}}><strong>Know what you are paying for</strong></h2>
+            <h2 className="title-3 mb-4" style={{textAlign: "center"}}><strong>Know what you are paying for</strong></h2>
           </div>
             {/* <BasicPlans />
             <SilverPlans />

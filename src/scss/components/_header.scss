@@ -6,7 +6,7 @@
   top: 0;
   z-index: 1000;
   color: $primary;
-  background-color: #ffffff;
+  background-color: $body-bg;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,4 +23,10 @@
       display: block;
     }
   }
+}
+
+
+div.header.dark-mode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
 }

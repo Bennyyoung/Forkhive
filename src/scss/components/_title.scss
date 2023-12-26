@@ -25,7 +25,7 @@
 .title-3 {
   font-family: $font-family-base;
   font-weight: light;
-  color: #333333;
+  // color: #333333;
   font-size: 1.6rem;
   @include media-breakpoint-up(sm) {
     font-size: 2rem;
@@ -36,4 +36,8 @@
   a {
     display: block;
   }
+}
+
+h2.title-3.dark-mode {
+  color: $background-color-light;
 }

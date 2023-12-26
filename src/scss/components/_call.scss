@@ -55,3 +55,8 @@
   //   border-bottom: 1px solid #CCC;
   // }
 }
+
+div.call.dark-mode {
+  background-color: $background-color-dark;
+  border: $card-border-color
+}
