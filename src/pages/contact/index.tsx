@@ -11,6 +11,8 @@ import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttach
 import { IHandleSubmit } from '../../components/Interface/Form/IHandleSubmit';
 import { useForm, ValidationError } from '@formspree/react';
 import ThankYouPage from '../thank-you';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mdoqnkzo");
@@ -32,34 +34,7 @@ export default function Contact() {
     );
   }
 
-  // const handleChange = (e: IHandleChange) => {
-  //   setState({ ...state, [e.target.name]: e.target.value })
-  // }
-  // const handleAttachment = (e: IHandleAttachment) => {
-  //   setState({ ...state, [e.target.name]: e.target.files?.[0] || '' })
-  // }
-
-  // const handleSubmit = (e: IHandleSubmit) => {
-  //   e.preventDefault()
-  //   const form = e.currentTarget
-
-  //   if (form) {
-  //     fetch('/', {
-  //       method: 'POST',
-  //       body: encode({
-  //         'form-name': form.getAttribute('name'),
-  //         ...state,
-  //       }),
-  //     })
-  //       .then(() => {
-  //         const action = form.getAttribute('action')
-  //         if (action) {
-  //           navigate(action)
-  //         }
-  //       })
-  //       .catch((error) => alert(error))
-  //   }
-  // }
+  const darkMode = useSelector((state: RootState) => state.darkMode)
 
   return (
     <Layout bodyClass="page-contact">
@@ -86,15 +61,15 @@ export default function Contact() {
           >
             <h3 className="mt-4">Your request</h3>
             <label className="container">Create a product
-              <input type="checkbox" name="Create a product" />
+              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Create a product" />
               <span className="checkmark"></span>
             </label>
             <label className="container">Enhance your team
-              <input type="checkbox" name="Enhance your team" />
+              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Enhance your team" />
               <span className="checkmark"></span>
             </label>
             <label className="container">Training
-              <input type="checkbox" name="Training" />
+              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Training" />
               <span className="checkmark"></span>
             </label>
 
@@ -114,37 +89,37 @@ export default function Contact() {
             <div>
               <p>
                 Full name
-                <input placeholder="Write your name here.." type="text" required name="full name"></input>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Write your name here.." type="text" required name="full name"></input>
               </p>
             </div>
             <div>
               <p>
                 Email
-                <input placeholder="Let us know how to contact you back.." type="email" required name="email" ></input>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us know how to contact you back.." type="email" required name="email" ></input>
               </p>
             </div>
 
             <div>
               <p>
                 Phone number:
-                <input placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" ></input>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" ></input>
               </p>
             </div>
 
             <label>
               Starting Date:
             </label>
-            <input style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
+            <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
 
             <label>
               Finishing Date:
             </label>
-            <input style={{ width: '50%' }} type="date" required name="Project End Date"></input>
+            <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project End Date"></input>
 
             <div>
               <p>
                 Attach a file (CV) Not mandatory: 📂
-                <input placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
               </p>
             </div>
 
@@ -154,27 +129,27 @@ export default function Contact() {
               </p>
 
               <label className="container">Basic Web Design
-                <input type="checkbox" name="Basic Web Design" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic Web Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Basic UX Design
-                <input type="checkbox" name="Basic UX Design" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic UX Design" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">HTML and CSS
-                <input type="checkbox" name="HTML and CSS" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="HTML and CSS" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">JavaScript (React)
-                <input type="checkbox" name="JavaScript (React)" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="JavaScript (React)" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Azure ML
-                <input type="checkbox" name="Azure ML" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Azure ML" />
                 <span className="checkmark"></span>
               </label>
               <label className="container">Python
-                <input type="checkbox" name="Python" />
+                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Python" />
                 <span className="checkmark"></span>
               </label>
             </div>
@@ -182,12 +157,12 @@ export default function Contact() {
             <div>
               <p>
                 Message (Brief description of your needs):
-                <textarea style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" ></textarea>
+                <textarea className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" ></textarea>
               </p>
             </div>
             <div data-netlify-recaptcha="true"></div>
 
-            <button type="submit" disabled={state.submitting}>Hire Us</button><br />
+            <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}>Hire Us</button><br />
           </form>
           <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:forkhivetech@gmail.com">forkhivetech@gmail.com</a></p>
         </div>
@@ -201,7 +176,7 @@ export default function Contact() {
                 <td className="day font-weight-bold">Monday</td>
                 <td className="opens">9:00am - 5:00pm</td>
               </tr>
-              <tr>
+              <tr  className={`${darkMode ? 'dark-mode' : ''}`} >
                 <td className="day font-weight-bold">Tuesday</td>
                 <td className="opens">9:00am - 5:00pm</td>
               </tr>
@@ -209,7 +184,7 @@ export default function Contact() {
                 <td className="day font-weight-bold">Wednesday</td>
                 <td className="opens">9:00am - 5:00pm</td>
               </tr>
-              <tr>
+              <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
                 <td className="day font-weight-bold">Thursday</td>
                 <td className="opens">9:00am - 5:00pm</td>
               </tr>
@@ -217,7 +192,7 @@ export default function Contact() {
                 <td className="day font-weight-bold">Friday</td>
                 <td className="opens">9:00am - 5:00pm</td>
               </tr>
-              <tr>
+              <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
                 <td className="day font-weight-bold">Saturday</td>
                 <td className="opens">12:00pm - 5:00pm</td>
               </tr>

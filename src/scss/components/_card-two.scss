@@ -59,6 +59,15 @@
         color: rgb(87, 87, 87);
         margin: 0;
         line-height: 1.3;
+        span {
+          color: gray
+        }
+        span.dark-mode {
+          color: $background-color-light;
+        }
+      }
+      li.dark-mode {
+        color: $background-color-light;
       }
     }
 

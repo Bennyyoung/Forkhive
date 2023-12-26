@@ -13,6 +13,8 @@
     padding: $table-cell-padding;
     vertical-align: top;
     border-top: $table-border-width solid $table-border-color;
+    text-align: center;
+    padding: 16px;
   }
 
   thead th {
@@ -27,6 +29,28 @@
   .table {
     background-color: $body-bg;
   }
+
+  th:first-child, td:first-child {
+    text-align: left;
+   }
+
+   .fa-check {
+    color: green;
+   }
+
+   .fa-remove {
+    color: red;
+   }
+
+   tr:nth-child(even) {
+    background-color: #f2f2f2
+   }
+
+   tr:nth-child(even).dark-mode {
+    background-color: $background-color-dark;
+    color: $background-color-light;
+
+   }
 }
 
 

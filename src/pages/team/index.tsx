@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, PageProps } from 'gatsby';
 import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
 interface ITeam {
   data: {
@@ -27,6 +29,7 @@ interface ITeam {
 
 const Team: React.FC<ITeam> = (props) => {
   const teams = props.data.allMarkdownRemark.edges;
+  const darkMode = useSelector((state: RootState) => state.darkMode)
   return (
     <Layout bodyClass="page-teams">
       <SEO title="Team" meta={[]} keywords={[]} />
@@ -61,23 +64,23 @@ const Team: React.FC<ITeam> = (props) => {
                     <h2 className="card-title">{edge.node.frontmatter.title}</h2>
                     <ul className="card-meta">
                       <li style={{ paddingBottom: '4px' }}>
-                        <span style={{ fontWeight: '510', color: 'gray' }}>{edge.node.frontmatter.jobtitle}</span>
-                        {/* <span style={{ fontWeight: '210', color: 'gray' }}>{edge.node.frontmatter.subtitle}</span> */}
+                        <span className={`${darkMode ? 'dark-mode': ''}`} style={{ fontWeight: '510' }}>{edge.node.frontmatter.jobtitle}</span>
+                        {/* <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span> */}
                       </li>
                       <li style={{ paddingBottom: '4px' }}>
-                        <span style={{ fontWeight: '210', color: 'gray' }}>{edge.node.frontmatter.subtitle}</span>
+                        <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span>
                       </li>
-                      <li style={{ paddingBottom: '4px' }}><b>LinkedIn:</b>
+                      <li className={`${darkMode ? 'dark-mode': ''}`} style={{ paddingBottom: '4px' }}><b>LinkedIn:</b>
                         <a target="_blank" href={edge.node.frontmatter.linkedinurl}>
                           {edge.node.frontmatter.linkedinurl}
                         </a>
                       </li>
-                      <li style={{ paddingBottom: '4px' }}><b>Twitter:</b>
+                      <li className={`${darkMode ? 'dark-mode': ''}`} style={{ paddingBottom: '4px' }}><b>Twitter:</b>
                         <a target="_blank" href={edge.node.frontmatter.twitterurl}>
                           {edge.node.frontmatter.twitterurl}
                         </a>
                       </li>
-                      <li><b>Email:</b>
+                      <li className={`${darkMode ? 'dark-mode': ''}`}><b>Email:</b>
                         <a href={`mailto: ${edge.node.frontmatter.email}`}>{edge.node.frontmatter.email}</a>
                       </li>
                     </ul>

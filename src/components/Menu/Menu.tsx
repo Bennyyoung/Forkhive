@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 interface MenuLinks {
   name: string
@@ -28,7 +27,6 @@ const Menu = () => {
             <Link to={link.link} activeClassName={link.name}>{link.name}</Link>
           </li>
         ))}
-        <DarkModeToggle />
       </ul>
     </div>
   );
