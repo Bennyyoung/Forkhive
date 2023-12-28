@@ -1,15 +1,15 @@
 import React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import { Trans, Link } from 'gatsby-plugin-react-i18next';
 
 interface Call {
   button: boolean | undefined;
 }
 
-
 const Call: React.FC<Call> = (props) => {
-  const darkMode = useSelector((state: RootState) => state.darkMode)
+  const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -29,18 +29,18 @@ const Call: React.FC<Call> = (props) => {
     <div className={`call ${darkMode ? 'dark-mode' : ''}`}>
       <div className="call-box-top">
         <div className="call-phone">
-          <strong>Phone 1: </strong>
+          <strong><Trans>Phone 1</Trans>: </strong>
           <a href={`tel:${data.site.siteMetadata.contact.phone1}`}>
             {data.site.siteMetadata.contact.phone1}
           </a>
           <br />
-          <strong>Phone 2: </strong>
+          <strong><Trans>Phone 2</Trans>: </strong>
           <a href={`tel:${data.site.siteMetadata.contact.phone2}`}>
             {data.site.siteMetadata.contact.phone2}
           </a>
         </div>
         <div className="call-email">
-          <strong>Email: </strong>
+          <strong><Trans>Email</Trans>: </strong>
           <a href={`mailto:${data.site.siteMetadata.contact.email}`}>
             {data.site.siteMetadata.contact.email}
           </a>
@@ -48,8 +48,8 @@ const Call: React.FC<Call> = (props) => {
       </div>
       {props.button && (
         <div className="call-box-bottom">
-          <Link to="/contact" className="button">
-            Contact
+          <Link to="/contact" className="button" placeholder={undefined}>
+            <Trans>Contact</Trans>
           </Link>
         </div>
       )}

@@ -6,4 +6,4 @@ export interface SetDarkModeAction {
   payload: boolean;
 }
 
-export type ActionType = SetDarkModeAction;
+export type DarkModeActionTypes = SetDarkModeAction;

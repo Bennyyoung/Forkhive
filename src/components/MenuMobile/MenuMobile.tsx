@@ -1,5 +1,6 @@
 import React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 
 interface IMenuMobile {
   active: boolean
@@ -32,7 +33,7 @@ const MenuMobile: React.FC<IMenuMobile> = props => {
       <ul>
         {menuLinks.map((link: MenuLinks) => (
           <li key={link.name}>
-            <Link to={link.link}>{link.name}</Link>
+            <Link to={link.link} placeholder={undefined}><Trans>{link.name}</Trans></Link>
           </li>
         ))}
       </ul>

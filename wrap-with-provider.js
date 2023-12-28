@@ -13,7 +13,7 @@ export default ({ element }) => {
         <Provider
             store={store}>
             <PersistGate loading={null} persistor={persistor}>
-                {element}
+                    {element}
             </PersistGate>
         </Provider>
     )

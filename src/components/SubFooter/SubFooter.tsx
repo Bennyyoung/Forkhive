@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const SubFooter = () => {
 const data = useStaticQuery(graphql`
@@ -24,13 +25,13 @@ const data = useStaticQuery(graphql`
             <div className="sub-footer">
               <ul>
                 <li>
-                  <strong>Phone1: </strong>
+                  <strong><Trans>Phone 1</Trans>: </strong>
                   {data.site.siteMetadata.contact.phone1}
                   <br />
-                  <strong>Phone2: </strong>
+                  <strong><Trans>Phone 2</Trans>: </strong>
                   {data.site.siteMetadata.contact.phone2}
                   <br />
-                  <strong>Email: </strong>{' '}
+                  <strong><Trans>Email</Trans>: </strong>{' '}
                   <a style={{textDecoration: 'none'}} href={`mailto:${data.site.siteMetadata.contact.email}`}>
                     {data.site.siteMetadata.contact.email}
                   </a>

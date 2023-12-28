@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 interface IServices extends PageProps {
   data: {
@@ -28,7 +29,7 @@ const Services: React.FC<IServices> = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1>Services</h1>
+              <h1><Trans>Services</Trans></h1>
             </div>
           </div>
         </div>
@@ -41,9 +42,9 @@ const Services: React.FC<IServices> = (props) => {
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h5 style={{fontWeight: 'bold'}}>
-                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+                    <Link to={edge.node.frontmatter.path}><Trans>{edge.node.frontmatter.title}</Trans></Link>
                   </h5>
-                  <p style={{wordSpacing: '0.2rem'}}>{edge.node.excerpt}</p>
+                  <p style={{wordSpacing: '0.2rem'}}><Trans>{edge.node.excerpt}</Trans></p>
                 </div>
               </div>
             </div>
@@ -55,7 +56,7 @@ const Services: React.FC<IServices> = (props) => {
 };
 
 export const query = graphql`
-  query ServicesQuery {
+  query ($language: String!) {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/services/" } }
       sort: { frontmatter: { date: DESC }}
@@ -67,6 +68,16 @@ export const query = graphql`
             title
             path
           }
+        }
+      }
+    }
+
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

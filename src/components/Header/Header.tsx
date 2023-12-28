@@ -7,6 +7,7 @@ import logo from '../../images/forkhive_logo.jpeg'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
   };
 
   const darkMode = useSelector((state: RootState) => {
-    return state.darkMode
+    return state.darkMode.darkMode
   }); // Accessing darkMode from Redux store
 
 

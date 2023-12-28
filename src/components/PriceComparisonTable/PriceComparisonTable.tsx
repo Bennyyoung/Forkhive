@@ -4,20 +4,20 @@ import { Link } from 'gatsby'
 import { Tooltip } from "react-tooltip";
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
-// import { Tooltip } from '@material-ui/core/Tooltip';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 
 function PriceComparisonTable() {
-    const darkMode = useSelector((state: RootState) => state.darkMode)
+    const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
     return (
         <div className="container content">
             <div className="table-responsive">
                 <table className="table table-bordered">
                     <thead className="thead-dark">
                         <tr>
-                            <th>Features</th>
-                            <th>Basic Plan (Suitable for Budget Applications) - <b> ₦500,000+ </b></th>
-                            <th>Pro Plan (Suitable for Medium to Enterprise Applications) - <b> ₦1million+ </b></th>
+                            <th><Trans>Features</Trans></th>
+                            <th><Trans>Basic Plan (Suitable for Budget Applications)</Trans> - <b> ₦500,000+ </b></th>
+                            <th><Trans>Pro Plan (Suitable for Medium to Enterprise Applications)</Trans> - <b> ₦1million+ </b></th>
                         </tr>
                     </thead>
 
@@ -25,13 +25,14 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className='socialMedia'>
-                                    Integration of Social Media (<i className="fa fa-facebook-f"></i> <i className="fa fa-twitter"></i> <i className="fa fa-instagram"></i> <i className="fa fa-whatsapp"></i>)
+                                    <Trans>Integration of Social Media</Trans> (<i className="fa fa-facebook-f"></i> <i className="fa fa-twitter"></i> <i className="fa fa-instagram"></i> <i className="fa fa-whatsapp"></i>)
 
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.socialMedia'
-                                    content='Get found on social media'
+                                    // @ts-ignore
+                                    content={<Trans>Get found on social media</Trans>}
                                     style={{ width: '15rem' }}
                                 />
                             </td>
@@ -41,12 +42,13 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className='ssl_tsl'>SSL/TLS Certificate
+                                <a className='ssl_tsl'><Trans>SSL/TLS Certificate</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.ssl_tsl'
-                                    content='If your site has a login or accepts form submissions, HTTPS is essential for your users’ security and privacy. Google search results prioritize sites with HTTPS enabled'
+                                    // @ts-ignore
+                                    content={<Trans>If your site has a login or accepts form submissions, HTTPS is essential for your users’ security and privacy. Google search results prioritize sites with HTTPS enabled</Trans>}
                                     style={{ width: '15rem' }}
                                 />
                             </td>
@@ -56,12 +58,13 @@ function PriceComparisonTable() {
 
                         <tr>
                             <td>
-                                <a className="fee">Hosting Fee
+                                <a className="fee"><Trans>Hosting Fee</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.fee'
-                                    content="Hosting fee is free"
+                                    // @ts-ignore
+                                    content={<Trans>Hosting fee is free</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -72,12 +75,13 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className="cms">CMS (Content Management System)
+                                <a className="cms"><Trans>CMS (Content Management System)</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.cms'
-                                    content="Would you love to create, manage, and modify content on your website without the need for our specialized technical knowledge"
+                                    // @ts-ignore
+                                    content={<Trans>Would you love to create, manage, and modify content on your website without the need for our specialized technical knowledge</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -88,12 +92,13 @@ function PriceComparisonTable() {
 
                         <tr>
                             <td>
-                                <a className="cdr">Custom Domain Registration
+                                <a className="cdr"><Trans>Custom Domain Registration</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.cdr'
-                                    content='Register a custom address like www.YourBusinessOrName.com to your website or online store.'
+                                    // @ts-ignore
+                                    content={<Trans>Register a custom address like www.YourBusinessOrName.com to your website or online store</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -104,12 +109,13 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className="form_">Form Submission
+                                <a className="form_"><Trans>Form Submission</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.form_'
-                                    content='Netlify build bots do it by parsing your HTML files directly at deploy time, so there’s no need for us to make an API call or include extra JavaScript on your site'
+                                    // @ts-ignore
+                                    content={<Trans>Netlify build bots do it by parsing your HTML files directly at deploy time, so there’s no need for us to make an API call or include extra JavaScript on your site</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -121,11 +127,12 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="support">
-                                    24/7 Support {' '}<i className="fa fa-question-circle"></i>
+                                    <Trans>24/7 Support</Trans> {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.support'
-                                    content='Friendly Forkhive Guides are standing by to answer your questions. Call +234 913 863 6045.'
+                                    // @ts-ignore
+                                    content={<Trans>Friendly Forkhive Guides are standing by to answer your questions. Call +234 913 863 6045</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -136,28 +143,30 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className="online">Online Appointments and Reminders (Business Working hours) 
+                                <a className="online"><Trans>Online Appointments and Reminders (Business Working hours)</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.online'
-                                    content='You can book one-time, recurring appointments, a webinar, class, workshop, in-person or virtual event directly from your website and Remind customers of their upcoming bookings.'
+                                    // @ts-ignore
+                                    content={<Trans>You can book one-time, recurring appointments, a webinar, class, workshop, in-person or virtual event directly from your website and Remind customers of their upcoming bookings</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
                             </td>
-                            <td><i className="fa fa-check">Mon-Fri</i></td>
-                            <td><i className="fa fa-check">Mon-Sun</i></td>
+                            <td><i className="fa fa-check"><Trans>Mon-Fri</Trans></i></td>
+                            <td><i className="fa fa-check"><Trans>Mon-Sun</Trans></i></td>
                         </tr>
 
                         <tr>
                             <td>
-                                <a className="ecommerce">Ecommerce Functionality
+                                <a className="ecommerce"><Trans>Ecommerce Functionality</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.ecommerce'
-                                    content='Accept credit card, Paystack, Flutterwave, Interswitch Webpay, Paypal, Amplify and Remita payments for products/orders. Transaction fees are dependent on your selected payment processor. We don’t charge additional fees and, with Paystack, offer one of the lowest transaction fees (Local Cards: 1.5% + 100NGN, International Cards: 3.9% + NGN, 100 NGN 100 fee is waived for transactions less than NGN 2500) compared to similar ecommerce plans.'
+                                    // @ts-ignore
+                                    content={<Trans>Accept credit card, Paystack, Flutterwave, Interswitch Webpay, Paypal, Amplify and Remita payments for products/orders. Transaction fees are dependent on your selected payment processor. We don’t charge additional fees and, with Paystack, offer one of the lowest transaction fees (Local Cards: 1.5% + 100NGN, International Cards: 3.9% + NGN, 100 NGN 100 fee is waived for transactions less than NGN 2500) compared to similar ecommerce plans</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -168,12 +177,13 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className="database">Database Integration
+                                <a className="database"><Trans>Database Integration</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.database'
-                                    content='Does your website require database integration let us know'
+                                    //@ts-ignore
+                                    content={<Trans>Does your website require database integration let us know</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -184,12 +194,13 @@ function PriceComparisonTable() {
 
                         <tr>
                             <td>
-                                <a className="guidance">Guidance and Analytics
+                                <a className="guidance"><Trans>Guidance and Analytics</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.guidance'
-                                    content='If someone loads pages of your site on multiple different days, they will be counted as a unique visitor for each day. If someone loads pages of your site during multiple different hours, they will  be counted as a unique visitor for each hour. You could be watching  this metric'
+                                    // @ts-ignore
+                                    content={<Trans>If someone loads pages of your site on multiple different days, they will be counted as a unique visitor for each day. If someone loads pages of your site during multiple different hours, they will  be counted as a unique visitor for each hour. You could be watching  this metric</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -200,12 +211,13 @@ function PriceComparisonTable() {
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
-                                <a className="seo">Search Engine Optimization (SEO)
+                                <a className="seo"><Trans>Search Engine Optimization (SEO)</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='seo'
-                                    content='Get found on Google and other search engines with help Gatsby or Netlify'
+                                    // @ts-ignore
+                                    content={<Trans>Get found on Google and other search engines with help Gatsby or Netlify</Trans>}
                                     style={{ width: '15rem' }}
 
                                 />
@@ -214,7 +226,7 @@ function PriceComparisonTable() {
                             <td><i className="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td><b>Price Range</b></td>
+                            <td><b><Trans>Price Range</Trans></b></td>
                             <td><b>₦500,000+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
                             <td><b>₦1million+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
                         </tr>
@@ -222,12 +234,12 @@ function PriceComparisonTable() {
                             <td></td>
                             <td>      <div className="call-box-bottom">
                                 <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
-                                    Try Basic Plan
+                                    <Trans>Try Basic Plan</Trans>
                                 </Link>
                             </div></td>
                             <td>      <div className="call-box-bottom">
                                 <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
-                                    Try Pro Plan
+                                    <Trans>Try Pro Plan</Trans>
                                 </Link>
                             </div></td>
                         </tr>

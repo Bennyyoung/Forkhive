@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from "react"
 import SunIcon from "../SunIcon/SunIcon"
 import MoonIcon from "../MoonIcon/MoonIcon"
 import { useDispatch } from 'react-redux';
-import { setDarkMode } from '../../redux/actions';
+import { setDarkMode } from '../../redux/actions/DarkModeActions';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 // @ts-ignore
-import audio from "../../sound/darkMode.wav"
+import audio from "../../sound/darkMode.mp3"
 
 const DarkModeToggle = () => {
-    const darkMode = useSelector((state: RootState) => state.darkMode); // Accessing darkMode from Redux store
+    const darkMode = useSelector((state: RootState) => state.darkMode.darkMode); // Accessing darkMode from Redux store
     const audioRef = useRef(new Audio(audio))
     const playSound = () => {
         audioRef.current.play()
@@ -37,14 +37,14 @@ const DarkModeToggle = () => {
     }, [darkMode]);
 
     return (
-        <>
+        <div>
             {
                 darkMode ?
                     (<MoonIcon handleDarkModeFalse={handleDarkModeFalse} />)
                     : (<SunIcon handleDarkModeTrue={handleDarkModeTrue} />)
             }
 
-        </>
+        </div>
     )
 }
 

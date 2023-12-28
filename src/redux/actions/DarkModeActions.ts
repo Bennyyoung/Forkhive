@@ -1,5 +1,5 @@
 // actions.js
-import { SET_DARK_MODE } from './actionTypes';
+import { SET_DARK_MODE } from '../actionTypes/DarkModeActionTypes';
 
 export const setDarkMode = (isDarkMode: boolean) => {
   return {

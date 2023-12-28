@@ -1,4 +1,6 @@
 const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
+// @ts-ignore
+import { languages, defaultLanguage } from "./languages"
 
 module.exports = {
   siteMetadata: {
@@ -94,6 +96,44 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        languages,
+        defaultLanguage,
+        siteUrl: `https://www.forkhive.com`,
+        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
+        trailingSlash: 'always',
+        // you can pass any i18next options
+        i18nextOptions: {
+          // debug: true,
+          fallbackLng: defaultLanguage,
+          supportedLngs: languages,
+          defaultNS: 'common',
+          keySeparator: false,
+          nsSeparator: false
+        },
+        pages: [
+          {
+            matchPath: "/",
+            languages: languages
+          },
+          {
+            matchPath: "/pricing",
+            languages: languages
+          }
+
+        ]
+
+      }
+    }
     // {
     //   resolve: 'gatsby-plugin-react-svg',
     //   options: {
