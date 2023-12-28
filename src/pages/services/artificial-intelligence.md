@@ -7,4 +7,4 @@ featured: true
 draft: false
 ---
 
-Our AI Team focuses on writing algorithms and leveraging on existing one to maximise human efficiency in business and home at large 
+Our AI Team focuses on writing algorithms and leveraging on existing one to maximise human efficiency in business and home at large

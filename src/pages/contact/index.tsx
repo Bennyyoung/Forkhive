@@ -3,16 +3,12 @@ import SEO from '../../components/SEO/SEO';
 import Layout from '../../layouts/index';
 import Call from '../../components/Call/Call';
 import './index.css'
-import { navigate } from 'gatsby-link';
-import { IForm } from '../../components/Interface/Form/IForm';
-import encode from '../../utils/encode';
-import { IHandleChange } from '../../components/Interface/Form/IHandleChange';
-import { IHandleAttachment } from '../../components/Interface/Form/IHandleAttachment';
-import { IHandleSubmit } from '../../components/Interface/Form/IHandleSubmit';
 import { useForm, ValidationError } from '@formspree/react';
 import ThankYouPage from '../thank-you';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import { graphql } from 'gatsby';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mdoqnkzo");
@@ -34,7 +30,7 @@ export default function Contact() {
     );
   }
 
-  const darkMode = useSelector((state: RootState) => state.darkMode)
+  const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
 
   return (
     <Layout bodyClass="page-contact">
@@ -43,7 +39,7 @@ export default function Contact() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1>Contact</h1>
+              <h1><Trans>Contact</Trans></h1>
             </div>
           </div>
         </div>
@@ -59,16 +55,16 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
           >
-            <h3 className="mt-4">Your request</h3>
-            <label className="container">Create a product
+            <h3 className="mt-4"><Trans>Your request</Trans></h3>
+            <label className="container"><Trans>Create a product</Trans>
               <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Create a product" />
               <span className="checkmark"></span>
             </label>
-            <label className="container">Enhance your team
+            <label className="container"><Trans>Enhance your team</Trans>
               <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Enhance your team" />
               <span className="checkmark"></span>
             </label>
-            <label className="container">Training
+            <label className="container"><Trans>Training</Trans>
               <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Training" />
               <span className="checkmark"></span>
             </label>
@@ -88,67 +84,67 @@ export default function Contact() {
 
             <div>
               <p>
-                Full name
+                <Trans>Full name</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Write your name here.." type="text" required name="full name"></input>
               </p>
             </div>
             <div>
               <p>
-                Email
+                <Trans>Email</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us know how to contact you back.." type="email" required name="email" ></input>
               </p>
             </div>
 
             <div>
               <p>
-                Phone number:
+                <Trans>Phone number</Trans>:
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" ></input>
               </p>
             </div>
 
             <label>
-              Starting Date:
+              <Trans>Starting Date</Trans>:
             </label>
             <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
 
             <label>
-              Finishing Date:
+              <Trans>Finishing Date</Trans>:
             </label>
             <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project End Date"></input>
 
             <div>
               <p>
-                Attach a file (CV) Not mandatory: 📂
+                <Trans>Attach a file (CV) Not mandatory</Trans>: 📂
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
               </p>
             </div>
 
             <div>
               <p>
-                For the Training (Only for those undergoing the training)
+                <Trans>For the Training (Only for those undergoing the training)</Trans>
               </p>
 
-              <label className="container">Basic Web Design
+              <label className="container"><Trans>Basic Web Design</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic Web Design" />
                 <span className="checkmark"></span>
               </label>
-              <label className="container">Basic UX Design
+              <label className="container"><Trans>Basic UX Design</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic UX Design" />
                 <span className="checkmark"></span>
               </label>
-              <label className="container">HTML and CSS
+              <label className="container"><Trans>HTML and CSS</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="HTML and CSS" />
                 <span className="checkmark"></span>
               </label>
-              <label className="container">JavaScript (React)
+              <label className="container"><Trans>JavaScript (React)</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="JavaScript (React)" />
                 <span className="checkmark"></span>
               </label>
-              <label className="container">Azure ML
+              <label className="container"><Trans>Azure ML</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Azure ML" />
                 <span className="checkmark"></span>
               </label>
-              <label className="container">Python
+              <label className="container"><Trans>Python</Trans>
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Python" />
                 <span className="checkmark"></span>
               </label>
@@ -156,45 +152,45 @@ export default function Contact() {
 
             <div>
               <p>
-                Message (Brief description of your needs):
+                <Trans>Message (Brief description of your needs)</Trans>:
                 <textarea className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" ></textarea>
               </p>
             </div>
             <div data-netlify-recaptcha="true"></div>
 
-            <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}>Hire Us</button><br />
+            <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}><Trans>Hire Us</Trans></button><br />
           </form>
-          <p style={{ paddingTop: '20px' }}>Or send us an email to&nbsp;<a href="mailto:forkhivetech@gmail.com">forkhivetech@gmail.com</a></p>
+          <p style={{ paddingTop: '20px' }}><Trans>Or send us an email to</Trans>&nbsp;<a href="mailto:forkhivetech@gmail.com"><Trans>forkhivetech@gmail.com</Trans></a></p>
         </div>
 
 
         <div className="col-8">
-          <h4 className="mt-4">Business Hours</h4>
+          <h4 className="mt-4"><Trans>Business Hours</Trans></h4>
           <table className="table table-sm opening-hours-table">
             <tbody>
               <tr>
-                <td className="day font-weight-bold">Monday</td>
-                <td className="opens">9:00am - 5:00pm</td>
+                <td className="day font-weight-bold"><Trans>Monday</Trans></td>
+                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr  className={`${darkMode ? 'dark-mode' : ''}`} >
                 <td className="day font-weight-bold">Tuesday</td>
-                <td className="opens">9:00am - 5:00pm</td>
+                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr>
-                <td className="day font-weight-bold">Wednesday</td>
-                <td className="opens">9:00am - 5:00pm</td>
+                <td className="day font-weight-bold"><Trans>Wednesday</Trans></td>
+                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
-                <td className="day font-weight-bold">Thursday</td>
-                <td className="opens">9:00am - 5:00pm</td>
+                <td className="day font-weight-bold"><Trans>Thursday</Trans></td>
+                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr>
-                <td className="day font-weight-bold">Friday</td>
-                <td className="opens">9:00am - 5:00pm</td>
+                <td className="day font-weight-bold"><Trans>Friday</Trans></td>
+                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
-                <td className="day font-weight-bold">Saturday</td>
-                <td className="opens">12:00pm - 5:00pm</td>
+                <td className="day font-weight-bold"><Trans>Saturday</Trans></td>
+                <td className="opens"><Trans>12:00pm - 5:00pm</Trans></td>
               </tr>
             </tbody>
           </table>
@@ -204,3 +200,17 @@ export default function Contact() {
     </Layout >
   )
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

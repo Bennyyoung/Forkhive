@@ -1,20 +1,42 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 // @ts-ignore
-import Link from 'gatsby-plugin-transition-link';
+// import Link from 'gatsby-plugin-transition-link';
 import logo from '../../images/forkhive_logo.jpeg'
 import Socials from '../Socials/Socials';
+import { useTranslation, Trans, Link } from "gatsby-plugin-react-i18next"
+import { useSelector } from 'react-redux';
+import { RootAction, RootState } from '../../redux/store';
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  const { t } = useTranslation()
+
+  console.log('t', t('Home', 'Home'))
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
+  // console.log('data', data) 
+
+  // const currentLanguageSelected = useSelector((state: RootState) => state.languageMode.languageMode)
+  // console.log('currentLanguageSelected', currentLanguageSelected)
+
+  // // Extracting translations for the current language
+  // const translations = data.locales.edges.find((edge: { node: { language: string; }; }) => edge.node.language === `${currentLanguageSelected}`)?.node.data;
+  // console.log('translations', translations)
+  // const parsedTranslations = JSON.parse(translations);
+  // if (translations) {
+  //   console.log('Home translation:', JSON.parse(translations).Home); // or translations.Home
+  // } else {
+  //   console.log('Translations not found or undefined');
+  // }
+
+
 
   return (
     <footer className="footer-strip">
@@ -22,20 +44,20 @@ const Footer = () => {
         <div className="row">
           <div className="col-12">
             <div className="footer">
-              <Link to="/">
+              <Link to="/" placeholder={undefined}>
                 <img alt="Figurit Homepage" src={logo} style={{ height: '3rem', width: '7rem' }} />
               </Link>
               <ul className="footer-menu">
                 <li>
                   {' '}
-                  <Link style={{ textDecoration: 'none' }} to="/">Home</Link>
+                  <Link style={{ textDecoration: 'none' }} to="/" placeholder={undefined}><Trans>Home</Trans></Link>
                 </li>
                 <li>
                   {' '}
-                  <Link style={{ textDecoration: 'none' }} to="/contact">Contact</Link>
+                  <Link style={{ textDecoration: 'none' }} to="/contact" placeholder={undefined}><Trans>Contact</Trans></Link>
                 </li>
                 <li className="copyright" style={{ fontSize: '13px' }}>
-                  ©{' '}{new Date().getFullYear()}{' '}{data.site.siteMetadata.title}. All rights reserved
+                  {/* ©{' '}{new Date().getFullYear()}{' '}{data.site.siteMetadata.title}. All rights reserved */}
                 </li>
                 <Socials />
               </ul>
@@ -46,5 +68,21 @@ const Footer = () => {
     </footer>
   );
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
+
+console.log('query', query)
 
 export default Footer

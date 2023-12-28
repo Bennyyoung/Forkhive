@@ -2,6 +2,7 @@ import { PageProps, graphql } from 'gatsby';
 import React from 'react'
 import SEO from '../../components/SEO/SEO'
 import Layout from '../../layouts/index'
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 interface IAbout extends PageProps {
     data: {
@@ -29,7 +30,7 @@ const About: React.FC<IAbout> = (props) => {
                 <div className="container" style={{ padding: '0px 120px' }}>
                     <div className="row">
                         <div style={{ fontWeight: 'bold' }} className="col-12">
-                            <h1>OVER 4 YEARS IN THE FIELD</h1>
+                            <h1><Trans>OVER 4 YEARS IN THE FIELD</Trans></h1>
                         </div>
                     </div>
                 </div>
@@ -41,8 +42,8 @@ const About: React.FC<IAbout> = (props) => {
                         <div key={index} className="col-12 col-md-4 mb-1">
                             <div className="card service">
                                 <div className="card-content">
-                                    <h5 style={{ fontWeight: 'bold' }}>{edge.node.frontmatter.title}</h5>
-                                    <p style={{ wordSpacing: '0.2rem' }}>{edge.node.excerpt}</p>
+                                    <h5 style={{ fontWeight: 'bold' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
+                                    <p style={{ wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +55,7 @@ const About: React.FC<IAbout> = (props) => {
 }
 
 export const query = graphql`
-    query AboutQuery {
+    query ($language: String!) {
         allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/about/" } }
             sort: { frontmatter: { date: DESC }} 
@@ -68,6 +69,16 @@ export const query = graphql`
                 }
             }
         }
+
+        locales: allLocale(filter: {language: {eq: $language}}) {
+            edges {
+              node {
+                ns
+                data
+                language
+              }
+            }
+          }
     }
 `
 

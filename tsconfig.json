@@ -15,6 +15,6 @@
     "types": ["node", "react", "react-dom"],
     "lib": ["dom", "esnext"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "i18n.ts, languages.ts"],
   "exclude": ["node_modules", ".cache", "public"]
 }
