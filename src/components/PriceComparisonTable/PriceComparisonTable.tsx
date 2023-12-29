@@ -215,7 +215,7 @@ function PriceComparisonTable() {
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
-                                    anchorSelect='seo'
+                                    anchorSelect='.seo'
                                     // @ts-ignore
                                     content={<Trans>Get found on Google and other search engines with help Gatsby or Netlify</Trans>}
                                     style={{ width: '15rem' }}
@@ -227,8 +227,8 @@ function PriceComparisonTable() {
                         </tr>
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>
-                            <td><b>₦500,000+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
-                            <td><b>₦1million+ </b>in addition to <b>recurrent costs</b> (<b>Note: </b>Prices are subject to the complexity of the project and nature of the market)</td>
+                            <td><b><Trans>₦500,000+</Trans> </b><Trans>in addition to</Trans> <b>recurrent costs</b> (<b><Trans>Note</Trans>: </b><Trans>Prices are subject to the complexity of the project and nature of the market</Trans>)</td>
+                            <td><b><Trans>₦1million+</Trans> </b><Trans>in addition to</Trans> <b>recurrent costs</b> (<b><Trans>Note</Trans>: </b><Trans>Prices are subject to the complexity of the project and nature of the market</Trans>)</td>
                         </tr>
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td></td>

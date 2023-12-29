@@ -16,7 +16,7 @@ const TechStack = () => {
           techStack.map((el, index) => (
             <div key={`grid-item_${index}`} className={`grid-item grid-item_${index}`}>
               <img src={el.img} alt={el.text.toLowerCase()} />
-              <h6><strong><Trans>{el.text}</Trans></strong></h6>
+              <h6><strong>{el.text}</strong></h6>
 
               <Tooltip
                 anchorSelect={`.grid-item_${index}`}
@@ -29,7 +29,7 @@ const TechStack = () => {
         }
         <div className='rapid-miner'>
           <img src={rapid_miner} width="210px" height="68px" />
-          <h6><strong><Trans>RAPID MINER</Trans></strong></h6>
+          <h6><strong>RAPID MINER</strong></h6>
           <Tooltip
                 anchorSelect={`.rapid-miner`}
                 // @ts-ignore

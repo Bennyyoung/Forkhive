@@ -21,8 +21,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
   const stringWithPTags = html.toString();
 
 const stringWithoutPTags = stringWithPTags.replace(/<\/?p>/g, '');
-  console.log('stringWithoutPTags', stringWithoutPTags)
-  console.log('html', html)
+
 
 
   return (
@@ -34,7 +33,7 @@ const stringWithoutPTags = stringWithPTags.replace(/<\/?p>/g, '');
             <div className="col-12 col-md-8">
               <div className="service service-single">
                 <h1 className="title"><Trans>{title}</Trans></h1>
-                <div className="content"><p><Trans>{stringWithoutPTags}</Trans></p></div>
+                <div className="content"><Trans>{stringWithoutPTags}</Trans></div>
               </div>
             </div>
           </div>
