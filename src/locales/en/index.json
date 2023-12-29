@@ -10,6 +10,7 @@
     "About": "About",
     "Pricing": "Pricing",
     "Team": "Team",
+    "Services": "Services",
     "Who we are": "Who we are",
     "Pricing built for businesses of all sizes": "Pricing built for businesses of all sizes",
     "Our team of Engineers": "Our team of Engineers",
@@ -22,6 +23,13 @@
     "Machine Learning": "Machine Learning",
     "Mobile Development": "Mobile Development",
     "Web Design/Development": "Web Design/Development",
+    "Our team of engineers deeply explore data and ways to record, store and analyze data to extract useful information and our end goal is to…": "Our team of engineers deeply explore data and ways to record, store and analyze data to extract useful information and our end goal is to…",
+
+    "Here at Team ML we focus on making use of AI algorithms by providing sytems the ability to automatically learn and in improve from…": "Here at Team ML we focus on making use of AI algorithms by providing sytems the ability to automatically learn and in improve from…",
+    
+    "For mobile development we utilise (React Native) which is a Mobile App Development Framework that enables the development of multi-platform…": "For mobile development we utilise (React Native) which is a Mobile App Development Framework that enables the development of multi-platform…",
+    
+    "We create websites and web apps of high quality that are highly responsive and user friendly using one of the best and fastest mobile…": "We create websites and web apps of high quality that are highly responsive and user friendly using one of the best and fastest mobile…",
     "Our AI Team focuses on writing algorithms and leveraging on existing one to maximise human efficiency in business and home at large": "Our AI Team focuses on writing algorithms and leveraging on existing one to maximise human efficiency in business and home at large",
     "Our team of engineers deeply explore data and ways to record, store and analyze data to extract useful information and our end goal is to gain insights and knowledge from any type of data both structured and unstructured": "Our team of engineers deeply explore data and ways to record, store and analyze data to extract useful information and our end goal is to gain insights and knowledge from any type of data both structured and unstructured",
     "Here at Team ML we focus on making use of AI algorithms by providing sytems the ability to automatically learn and in improve from experience without being explicitly programmed, we also focus on the development of computer programs that can access data and use it to learn for themselves": "Here at Team ML we focus on making use of AI algorithms by providing sytems the ability to automatically learn and in improve from experience without being explicitly programmed, we also focus on the development of computer programs that can access data and use it to learn for themselves",
@@ -91,7 +99,9 @@
     "Pricing Built For Businesses Of All Sizes": "Pricing Built For Businesses Of All Sizes",
     "Before building a website for your business, it is important to know the costs involved. This will ensure you budget adequately for the project. Some business owners think building a website is a one-off thing. You just build it and you go to sleep. However, there are fixed costs and recurrent costs involved in building a business website": "Before building a website for your business, it is important to know the costs involved. This will ensure you budget adequately for the project. Some business owners think building a website is a one-off thing. You just build it and you go to sleep. However, there are fixed costs and recurrent costs involved in building a business website",
     "Features": "Features",
+    "Basic Plan (Suitable for Budget Applications)": "Basic Plan (Suitable for Budget Applications)",
     "Basic Plan (Suitable for Budget Applications) - ₦500,000+": "Basic Plan (Suitable for Budget Applications) - ₦500,000+",
+    "Pro Plan (Suitable for Medium to Enterprise Applications)": "Pro Plan (Suitable for Medium to Enterprise Applications)",
     "Pro Plan (Suitable for Medium to Enterprise Applications) - ₦1million+": "Pro Plan (Suitable for Medium to Enterprise Applications) - ₦1million+",
     "Integration of Social Media": "Integration of Social Media",
 
@@ -155,6 +165,8 @@
     "Training": "Training",
     "Full name": "Full name",
     "Phone number": "Phone number",
+    "Starting Date": "Starting Date",
+    "Finishing Date": "Finishing Date",
     "Attach a file (CV) Not mandatory": "Attach a file (CV) Not mandatory",
     "For the Training (Only for those undergoing the training)": "For the Training (Only for those undergoing the training)",
     "Basic Web Design": "Basic Web Design",
