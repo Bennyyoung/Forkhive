@@ -81,6 +81,16 @@ body.dark-mode {
   color: $background-color-light;
 }
 
+.dropdown {
+  background-color: $body-bg;
+
+}
+
+.dropdown.dark-mode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
+}
+
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
 // This prevents an unwanted focus outline from appearing around elements that
 // might still respond to pointer events.
