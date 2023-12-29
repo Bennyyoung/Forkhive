@@ -173,7 +173,7 @@ export default function Contact() {
                 <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr  className={`${darkMode ? 'dark-mode' : ''}`} >
-                <td className="day font-weight-bold">Tuesday</td>
+                <td className="day font-weight-bold"><Trans>Tuesday</Trans></td>
                 <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
               </tr>
               <tr>
