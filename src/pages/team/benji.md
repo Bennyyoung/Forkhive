@@ -11,6 +11,4 @@ linkedinurl: ' https://linkedin.com/in/benjamin-effiong-react'
 twitterurl: ' https://twitter.com/EffiongBenjami2'
 weight: 2
 ---
-<p style='text-align: justify;'>
-    Benajamin Effiong is the Founder and CEO of Forkhive. He also has a sound knowledge of the tech industry and its business operation.
-</p>
+Benjamin Effiong is the Founder and CEO of Forkhive. He also has a sound knowledge of the tech industry and its business operation.

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, PageProps } from 'gatsby';
 import Layout from '../layouts/index';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 interface ITeam extends PageProps {
   data: {
@@ -16,6 +17,11 @@ interface ITeam extends PageProps {
 const Team: React.FC<ITeam> = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
+  const stringWithPTags = html.toString();
+
+const stringWithoutPTags = stringWithPTags.replace(/<\/?p>/g, '');
+console.log('stringWithoutPTags', stringWithoutPTags)
+console.log('html', html)
 
   return (
     <Layout bodyClass="page-team">
@@ -24,8 +30,10 @@ const Team: React.FC<ITeam> = ({ data }) => {
           <div className="row justify-content-start">
             <div className="col-12 col-md-8">
               <div className="team">
-                <h1 className="title">{title}</h1>
-                <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+                <h1 className="title"><Trans>{title}</Trans></h1>
+                {/* <div className="content" dangerouslySetInnerHTML={{ __html: html }} /> */}
+                <div className="content"><p><Trans>{stringWithoutPTags}</Trans></p></div>
+
               </div>
             </div>
           </div>

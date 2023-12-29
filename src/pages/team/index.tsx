@@ -31,6 +31,7 @@ interface ITeam extends PageProps {
 const Team: React.FC<ITeam> = (props) => {
   const teams = props.data.allMarkdownRemark.edges;
   const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
+  console.log('teams ', teams )
   return (
     <Layout bodyClass="page-teams">
       <SEO title="Team" meta={[]} keywords={[]} />
