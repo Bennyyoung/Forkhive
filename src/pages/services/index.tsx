@@ -41,7 +41,7 @@ const Services: React.FC<IServices> = (props) => {
             <div key={edge.node.frontmatter.path} className="col-single mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
-                  <h5 style={{fontWeight: 'bold'}}>
+                  <h5 style={{fontWeight: 'bold', textAlign: 'center'}}>
                     <Link to={edge.node.frontmatter.path}><Trans>{edge.node.frontmatter.title}</Trans></Link>
                   </h5>
                   <p style={{wordSpacing: '0.2rem'}}><Trans>{edge.node.excerpt}</Trans></p>
