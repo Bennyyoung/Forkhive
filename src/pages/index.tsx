@@ -147,7 +147,7 @@ const Home: React.FC<IHome> = (props) => {
         </div>
       </div>
 
-      <div className="container" style={{margin: '80px 0px'}}>
+      <div className="container text-center" style={{marginBottom: '5rem'}}>
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong><Trans>Our Features</Trans></strong></h2>
