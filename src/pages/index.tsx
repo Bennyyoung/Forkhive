@@ -87,7 +87,7 @@ const Home: React.FC<IHome> = (props) => {
 
       <div className='container mt-4'>
         <div className='row'>
-          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
             <h2><strong><Trans>About</Trans></strong></h2>
             <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>
               <Trans>Who we are</Trans>
@@ -96,14 +96,14 @@ const Home: React.FC<IHome> = (props) => {
               <Trans>About</Trans>
             </Link>
           </div>
-          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
             <h2><strong><Trans>Pricing</Trans></strong></h2>
             <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Pricing built for businesses of all sizes</Trans></p>
             <Link className="button button-primary mt-2" to="/pricing" placeholder={undefined}>
               <Trans>Pricing</Trans>
             </Link>
           </div>
-          <div className="text-center col-md-4 col-2 mb-1 mt-1">
+          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
             <h2><strong><Trans>Team</Trans></strong></h2>
             <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Our team of Engineers</Trans></p>
             <Link className="button button-primary mt-2" to="/team" placeholder={undefined}>

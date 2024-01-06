@@ -8,14 +8,25 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
+        gap: 10px;
     }
     h6{
         font-size: 0.8rem;
     }
 }
+@media screen and (max-width: 375px) {
+  /* Additional styling for smaller screens */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 1px; */
+    }
+    h6{
+        font-size: 1rem;
+    }
+}
 
 
 .grid-item {
-    padding: '2px'
+    padding: 5px
 }

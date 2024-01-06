@@ -28,7 +28,7 @@ const TechStack = () => {
           ))
         }
         <div className='rapid-miner'>
-          <img src={rapid_miner} width="200px" height="60px" />
+          <img src={rapid_miner} width="190px" height="60px" />
           <h6><strong>RAPID MINER</strong></h6>
           <Tooltip
                 anchorSelect={`.rapid-miner`}
