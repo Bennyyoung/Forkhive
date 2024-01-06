@@ -39,7 +39,7 @@ const About: React.FC<IAbout> = (props) => {
             <div className="container pb-6">
                 <div className="row">
                     {about.map((edge, index) => (
-                        <div key={index} className="col-12 col-md-4 mb-1">
+                        <div key={index} className="col-single mb-1">
                             <div className="card service">
                                 <div className="card-content">
                                     <h5 style={{ fontWeight: 'bold' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>

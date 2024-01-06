@@ -3,6 +3,18 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  /* Additional styling for smaller screens */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+    h6{
+        font-size: 0.8rem;
+    }
+}
+
 
 .grid-item {
     padding: '2px'

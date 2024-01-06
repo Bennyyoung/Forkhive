@@ -119,7 +119,7 @@ const Home: React.FC<IHome> = (props) => {
             <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong><Trans>Our Services</Trans></strong></h2>
           </div>
           {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+            <div key={edge.node.frontmatter.path} className="col-single">
               <div className="card service">
                 <div className="card-content">
                   <h5 style={{ fontWeight: 'bold' }}>
@@ -133,7 +133,7 @@ const Home: React.FC<IHome> = (props) => {
 
 
 
-          <div className="col-12 text-center">
+          <div className="col-12 text-center" style={{marginTop: '80px'}}>
             <TeckStack />
           </div>
 
@@ -147,7 +147,7 @@ const Home: React.FC<IHome> = (props) => {
         </div>
       </div>
 
-      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
+      <div className="container" style={{margin: '80px 0px'}}>
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong><Trans>Our Features</Trans></strong></h2>
@@ -159,7 +159,7 @@ const Home: React.FC<IHome> = (props) => {
 
           {/* Everything in our features could be found in the data/features.json */}
           {json.map(edge => (
-            <div key={edge.node.id} className="col-md-4">
+            <div key={edge.node.id} className="col-single">
               <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
                 {edge.node.image && (
                   <div className="feature-image">

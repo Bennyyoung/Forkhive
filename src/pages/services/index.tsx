@@ -38,7 +38,7 @@ const Services: React.FC<IServices> = (props) => {
       <div className="container pb-6">
         <div className="row">
           {services.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-md-4 col-2 mb-1">
+            <div key={edge.node.frontmatter.path} className="col-single mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h5 style={{fontWeight: 'bold'}}>
