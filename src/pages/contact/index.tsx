@@ -55,7 +55,7 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
           >
-            <h3 className="mt-4"><Trans>Your request</Trans></h3>
+            {/* <h3 className="mt-4"><Trans>Your request</Trans></h3>
             <label className="container"><Trans>Create a product</Trans>
               <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Create a product" />
               <span className="checkmark"></span>
@@ -67,7 +67,7 @@ export default function Contact() {
             <label className="container"><Trans>Training</Trans>
               <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Training" />
               <span className="checkmark"></span>
-            </label>
+            </label> */}
 
             {/* <label for="training" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
               Training
@@ -102,7 +102,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <label>
+            {/* <label>
               <Trans>Starting Date</Trans>:
             </label>
             <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
@@ -117,9 +117,9 @@ export default function Contact() {
                 <Trans>Attach a file (CV) Not mandatory</Trans>: 📂
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
               </p>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <p>
                 <Trans>For the Training (Only for those undergoing the training)</Trans>
               </p>
@@ -148,7 +148,7 @@ export default function Contact() {
                 <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Python" />
                 <span className="checkmark"></span>
               </label>
-            </div>
+            </div> */}
 
             <div>
               <p>
@@ -164,7 +164,7 @@ export default function Contact() {
         </div>
 
 
-        <div className="col-8">
+        {/* <div className="col-8">
           <h4 className="mt-4"><Trans>Business Hours</Trans></h4>
           <table className="table table-sm opening-hours-table">
             <tbody>
@@ -194,7 +194,7 @@ export default function Contact() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
 
     </Layout >

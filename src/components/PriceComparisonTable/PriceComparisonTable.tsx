@@ -36,8 +36,8 @@ function PriceComparisonTable() {
                                     style={{ width: '15rem' }}
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -52,8 +52,8 @@ function PriceComparisonTable() {
                                     style={{ width: '15rem' }}
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr>
@@ -69,8 +69,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -86,8 +86,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr>
@@ -103,8 +103,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -120,8 +120,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr>
@@ -137,8 +137,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -154,8 +154,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className="fa fa-check"><Trans>Mon-Fri</Trans></i></td>
-                            <td><i className="fa fa-check"><Trans>Mon-Sun</Trans></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Fri</Trans></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Sun</Trans></i></td>
                         </tr>
 
                         <tr>
@@ -172,7 +172,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -189,7 +189,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr>
@@ -206,7 +206,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -223,7 +223,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className="fa fa-check"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>

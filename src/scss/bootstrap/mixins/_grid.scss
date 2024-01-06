@@ -15,6 +15,7 @@
   -ms-flex: 0 0 33.333333%;
   flex: 1 1 33.333333%;
   max-width: 33.333333%;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -24,6 +25,11 @@
     flex: 1 1 50%;
     max-width: 50%;
   }
+  .col-single{
+    max-width: 100%;
+    margin: 1rem
+    // paddin
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -32,6 +38,15 @@
     -ms-flex: 0 0 33.333333%;
     flex: 1 1 33.333333%;
     max-width: 33.333333%;
+  }
+  .col-single{
+    -ms-flex: 0 0 33.333333%;
+    flex: 1 1 33.333333%;
+    max-width: 33.333333%;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
