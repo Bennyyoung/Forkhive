@@ -42,7 +42,7 @@ const About: React.FC<IAbout> = (props) => {
                         <div key={index} className="col-single mb-1">
                             <div className="card service">
                                 <div className="card-content">
-                                    <h5 style={{ fontWeight: 'bold' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
+                                    <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
                                     <p style={{ wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
                                 </div>
                             </div>

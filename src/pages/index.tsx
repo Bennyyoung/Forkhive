@@ -122,7 +122,7 @@ const Home: React.FC<IHome> = (props) => {
             <div key={edge.node.frontmatter.path} className="col-single">
               <div className="card service">
                 <div className="card-content">
-                  <h5 style={{ fontWeight: 'bold' }}>
+                  <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}>
                     <Link style={{ textDecoration: 'none' }} to={edge.node.frontmatter.path} placeholder={undefined}><Trans>{edge.node.frontmatter.title}</Trans></Link>
                   </h5>
                   <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
