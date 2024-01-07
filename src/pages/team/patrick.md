@@ -13,5 +13,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Patrick is a Senior Backend Developer.
+    Patrick is an adept Senior Backend Software Engineer skilled in Node-TS and JavaScript.
 </p>

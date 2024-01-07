@@ -11,4 +11,6 @@ linkedinurl: ' https://linkedin.com/in/benjamin-effiong-react'
 twitterurl: ' https://twitter.com/EffiongBenjami2'
 weight: 2
 ---
-Benjamin Effiong is the Founder and CEO of Forkhive. He also has a sound knowledge of the tech industry and its business operation.
+<p style='text-align: justify'>
+    Benjamin Effiong, the visionary Founder and CEO of Forkhive, possesses extensive expertise as a Senior Frontend Software Engineer specializing in React-TS and JavaScript. His profound understanding of the tech industry and its operational dynamics drives Forkhive's success.
+</p>
