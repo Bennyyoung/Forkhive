@@ -13,5 +13,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Micheal is a Senior Fullstack Software Engineer (MERN, GraphQL).
+    Micheal is an accomplished Senior Fullstack Software Engineer adept in MERN and GraphQL technologies.
 </p>

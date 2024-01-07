@@ -13,5 +13,5 @@ weight: 2
 ---
 
 <p style='text-align: justify'>
-    Leslie is a Software Engineer.
+    Leslie is a tech enthusiast specializing in MERN Stack development.
 </p>
