@@ -31,7 +31,7 @@ interface ITeam extends PageProps {
 const Team: React.FC<ITeam> = (props) => {
   const teams = props.data.allMarkdownRemark.edges;
   const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
-  console.log('teams ', teams )
+  console.log('teams ', teams)
   return (
     <Layout bodyClass="page-teams">
       <SEO title="Team" meta={[]} keywords={[]} />
@@ -66,23 +66,27 @@ const Team: React.FC<ITeam> = (props) => {
                     <h2 className="card-title">{edge.node.frontmatter.title}</h2>
                     <ul className="card-meta">
                       <li style={{ paddingBottom: '4px' }}>
-                        <span className={`${darkMode ? 'dark-mode': ''}`} style={{ fontWeight: '510' }}><Trans>{edge.node.frontmatter.jobtitle}</Trans></span>
+                        <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '510' }}><Trans>{edge.node.frontmatter.jobtitle}</Trans></span>
                         {/* <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span> */}
                       </li>
                       <li style={{ paddingBottom: '4px' }}>
                         <span style={{ fontWeight: '210' }}><Trans>{edge.node.frontmatter.subtitle}</Trans></span>
                       </li>
-                      <li className={`${darkMode ? 'dark-mode': ''}`} style={{ paddingBottom: '4px' }}><b>LinkedIn:</b>
-                        <a target="_blank" href={edge.node.frontmatter.linkedinurl}>
-                          <Trans>{edge.node.frontmatter.linkedinurl}</Trans>
-                        </a>
-                      </li>
-                      <li className={`${darkMode ? 'dark-mode': ''}`} style={{ paddingBottom: '4px' }}><b>Twitter:</b>
+                      {
+                        edge.node.frontmatter.linkedinurl && (
+                          <li className={`${darkMode ? 'dark-mode' : ''}`} style={{ paddingBottom: '4px' }}><b>LinkedIn:</b>
+                            <a target="_blank" href={edge.node.frontmatter.linkedinurl}>
+                              <Trans>{edge.node.frontmatter.linkedinurl}</Trans>
+                            </a>
+                          </li>
+                        )
+                      }
+                      <li className={`${darkMode ? 'dark-mode' : ''}`} style={{ paddingBottom: '4px' }}><b>Twitter:</b>
                         <a target="_blank" href={edge.node.frontmatter.twitterurl}>
                           <Trans>{edge.node.frontmatter.twitterurl}</Trans>
                         </a>
                       </li>
-                      <li className={`${darkMode ? 'dark-mode': ''}`}><b><Trans>Email</Trans>:</b>
+                      <li className={`${darkMode ? 'dark-mode' : ''}`}><b><Trans>Email</Trans>:</b>
                         <a href={`mailto: ${edge.node.frontmatter.email}`}><Trans>{edge.node.frontmatter.email}</Trans></a>
                       </li>
                     </ul>
@@ -90,7 +94,6 @@ const Team: React.FC<ITeam> = (props) => {
                 </div>
                 <div
                   className="team-content"
-                  style={{width: '60%'}}
                   dangerouslySetInnerHTML={{ __html: edge.node.html }}
 
                 />
