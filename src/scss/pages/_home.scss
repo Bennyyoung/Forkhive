@@ -1,18 +1,19 @@
 .page-home {
-  // background-image: url('../images/undraw_Landing_page.inline.svg');
-  background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;
   }
   @include media-breakpoint-up(md) {
-    background-size: 85%;
-    background-position: 199px -80px;
+    background-image: url('../images/undraw_Landing_page.inline.svg');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 499px -80px;
   }
   @include media-breakpoint-up(lg) {
+    background-image: url('../images/undraw_Landing_page.inline.svg');
+    background-repeat: no-repeat;
     background-size: 60%;
     background-position: 100% -110px;
   }
+
 }
