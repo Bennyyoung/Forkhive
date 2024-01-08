@@ -90,6 +90,7 @@ const Team: React.FC<ITeam> = (props) => {
                 </div>
                 <div
                   className="team-content"
+                  style={{width: '60%'}}
                   dangerouslySetInnerHTML={{ __html: edge.node.html }}
 
                 />
