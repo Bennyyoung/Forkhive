@@ -2,6 +2,7 @@ import React from "react"
 import { Provider } from "react-redux"
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./src/redux/store"
+import { Analytics } from '@vercel/analytics/react';
 
 // eslint-disable-next-line react/display-name,react/prop-types
 export default ({ element }) => {
@@ -14,6 +15,7 @@ export default ({ element }) => {
             store={store}>
             <PersistGate loading={null} persistor={persistor}>
                     {element}
+                    <Analytics />
             </PersistGate>
         </Provider>
     )
