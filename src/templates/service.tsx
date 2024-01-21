@@ -3,6 +3,8 @@ import { graphql, PageProps } from 'gatsby';
 import SEO from '../components/SEO/SEO';
 import Layout from '../layouts/index';
 import { Trans } from 'gatsby-plugin-react-i18next';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
 
 interface ServiceProps extends PageProps {
   data: {
@@ -17,6 +19,8 @@ interface ServiceProps extends PageProps {
 
 const Service: React.FC<ServiceProps> = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
+  const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
+
   const { html } = data.markdownRemark;
   const stringWithPTags = html.toString();
 
@@ -27,7 +31,7 @@ const stringWithoutPTags = stringWithPTags.replace(/<\/?p>/g, '');
   return (
     <Layout bodyClass="page-service">
       <SEO title={title} meta={[]} keywords={[]} />
-      <div className="strip strip-white strip-diagonal">
+      <div className={`strip strip-white strip-diagonal ${darkMode ? 'dark-mode' : ''}`}>
         <div className="container pt-4 pt-md-10">
           <div className="row justify-content-start">
             <div className="col-12 col-md-8">
