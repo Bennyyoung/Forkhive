@@ -85,34 +85,6 @@ const Home: React.FC<IHome> = (props) => {
         <Call button={true} />
       </div>
 
-      <div className='container mt-4'>
-        <div className='row'>
-          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
-            <h2><strong><Trans>About</Trans></strong></h2>
-            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>
-              <Trans>Who we are</Trans>
-            </p>
-            <Link className="button button-primary mt-2" to="/about" placeholder={undefined}>
-              <Trans>About</Trans>
-            </Link>
-          </div>
-          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
-            <h2><strong><Trans>Pricing</Trans></strong></h2>
-            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Pricing built for businesses of all sizes</Trans></p>
-            <Link className="button button-primary mt-2" to="/pricing" placeholder={undefined}>
-              <Trans>Pricing</Trans>
-            </Link>
-          </div>
-          <div className="text-center col-single mb-1 mt-1" style={{width: '100%'}}>
-            <h2><strong><Trans>Team</Trans></strong></h2>
-            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Our team of Engineers</Trans></p>
-            <Link className="button button-primary mt-2" to="/team" placeholder={undefined}>
-              <Trans>Team</Trans>
-            </Link>
-          </div>
-        </div>
-      </div>
-
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
@@ -131,23 +103,50 @@ const Home: React.FC<IHome> = (props) => {
             </div>
           ))}
 
-
-
-          <div className="col-12 text-center" style={{marginTop: '80px'}}>
-            <TeckStack />
-          </div>
-
-
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services" placeholder={undefined}>
               {/* View All Services */}
               <Trans>View All Services</Trans>
             </Link>
           </div>
+
+
+          <div className="col-12 text-center" style={{ marginTop: '80px' }}>
+            <TeckStack />
+          </div>
+
         </div>
       </div>
 
-      <div className="container text-center" style={{marginBottom: '5rem'}}>
+      {/* <div className='container mt-4'>
+        <div className='row'>
+          <div className="text-center col-single mb-1 mt-1" style={{ width: '100%' }}>
+            <h2><strong><Trans>About</Trans></strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}>
+              <Trans>Who we are</Trans>
+            </p>
+            <Link className="button button-primary mt-2" to="/about" placeholder={undefined}>
+              <Trans>About</Trans>
+            </Link>
+          </div>
+          <div className="text-center col-single mb-1 mt-1" style={{ width: '100%' }}>
+            <h2><strong><Trans>Pricing</Trans></strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Pricing built for businesses of all sizes</Trans></p>
+            <Link className="button button-primary mt-2" to="/pricing" placeholder={undefined}>
+              <Trans>Pricing</Trans>
+            </Link>
+          </div>
+          <div className="text-center col-single mb-1 mt-1" style={{ width: '100%' }}>
+            <h2><strong><Trans>Team</Trans></strong></h2>
+            <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>Our team of Engineers</Trans></p>
+            <Link className="button button-primary mt-2" to="/team" placeholder={undefined}>
+              <Trans>Team</Trans>
+            </Link>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="container text-center" style={{ marginBottom: '5rem', marginTop: '5rem' }}>
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong><Trans>Our Features</Trans></strong></h2>
