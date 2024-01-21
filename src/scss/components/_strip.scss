@@ -5,6 +5,9 @@
 .strip-white {
   background: white;
 }
+.strip-white.dark-mode {
+  background: #292a32;
+}
 .strip-diagonal {
   transform: skewY(5deg);
   padding-bottom: 50px;
