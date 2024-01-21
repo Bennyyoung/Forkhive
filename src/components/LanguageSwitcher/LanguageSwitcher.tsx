@@ -36,8 +36,8 @@ const LanguageSwitcher = () => {
             </div>
             {
                 openDropDown === true ? (
-                    <div style={{ position: 'absolute', top: '3.3rem', textAlign: 'center', padding: '0.5rem' }} className={`dropdown ${darkMode ? 'dark-mode' : ''}`}>
-                        <div className="main-menu" style={{ display: 'contents' }}>
+                    <div style={{ border: '2px solid #eba937',  position: 'absolute', top: '3.3rem', textAlign: 'center', padding: '0.4rem' }} className={`dropdown ${darkMode ? 'dark-mode' : ''}`}>
+                        <div className="main-menu" style={{ display: 'contents'}}>
                             {
                                 languages.map((lng, index) => (
                                     <ul key={index}>
