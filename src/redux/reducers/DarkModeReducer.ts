@@ -6,7 +6,7 @@ interface DarkModeState {
 }
 
 const initialState: DarkModeState = {
-  darkMode: false,
+  darkMode: true,
 };
 
 const DarkModeReducer = (state: DarkModeState = initialState, action: DarkModeActionTypes): DarkModeState => {

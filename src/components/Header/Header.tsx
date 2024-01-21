@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import Menu from '../Menu/Menu';
 import Hamburger from '../Hamburger/Hamburger';
 import MenuMobile from '../MenuMobile/MenuMobile';
-import logo from '../../images/forkhive_logo.jpeg'
+import forkhive_logo_dark_bg from '../../images/forkhive_logo_dark_bg.jpg'
+import forkhive_logo_white_bg from '../../images/forkhive_logo_white_bg.jpg'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
@@ -26,13 +27,23 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <img alt="Figurit Homepage" src={logo} />
+            {
+              darkMode === true ? 
+              (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '55px', width: '100px' }} />) 
+              : <img alt="Figurit Homepage" src={forkhive_logo_white_bg} style={{ height: '55px', width: '100px' }} />
+            }
             {/* <h2 style={{ color: '#EBA937'}}>Forkhive</h2> */}
           </Link>
         </div>
         <div className="logo-mobile">
           <Link to="/">
-            <img alt="Figurit Homepage" src={logo} style={{ height: '55px', width: '100px' }} />
+            {
+              darkMode === true ? 
+              (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '55px', width: '100px' }} />) 
+              : <img alt="Figurit Homepage" src={forkhive_logo_white_bg} style={{ height: '55px', width: '100px' }} />
+
+            }
+
           </Link>
         </div>
         <MenuMobile active={menuActive} />

@@ -17,7 +17,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ toggleMenu }) => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', width: '8rem', alignItems: 'flex-end' }}>
-      <div style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', width: '5.6rem'}}>
+      <div style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end'}}>
         <LanguageSwitcher />
         <DarkModeToggle />
       </div>
