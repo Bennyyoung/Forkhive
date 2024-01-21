@@ -81,6 +81,8 @@ body.dark-mode {
   color: $background-color-light;
 }
 
+
+
 .dropdown {
   background-color: $body-bg;
 
@@ -89,6 +91,13 @@ body.dark-mode {
 .dropdown.dark-mode {
   background-color: $background-color-dark;
   color: $background-color-light;
+}
+
+.dropdown .dropdown-text {
+  color: #eba937
+}
+.dropdown .dropdown-text.dark-mode {
+  color: #ffffff
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.

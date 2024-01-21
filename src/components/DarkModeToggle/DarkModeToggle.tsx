@@ -37,7 +37,7 @@ const DarkModeToggle = () => {
     }, [darkMode]);
 
     return (
-        <div>
+        <div style={{marginRight: '1rem'}}>
             {
                 darkMode ?
                     (<MoonIcon handleDarkModeFalse={handleDarkModeFalse} />)

@@ -24,32 +24,38 @@ const LanguageSwitcher = () => {
     }
 
     return (
-        <div>
+        <div style={{ paddingRight: '.5rem' }}>
             <div>
-                <button style={{ width: 'auto' }} onClick={() => setopenDropdown((prevState) => !prevState)} className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {selected}
+                <button style={{ width: 'auto' }} onClick={() => setopenDropdown((prevState) => !prevState)} className="button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span className={`dropdown-text ${darkMode ? 'dark-mode' : ''}`}>
+                        {selected.toUpperCase()}
+                    </span>
                 </button>
 
 
             </div>
             {
                 openDropDown === true ? (
-                    <div style={{ position: 'absolute', top: '3.3rem',textAlign: 'center', padding: '1.15rem' }} className={`dropdown ${darkMode ? 'dark-mode': ''}`}>
-                        {
-                            languages.map((lng, index) => (
-                                <div key={index}>
-                                    <Link
-                                        to={originalPath}
-                                        language={lng}
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            changeSelected(lng);
-                                        }} placeholder={undefined}>
-                                        {lng}
-                                    </Link>
-                                </div>
-                            ))
-                        }
+                    <div style={{ position: 'absolute', top: '3.3rem', textAlign: 'center', padding: '0.5rem' }} className={`dropdown ${darkMode ? 'dark-mode' : ''}`}>
+                        <div className="main-menu" style={{ display: 'contents' }}>
+                            {
+                                languages.map((lng, index) => (
+                                    <ul key={index}>
+                                        <li>
+                                            <Link
+                                                to={originalPath}
+                                                language={lng}
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    changeSelected(lng);
+                                                }} placeholder={undefined}>
+                                                {lng}
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                ))
+                            }
+                        </div>
                     </div>
                 ) : null
             }
