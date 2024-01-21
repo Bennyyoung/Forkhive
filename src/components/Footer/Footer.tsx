@@ -7,11 +7,14 @@ import Socials from '../Socials/Socials';
 import { useTranslation, Trans, Link } from "gatsby-plugin-react-i18next"
 import { useSelector } from 'react-redux';
 import { RootAction, RootState } from '../../redux/store';
+import subfooter_forkhive_logo_dark_bg from '../../images/subfooter_forkhive_logo_dark_bg.jpg'
 
 const Footer = () => {
   const { t } = useTranslation()
 
-  console.log('t', t('Home', 'Home'))
+  const darkMode = useSelector((state: RootState) => {
+    return state.darkMode.darkMode
+  }); // Accessing darkMode from Redux store
   // const data = useStaticQuery(graphql`
   //   query {
   //     site {
@@ -45,7 +48,8 @@ const Footer = () => {
           <div className="col-12">
             <div className="footer">
               <Link to="/" placeholder={undefined}>
-                <img alt="Figurit Homepage" src={logo} style={{ height: '3rem', width: '7rem' }} />
+                {<img alt="Figurit Homepage" src={subfooter_forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />
+                }
               </Link>
               <ul className="footer-menu">
                 <li>
