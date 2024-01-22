@@ -4,13 +4,13 @@ const Socials = () => {
     // const yaml = props.data.allDataYaml.edges;
     return (
         <li style={{ paddingBottom: '7px' }}>
-            <a href="https://www.instagram.com/forkhivetech/">
+            <a target='_blank' href="https://www.instagram.com/forkhivetech/">
                 <img src="https://img.icons8.com/color/24/000000/instagram-new.png" />
             </a>
-            <a href="https://web.facebook.com/Forkhive-107730554053669/">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61555859938895">
                 <img src="https://img.icons8.com/fluent/24/000000/facebook-new.png" />
             </a>
-            <a href="https://twitter.com/HubBloom">
+            <a target='_bblank' href="https://twitter.com/Forkhivetech">
                 <img src="https://img.icons8.com/fluent/24/000000/twitter.png" />
             </a>
         </li>
