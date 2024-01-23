@@ -66,16 +66,21 @@ const Home: React.FC<IHome> = (props) => {
       <Helmet>
         <meta
           name="Forkhive"
-          content="We are a Software Company, focused on Frontend Development (Web and Mobile), Design (Web and Mobile) and Data Science (AI and ML) to help build your startup ideas and team."
+          content="We are a dynamic Software Development Company with a primary emphasis on Frontend Development.
+
+          Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning"
         />
       </Helmet>
       <div className={`intro ${darkMode ? 'dark-mode' : ''} intro-small`}>
         <div className="container">
           <h2 style={{ color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}><Trans>Forkhive</Trans></h2>
-          <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}><Trans>Innovating African businesses</Trans></h5>
+          <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}><Trans>Building Bridges between Technology and Human Experience</Trans></h5>
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
             <Trans>
-              We are a Software Development Company, primarily focused on Frontend Web Development.
+              We are a dynamic Software Development Company with a primary emphasis on Frontend Development.
+              <br /><br />
+
+              Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning.
             </Trans>
           </p>
         </div>
