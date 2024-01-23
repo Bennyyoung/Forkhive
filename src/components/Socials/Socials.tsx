@@ -10,7 +10,7 @@ const Socials = () => {
             <a target="_blank" href="https://www.facebook.com/profile.php?id=61555859938895">
                 <img src="https://img.icons8.com/fluent/24/000000/facebook-new.png" />
             </a>
-            <a target='_bblank' href="https://twitter.com/Forkhivetech">
+            <a target='_blank' href="https://twitter.com/Forkhivetech">
                 <img src="https://img.icons8.com/fluent/24/000000/twitter.png" />
             </a>
         </li>

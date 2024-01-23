@@ -6,5 +6,4 @@ image: '/services/default.png'
 featured: true
 draft: false
 ---
-
-Here at Team ML we focus on making use of AI algorithms by providing sytems the ability to automatically learn and in improve from experience without being explicitly programmed, we also focus on the development of computer programs that can access data and use it to learn for themselves
+At Team ML, our primary focus revolves around harnessing AI algorithms to empower systems with the capability to autonomously learn and improve from experience without explicit programming. Additionally, we are dedicated to developing computer programs that can access data and autonomously enhance their learning capabilities.
