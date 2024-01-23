@@ -23,8 +23,15 @@ const Mernstack = () => (
     <div className="container" style={{ paddingTop: '2px', paddingBottom: '2px' }}>
       <p>
         <Trans>
-        Prior to embarking on the construction of a website for your business, gaining a comprehensive understanding of the associated costs is crucial. This proactive approach ensures that you allocate your budget effectively for the project. Contrary to a common misconception among business owners that website development is a one-time endeavor, it's essential to recognize both fixed and recurring costs entailed in establishing and maintaining a business website. This awareness enables you to make informed decisions and facilitates a more sustainable and successful online presence for your business.</Trans>
-        </p>
+          Prior to embarking on the construction of a website for your business, gaining a comprehensive understanding of the associated costs is crucial. This proactive approach ensures that you allocate your budget effectively for the project.
+        </Trans>
+        <br />
+        <br />
+        <Trans>
+          Contrary to a common misconception among business owners that website development is a one-time endeavor, it's essential to recognize both fixed and recurring costs entailed in establishing and maintaining a business website. This awareness enables you to make informed decisions and facilitates a more sustainable and successful online presence for your business.
+
+        </Trans>
+      </p>
       <PriceComparisonTable />
     </div>
 
