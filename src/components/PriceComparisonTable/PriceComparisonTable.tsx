@@ -228,19 +228,19 @@ function PriceComparisonTable() {
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>
                             <td>
-                                <b><Trans>Cost Details:</Trans></b> Starting at ₦500,000+ with additional recurrent costs. {' '}
+                                <b><Trans>Cost Details</Trans>:</b> <Trans>Starting at ₦500,000+ with additional recurrent costs.</Trans> {' '}
 
                                 <span style={{ color: 'red', fontStyle: 'italic' }}>
-                                    (<b>Please note:</b> Prices may vary based on the project's complexity and market dynamics.)
+                                    (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)
                                 </span>
                             </td>
 
 
                             <td>
-                                <b><Trans>Cost Details:</Trans></b> Starting at ₦1 million, with additional recurrent costs. {' '}
+                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at ₦1 million with additional recurrent costs.</Trans> {' '}
 
                                 <span style={{ color: 'red', fontStyle: 'italic' }}>
-                                    (<b>Please note:</b> Prices may vary based on the project's complexity and market dynamics.)
+                                    (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)
                                 </span>
                             </td>
                         </tr>
