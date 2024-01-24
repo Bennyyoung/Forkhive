@@ -87,11 +87,7 @@ const Home: React.FC<IHome> = (props) => {
         </div>
       </div>
 
-      <div className="container pb-0">
-        <Call button={true} />
-      </div>
-
-      <div className="container pt-8 pt-md-10">
+      <div className="container pt-8 pt-md-5">
         <div className="row justify-content-start">
           <div className="col-12">
             <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong><Trans>Our Services</Trans></strong></h2>
@@ -109,6 +105,10 @@ const Home: React.FC<IHome> = (props) => {
             </div>
           ))}
 
+          <div className="container pt-8 pt-md-5 pb-md-5">
+            <Call button={true} />
+          </div>
+
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services" placeholder={undefined}>
               {/* View All Services */}
@@ -123,6 +123,8 @@ const Home: React.FC<IHome> = (props) => {
 
         </div>
       </div>
+
+
 
       {/* <div className='container mt-4'>
         <div className='row'>
