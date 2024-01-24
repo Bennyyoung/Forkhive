@@ -78,8 +78,9 @@ const Home: React.FC<IHome> = (props) => {
           <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
             <Trans>
               We are a dynamic Software Development Company with a primary emphasis on Frontend Development.
-              <br /><br />
-
+            </Trans>
+            <br /><br />
+            <Trans>
               Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning.
             </Trans>
           </p>
