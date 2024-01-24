@@ -117,7 +117,11 @@
     "We ensure the websites of our clients' is well maintained as we stay in touch with them": "Mun tabbatar da cewa gidajen yanar gizon abokan cinikinmu suna da kyau yayin da muke hulɗa da su",
     "We design and develop with cutting edge technologies": "Muna tsarawa da haɓakawa tare da fasahar yankan",
     "We provide Artificial Intelligence, Machine Learning and Data Science consultations": "Muna ba da Hankali na Artificial, Koyan Injin da tuntuɓar Kimiyyar Bayanai",
-    "Price comparison Table": "Teburin kwatanta farashin",
+
+    "Prior to embarking on the construction of a website for your business, gaining a comprehensive understanding of the associated costs is crucial. This proactive approach ensures that you allocate your budget effectively for the project.": "Kafin fara gina gidan yanar gizon kasuwancin ku, samun cikakkiyar fahimta game da farashin haɗin gwiwa yana da mahimmanci. ",
+    "Contrary to a common misconception among business owners that website development is a one-time endeavor, it's essential to recognize both fixed and recurring costs entailed in establishing and maintaining a business website. This awareness enables you to make informed decisions and facilitates a more sustainable and successful online presence for your business.": "Sabanin rashin fahimta na gama gari tsakanin masu kasuwanci cewa haɓaka gidan yanar gizon aiki ne na lokaci ɗaya, yana da mahimmanci a gane ƙayyadaddun farashi da maimaitawa duka waɗanda ke tattare da kafawa da kiyaye gidan yanar gizon kasuwanci.",
+
+    "Price Comparison Table": "Teburin kwatanta farashin",
     "Pricing Built For Businesses Of All Sizes": "Farashi Gina Don Kasuwanci Na Duk Girma",
     "Before building a website for your business, it is important to know the costs involved. This will ensure you budget adequately for the project. Some business owners think building a website is a one-off thing. You just build it and you go to sleep. However, there are fixed costs and recurrent costs involved in building a business website": "Kafin gina gidan yanar gizo don kasuwancin ku, yana da mahimmanci ku san farashin da abin ya shafa. ",
     "Features": "Siffofin",
@@ -137,6 +141,13 @@
     "Does your website require database integration let us know": "Shin gidan yanar gizon ku yana buƙatar haɗin bayanai bari mu sani",
     "If someone loads pages of your site on multiple different days, they will be counted as a unique visitor for each day. If someone loads pages of your site during multiple different hours, they will  be counted as a unique visitor for each hour. You could be watching  this metric": "Idan wani ya loda shafukan rukunin yanar gizonku a cikin kwanaki daban-daban, za a ƙidaya su azaman baƙo na musamman na kowace rana. ",
     "Get found on Google and other search engines with help Gatsby or Netlify": "Samu akan Google da sauran injunan bincike tare da taimako Gatsby ko Netlify",
+
+    "Cost Details": "Cikakken Bayani",
+    "Starting at ₦500,000+ with additional recurrent costs.": "Farawa akan ₦500,000 tare da ƙarin farashi akai-akai.",
+    "Starting at ₦1 million with additional recurrent costs.": "Farawa daga ₦1 miliyan tare da ƙarin farashi na yau da kullun.",
+    "Please note": "Da fatan za a kula",
+    "Prices may vary based on the project's complexity and market dynamics.": "Farashi na iya bambanta dangane da sarkar aikin da yanayin kasuwa.",
+
     "₦500,000+": "₦500,000",
     "in addition to": "ban da",
     "recurrent costs": "m halin kaka",
