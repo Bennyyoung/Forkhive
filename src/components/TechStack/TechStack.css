@@ -1,11 +1,11 @@
-.grid-container {
+.tech-stack-grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
 }
 @media screen and (max-width: 768px) {
   /* Additional styling for smaller screens */
-    .grid-container {
+    .tech-stack-grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 375px) {
   /* Additional styling for smaller screens */
-    .grid-container {
+    .tech-stack-grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* gap: 1px; */

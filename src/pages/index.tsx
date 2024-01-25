@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { graphql, withPrefix, PageProps } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -42,9 +42,30 @@ interface IHome extends PageProps {
   }
 }
 
+
 console.log('Trans', Trans)
 
 const Home: React.FC<IHome> = (props) => {
+  const backgroundColors = [
+    '#7913e5',
+    '#2295f2',
+    '#39c277',
+    '#e5489b',
+    '#0c1825',
+    '#0c1825'
+  ]
+  const [backgroundColorIndex, setBackgroundColorIndex] = useState(-1)
+  const [backgroundColor, setBackgroundColor] = useState('#fff')
+
+  useEffect(() => {
+    const timeIntervalId = setInterval(() => {
+      setBackgroundColorIndex((prevColorIndex) => (prevColorIndex + 1) % backgroundColors.length)
+    }, 3000)
+    setBackgroundColor(backgroundColors[backgroundColorIndex])
+
+    return () => clearInterval(timeIntervalId)
+  }, [backgroundColorIndex, backgroundColors])
+
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
   const darkMode = useSelector((state: RootState) => state.darkMode.darkMode); // Accessing darkMode from Redux store
@@ -71,43 +92,57 @@ const Home: React.FC<IHome> = (props) => {
           Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning"
         />
       </Helmet>
-      <div className={`intro ${darkMode ? 'dark-mode' : ''} intro-small`}>
+      <div className={`intro mt-9 mb-5 ${darkMode ? 'dark-mode' : ''} intro-small`}>
         <div className="container">
-          <h2 style={{ color: '#EBA937', fontSize: '2rem', fontWeight: 'bold' }}><Trans>Forkhive</Trans></h2>
+          <h2 style={{ fontWeight: 'bold' }} className={`h2 ${darkMode ? 'dark-mode' : ''}`}><Trans>Empower Your Digital Journey</Trans></h2>
           <h5 style={{ fontStyle: 'italic', color: '#EBA937', fontSize: '16px', fontWeight: 'bold' }}><Trans>Building Bridges between Technology and Human Experience</Trans></h5>
-          <p style={{ marginBottom: "-5px", fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
+          <p style={{ fontSize: '16px', justifyContent: 'center', wordSpacing: '0.2rem' }}>
             <Trans>
-              We are a dynamic Software Development Company with a primary emphasis on Frontend Development.
+              Crafting digital excellence is our focus. Elevate your online presence with tailored Frontend solutions, ensuring a captivating user experience.
             </Trans>
-            <br /><br />
+
+            {/* <br /><br />
             <Trans>
               Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning.
-            </Trans>
+            </Trans> */}
           </p>
+          <div className="pb-5-lg">
+            <Call button={true} />
+          </div>
+
         </div>
       </div>
+
 
       <div className="container pt-8 pt-md-5">
         <div className="row justify-content-start">
           <div className="col-12">
             <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong><Trans>Our Services</Trans></strong></h2>
           </div>
-          {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-single">
-              <div className="card service">
-                <div className="card-content">
-                  <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                    <Link style={{ textDecoration: 'none' }} to={edge.node.frontmatter.path} placeholder={undefined}><Trans>{edge.node.frontmatter.title}</Trans></Link>
-                  </h5>
-                  <p style={{ justifyContent: 'center', wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
+          <div className='grid-container'>
+            {markdown.map((edge, index) => (
+              <div key={edge.node.frontmatter.path} className="col-single" style={{ backgroundColor: index === backgroundColorIndex ? backgroundColor : '', borderRadius: '20px', color: 'white', padding: '30px 10px 30px 30px' }}>
+                <div className="card service">
+                  <div className="card-content">
+                    <Link style={{ textDecoration: 'none' }} to={edge.node.frontmatter.path} placeholder={undefined}>
+                      <h5 style={{ fontWeight: 'bold', textAlign: 'center', color: index === backgroundColorIndex ? '#fff' : '#eba937', }}>
+                        <Trans>{edge.node.frontmatter.title}</Trans>
+                      </h5>
+                      <p className={`col-p ${darkMode ? 'dark-mode' : ''}`} style={{
+                        justifyContent: 'center',
+                        wordSpacing: '0.2rem',
+                        color: index === backgroundColorIndex ? '#fff' : '',
+                      }}><Trans>{edge.node.excerpt}</Trans></p>
+
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
 
-          <div className="container pt-8 pt-md-5 pb-md-5">
-            <Call button={true} />
           </div>
+
+
 
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services" placeholder={undefined}>
@@ -165,19 +200,22 @@ const Home: React.FC<IHome> = (props) => {
           </div>
 
           {/* Everything in our features could be found in the data/features.json */}
-          {json.map(edge => (
-            <div key={edge.node.id} className="col-single">
-              <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
-                {edge.node.image && (
-                  <div className="feature-image">
-                    <img src={withPrefix(edge.node.image)} />
-                  </div>
-                )}
-                <h2 className="feature-title"><Trans>{edge.node.title}</Trans></h2>
-                <div style={{ justifyContent: 'center', wordSpacing: '0.2rem' }} className="feature-content"><Trans>{edge.node.description}</Trans></div>
+          <div className='grid-container'>
+            {json.map(edge => (
+              <div key={edge.node.id}>
+                <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
+                  {edge.node.image && (
+                    <div className="feature-image">
+                      <img src={withPrefix(edge.node.image)} />
+                    </div>
+                  )}
+                  <h2 className="feature-title"><Trans>{edge.node.title}</Trans></h2>
+                  <div style={{ justifyContent: 'center', wordSpacing: '0.2rem' }} className="feature-content"><Trans>{edge.node.description}</Trans></div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+
+          </div>
         </div>
       </div>
     </Layout>
