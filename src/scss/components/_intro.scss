@@ -2,51 +2,86 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
+
   padding-top: 200px;
   padding-bottom: 100px;
+
   @include media-breakpoint-up(sm) {
+    text-align: left;
     padding-top: 160px;
     padding-bottom: 80px;
   }
+
   @include media-breakpoint-up(md) {
+    text-align: left;
+
     padding-top: 160px;
     padding-bottom: 80px;
   }
+
   @include media-breakpoint-up(lg) {
+    text-align: left;
+
     padding-top: 200px;
     padding-bottom: 100px;
+
   }
+
   h1 {
     color: $primary;
     font-size: 2.4rem;
     line-height: 1.2;
     font-family: $font-family-heading;
     width: 70%;
+
     @include media-breakpoint-up(sm) {
       width: 70%;
     }
+
     @include media-breakpoint-up(md) {
       font-size: 3rem;
       width: 70%;
     }
+
     @include media-breakpoint-up(lg) {
       font-size: 3rem;
       width: 50%;
     }
   }
+  
+  h2 {
+    line-height: 2.5rem;
+    font-size: 2.25rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+
   p {
-    width: 80%;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: lighter;
     line-height: 1.4;
     color: $secondary;
+
     @include media-breakpoint-up(sm) {
+      text-align: left;
+
       width: 70%;
     }
+
     @include media-breakpoint-up(md) {
+      text-align: left;
+
       width: 60%;
     }
+
     @include media-breakpoint-up(lg) {
+      text-align: left;
+
       width: 40%;
     }
   }

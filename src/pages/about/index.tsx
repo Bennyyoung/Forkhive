@@ -3,6 +3,8 @@ import React from 'react'
 import SEO from '../../components/SEO/SEO'
 import Layout from '../../layouts/index'
 import { Trans } from 'gatsby-plugin-react-i18next';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
 interface IAbout extends PageProps {
     data: {
@@ -21,6 +23,7 @@ interface IAbout extends PageProps {
 
 const About: React.FC<IAbout> = (props) => {
     const about = props.data.allMarkdownRemark.edges;
+    const darkMode = useSelector((state: RootState) => state.darkMode.darkMode);
 
     return (
         <Layout bodyClass="page-about">
@@ -38,9 +41,10 @@ const About: React.FC<IAbout> = (props) => {
 
             <div className="container pb-6">
                 <div className="row">
+                    <div className='grid-container'>
                     {about.map((edge, index) => (
-                        <div key={index} className="col-single mb-1">
-                            <div className="card service">
+                        <div key={index} className="mb-1">
+                            <div className={`card service feature ${darkMode ? 'dark-mode' : ''}`}>
                                 <div className="card-content">
                                     <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
                                     <p style={{ wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
@@ -48,6 +52,7 @@ const About: React.FC<IAbout> = (props) => {
                             </div>
                         </div>
                     ))}
+                    </div>
                 </div>
             </div>
         </Layout>

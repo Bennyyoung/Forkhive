@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { Trans, Link } from 'gatsby-plugin-react-i18next';
+import diagonalArrow from '../../images/diagonal_arrow.svg'
 
 interface Call {
   button: boolean | undefined;
@@ -50,6 +51,10 @@ const Call: React.FC<Call> = (props) => {
         <div className="call-box-bottom">
           <Link to="/contact" className="button" placeholder={undefined}>
             <Trans>Contact</Trans>
+          </Link><br />
+          <Link to='/contact' placeholder={undefined}>
+            <img src={diagonalArrow} width={'32rem'} height={'32rem'} style={{ marginLeft: '5rem', marginTop: '0.5rem' }} />
+
           </Link>
         </div>
       )}

@@ -1,6 +1,6 @@
 import React from 'react'
 import rapid_miner_dark_bg from '../../images/rapid_miner_dark_bg.jpg'
-import rapid_miner_white_bg from '../../images/rapid_miner_white_bg.jpg'
+import rapid_miner_f2f7f8_bg from '../../images/rapid_miner_f2f7f8_bg.jpg'
 import techStack from '../../data/techStack';
 import "./TechStack.css"
 import { Tooltip } from "react-tooltip";
@@ -15,7 +15,7 @@ const TechStack = () => {
     <>
       <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong><Trans>Your vision is built with</Trans></strong></h2>
 
-      <div className='grid-container'>
+      <div className='tech-stack-grid-container'>
 
         {
           techStack.map((el, index) => (
@@ -38,7 +38,7 @@ const TechStack = () => {
           {
             darkMode === true ?
               (<img src={rapid_miner_dark_bg} width="190px" height="60px" />)
-              : (<img src={rapid_miner_white_bg} width="190px" height="60px" />)
+              : (<img src={rapid_miner_f2f7f8_bg} width="190px" height="60px" />)
           }
 
           <h6><strong>RAPID MINER</strong></h6>

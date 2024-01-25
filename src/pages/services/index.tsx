@@ -37,18 +37,21 @@ const Services: React.FC<IServices> = (props) => {
 
       <div className="container pb-6">
         <div className="row">
-          {services.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-single mb-1">
-              <div className="card service service-teaser">
-                <div className="card-content">
-                  <h5 style={{fontWeight: 'bold', textAlign: 'center'}}>
-                    <Link to={edge.node.frontmatter.path}><Trans>{edge.node.frontmatter.title}</Trans></Link>
-                  </h5>
-                  <p style={{wordSpacing: '0.2rem'}}><Trans>{edge.node.excerpt}</Trans></p>
+          <div className='grid-container'>
+            {services.map(edge => (
+              <div key={edge.node.frontmatter.path} className="col-single mb-1">
+                <div className="card service service-teaser">
+                  <div className="card-content">
+                    <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}>
+                      <Link to={edge.node.frontmatter.path}><Trans>{edge.node.frontmatter.title}</Trans></Link>
+                    </h5>
+                    <p style={{ wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+
+          </div>
         </div>
       </div>
     </Layout>

@@ -18,36 +18,179 @@
 
 }
 
+
+
+.col-single {
+  transition: transform 0.3s ease;
+
+
+  a {
+    h5 {
+      color: #eba937
+    }
+
+    p {
+      color: $secondary
+    }
+  }
+
+  // background-color: #fff;
+  border-radius: 20px;
+  margin: 0.2rem
+}
+
+.col-single:nth-child(1):hover {
+  a {
+
+    h5,
+    p {
+      color: #fff !important
+    }
+  }
+
+  color: red !important;
+  background-color: #7913e5;
+  border-radius: 20px;
+}
+
+.col-single:nth-child(2):hover {
+  a {
+
+    h5,
+    p {
+      color: #fff
+    }
+  }
+
+
+  background-color: #2295f2;
+  color: #fff !important;
+
+  border-radius: 20px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-single:nth-child(3):hover {
+  a {
+
+    h5,
+    p {
+      color: #fff
+    }
+  }
+
+  background-color: #39c277 !important;
+  color: #fff !important;
+
+  border-radius: 20px;
+}
+
+.col-single:nth-child(4):hover {
+  a {
+
+    h5,
+    p {
+      color: #fff
+    }
+  }
+
+  background-color: #e5489b !important;
+  color: #fff !important;
+
+  border-radius: 20px;
+}
+
+.col-single:nth-child(5):hover {
+  a {
+
+    h5,
+    p {
+      color: #fff
+    }
+  }
+
+  background-color: #0c1825 !important;
+  color: #fff !important;
+
+  border-radius: 20px;
+}
+
+// .col-single:nth-child(6):hover {
+//   a {
+
+//     h5,
+//     p {
+//       color: #fff
+//     }
+//   }
+
+//   background-color: #0c1825 !important;
+//   color: #fff !important;
+
+//   border-radius: 20px;
+// }
+
 @media screen and (max-width: 768px) {
+
   /* Additional styling for smaller screens */
   .col-md-4 {
     -ms-flex: 0 0 50%;
     flex: 1 1 50%;
     max-width: 50%;
   }
-  .col-single{
+
+  .col-single {
     max-width: 100%;
-    margin: 1rem
-    // paddin
+    margin: 1rem // paddin
   }
 }
 
 @media screen and (min-width: 768px) {
+
   /* Additional styling for larger screens */
   .col-md-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 1 1 33.333333%;
     max-width: 33.333333%;
   }
-  .col-single{
-    -ms-flex: 0 0 33.333333%;
-    flex: 1 1 33.333333%;
-    max-width: 33.333333%;
+
+  .col-single {
+    // flex: 1 1 33.333333%;
+    // max-width: 33.333333%;
     width: 100%;
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px;
+    // border-radius: 20px;
   }
+}
+
+@include media-breakpoint-up(md) {
+  .grid-container {
+    display: grid !important;
+    grid-template-columns: 25rem 25rem 25rem !important;
+    /* Adjust the column width as needed */
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .grid-container {
+    display: grid !important;
+    grid-template-columns: 25rem 25rem 25rem !important;
+    /* Adjust the column width as needed */
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+  }
+}
+
+.col-p.dark-mode {
+  color: $background-color-light !important;
 }
 
 
@@ -74,7 +217,7 @@
   // later on to override this initial width.
   width: 100%;
   min-height: 1px; // Prevent collapsing
-  padding-right:math.div($grid-gutter-width, 2);
+  padding-right: math.div($grid-gutter-width, 2);
   padding-left: math.div($grid-gutter-width, 2);
 }
 
@@ -88,6 +231,6 @@
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
   $num: math.div($size, $columns);
-  
-  margin-left: if($num == 0, 0, percentage($num));
+
+  margin-left: if($num ==0, 0, percentage($num));
 }
