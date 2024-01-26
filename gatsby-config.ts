@@ -7,7 +7,7 @@ module.exports = {
     title: 'Forkhive',
     description: 'Forkhive',
     contact: {
-      phone1: '+234 913 863 6045',
+      phone1: '2349138636045',
       phone2: '+234 701 912 7578',
       email: 'forkhivetech@gmail.com',
     },
