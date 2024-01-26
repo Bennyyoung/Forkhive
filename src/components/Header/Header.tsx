@@ -4,8 +4,7 @@ import Menu from '../Menu/Menu';
 import Hamburger from '../Hamburger/Hamburger';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import forkhive_logo_dark_bg from '../../images/forkhive_logo_dark_bg.jpg'
-import forkhive_logo_white_bg from '../../images/forkhive_logo_white_bg.png'
-import ng from '../../images/forkhive_logo_f2f7f8_bg.png'
+import forkhive_logo_f2f7f8_bg from '../../images/forkhive_logo_f2f7f8_bg.png'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
@@ -31,7 +30,7 @@ const Header = () => {
             {
               darkMode === true ? 
               (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />) 
-              : <img alt="Figurit Homepage" src={ng} style={{ height: '55px', width: '100px' }} />
+              : <img alt="Figurit Homepage" src={forkhive_logo_f2f7f8_bg} style={{ height: '55px', width: '100px' }} />
             }
             {/* <h2 style={{ color: '#EBA937'}}>Forkhive</h2> */}
           </Link>
@@ -41,7 +40,7 @@ const Header = () => {
             {
               darkMode === true ? 
               (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />) 
-              : <img alt="Figurit Homepage" src={ng} style={{ height: '55px', width: '100px' }} />
+              : <img alt="Figurit Homepage" src={forkhive_logo_f2f7f8_bg} style={{ height: '55px', width: '100px' }} />
 
             }
 

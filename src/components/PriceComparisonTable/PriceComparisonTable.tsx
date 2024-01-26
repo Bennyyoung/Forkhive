@@ -10,7 +10,7 @@ import { Trans } from 'gatsby-plugin-react-i18next';
 function PriceComparisonTable() {
     const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
     return (
-        <div className="container content">
+        <div className="container mb-9 content">
             <div className="table-responsive">
                 <table className="table table-bordered">
                     <thead className="thead-dark">
