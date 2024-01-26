@@ -38,20 +38,57 @@ const About: React.FC<IAbout> = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="container pb-6">
+                <div className="row">
+                    <div className="col-12">
+                        <h2 className="title-3 mb-3" style={{ textAlign: "center" }}>
+                            <Trans>We're the No.1 <strong>Software Company</strong></Trans>
+                        </h2>
+                    </div>
+                    <div style={{ textAlign: 'center' }}>
+                        <p>
+                            We're a forward-thinking Software Development Company specializing in <strong style={{ color: '#eba937' }}>Frontend Web Development</strong>. Passionate about innovation, we're extending our expertise into transformative realms —
+                            <strong style={{ color: '#eba937' }}>
+                                Data Science
+                            </strong>, {' '}
+                            <strong style={{ color: '#eba937' }}>
+                                Artificial Intelligence
+                            </strong>, {' '}
+                            <strong style={{ color: '#eba937' }}> and
+                                Machine Learning
+                            </strong>
+                        </p>
+
+                        <p>
+                            Our commitment is to redefine digital possibilities through sleek and intuitive web interfaces while harnessing the power of advanced technologies. Whether crafting seamless user experiences or delving into the realms of AI and machine learning, we're dedicated to pushing boundaries and staying at the forefront of technological evolution.
+                        </p>
+
+                        <p>
+                            Join us on this exciting journey as we build the future of software solutions, blending aesthetics with intelligence for unparalleled digital experiences.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
             <div className="container pb-6">
                 <div className="row">
+                        <div className="col-12">
+                            <h2 className="title-3 mb-3" style={{ textAlign: "center" }}>
+                                <Trans>Our <strong>Vision & Mission</strong></Trans>
+                            </h2>
+                        </div>
                     <div className='grid-container'>
-                    {about.map((edge, index) => (
-                        <div key={index} className="mb-1">
-                            <div className={`card service feature ${darkMode ? 'dark-mode' : ''}`}>
-                                <div className="card-content">
-                                    <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
-                                    <p style={{ wordSpacing: '0.2rem' }}><Trans>{edge.node.excerpt}</Trans></p>
+                        {about.map((edge, index) => (
+                            <div key={index} className="mb-1">
+                                <div className={`card service feature ${darkMode ? 'dark-mode' : ''}`}>
+                                    <div className="card-content">
+                                        <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
+                                        <p style={{ wordSpacing: '0.2rem', fontStyle: 'italic' }}><Trans>{edge.node.excerpt}</Trans></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                     </div>
                 </div>
             </div>
