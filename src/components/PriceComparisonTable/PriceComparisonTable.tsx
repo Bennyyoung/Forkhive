@@ -16,12 +16,29 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th><Trans>Features</Trans></th>
-                            <th><Trans>Basic Plan (Suitable for Budget Applications)</Trans> - <b> ₦500,000+ </b></th>
-                            <th><Trans>Pro Plan (Suitable for Medium to Enterprise Applications)</Trans> - <b> ₦1million+ </b></th>
+                            <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$580 = ₦870,000 </b></th>
+                            <th><Trans>Pro Plan (Medium to Enterprise Applications)</Trans><b> <br />$1,526 = ₦2,289,000 </b></th>
                         </tr>
                     </thead>
 
                     <tbody>
+                        <tr>
+                            <td>
+                                <a className='socialMedia'>
+                                    <Trans>Developers Fee (3 or 5)</Trans> 
+
+                                    {' '}<i className="fa fa-question-circle"></i>
+                                </a>
+                                <Tooltip
+                                    anchorSelect='.socialMedia'
+                                    // @ts-ignore
+                                    content={<Trans>Get found on social media</Trans>}
+                                    style={{ width: '15rem' }}
+                                />
+                            </td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$167/Developer</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$267/Developer</td>
+                        </tr>
                         <tr>
                             <td>
                                 <a className='socialMedia'>
@@ -36,8 +53,8 @@ function PriceComparisonTable() {
                                     style={{ width: '15rem' }}
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$5</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$5</td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -52,7 +69,7 @@ function PriceComparisonTable() {
                                     style={{ width: '15rem' }}
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
@@ -69,7 +86,7 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
@@ -86,13 +103,13 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}Your choice</td>
+                            <td>-</td>
                         </tr>
 
                         <tr>
                             <td>
-                                <a className="cdr"><Trans>Custom Domain Registration</Trans>
+                                <a className="cdr"><Trans>Domain Registration/Renewal/Maintenance</Trans>
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
@@ -103,8 +120,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50/yr</td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -120,14 +137,14 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$24/yr</td>
                         </tr>
 
                         <tr>
                             <td>
                                 <a className="support">
-                                    <Trans>24/7 Support</Trans> {' '}<i className="fa fa-question-circle"></i>
+                                    <Trans>12/5 or 24/7 Support</Trans> {' '}<i className="fa fa-question-circle"></i>
                                 </a>
                                 <Tooltip
                                     anchorSelect='.support'
@@ -137,8 +154,8 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -154,7 +171,7 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Fri</Trans></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Fri</Trans></i>{' '}</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Sun</Trans></i></td>
                         </tr>
 
@@ -189,7 +206,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}512MB to 5GB of storage</td>
                         </tr>
 
                         <tr>
@@ -206,7 +223,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>$50</td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -223,12 +240,12 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50</td>
                         </tr>
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>
                             <td>
-                                <b><Trans>Cost Details</Trans>:</b> <Trans>Starting at ₦500,000+ with additional recurrent costs.</Trans> {' '}
+                                <b><Trans>Cost Details</Trans>:</b> <Trans>Starting at $580 = ₦870,000 with additional recurrent costs.</Trans> {' '}
 
                                 <span style={{ color: 'red', fontStyle: 'italic' }}>
                                     (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)
@@ -237,7 +254,7 @@ function PriceComparisonTable() {
 
 
                             <td>
-                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at ₦1 million with additional recurrent costs.</Trans> {' '}
+                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at $1,526 = ₦2,289,000 n with additional recurrent costs.</Trans> {' '}
 
                                 <span style={{ color: 'red', fontStyle: 'italic' }}>
                                     (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)

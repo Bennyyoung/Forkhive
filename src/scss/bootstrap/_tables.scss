@@ -45,9 +45,9 @@
     color: red;
    }
 
-   tr:nth-child(even) {
-    background-color: #f2f2f2
-   }
+  //  tr:nth-child(odd) {
+  //   background-color: #f2f2f2
+  //  }
 
    tr:nth-child(even).dark-mode {
     background-color: $background-color-dark;
