@@ -11,9 +11,9 @@ th:first-child, td:first-child {
  text-align: left;
 }
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
  background-color: #f2f2f2
-}
+} */
 
 .fa-check {
  color: green;
