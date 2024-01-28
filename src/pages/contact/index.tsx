@@ -25,7 +25,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-       <ThankYouPage />
+        <ThankYouPage />
       </Layout>
     );
   }
@@ -90,15 +90,34 @@ export default function Contact() {
             </div>
             <div>
               <p>
+                <Trans>Company</Trans>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Write your company here.." type="text" required name="Company"></input>
+              </p>
+            </div>
+            <div>
+              <p>
                 <Trans>Email</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us know how to contact you back.." type="email" required name="email" ></input>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us know how to contact you back.." type="email" required name="Email" ></input>
               </p>
             </div>
 
             <div>
               <p>
                 <Trans>Phone number</Trans>:
-                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="phone" ></input>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us talk eg. +234 805 782 6599.." type="number" required name="Phone" ></input>
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <Trans>Website</Trans>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="What name do you want for your website" type="text" required name="Website" ></input>
+              </p>
+            </div>
+            <div>
+              <p>
+                <Trans>Domain</Trans>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Your Domain name" type="text" required name="Domain" ></input>
               </p>
             </div>
 
@@ -152,10 +171,28 @@ export default function Contact() {
 
             <div>
               <p>
-                <Trans>Message (Brief description of your needs)</Trans>:
+                <Trans>
+                  Navigation items (number of pages), wanted functionalities, do you have a website that you like and why?
+                  The more details you mention in your request, our offer will be more precise and detailed:
+                </Trans>
                 <textarea className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '100%', height: '300px' }} placeholder="Brief description of your needs" required name="message" ></textarea>
               </p>
             </div>
+
+            <div>
+              <p>
+                <Trans>Websites you like</Trans>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Where do you want to draw inspiration from" type="text" required name="Website Inspiration" ></input>
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <Trans>Budget (USD or ₦)</Trans>
+                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Let us still know your budget" type="text" required name="Budget" ></input>
+              </p>
+            </div>
+
             <div data-netlify-recaptcha="true"></div>
 
             <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}><Trans>Hire Us</Trans></button><br />
