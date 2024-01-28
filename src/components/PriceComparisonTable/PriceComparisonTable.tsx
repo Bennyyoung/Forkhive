@@ -17,15 +17,22 @@ function PriceComparisonTable() {
                         <tr>
                             <th><Trans>Features</Trans></th>
                             <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$580 = ₦870,000 </b></th>
-                            <th><Trans>Pro Plan (Medium to Enterprise Applications)</Trans><b> <br />$1,526 = ₦2,289,000 </b></th>
+                            <th><Trans>Pro Plan</Trans><b> <br />$1,526 = ₦2,289,000 </b></th>
+                            <th><Trans>Enterprise Plan</Trans><b> <br />$2,772 = ₦4,158,000 </b></th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
+                            <td><Trans></Trans></td>
+                            <td><Trans>2-3 months</Trans></td>
+                            <td><Trans>3-4 months</Trans></td>
+                            <td><Trans>4-6 months</Trans></td>
+                        </tr>
+                        <tr>
                             <td>
                                 <a className='socialMedia'>
-                                    <Trans>Developers Fee (3 or 5)</Trans> 
+                                    <Trans>Developers Fee (3 or 5 or 7)</Trans>
 
                                     {' '}<i className="fa fa-question-circle"></i>
                                 </a>
@@ -38,6 +45,7 @@ function PriceComparisonTable() {
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$167/Developer</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$267/Developer</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$367/Developer</td>
                         </tr>
                         <tr>
                             <td>
@@ -53,6 +61,7 @@ function PriceComparisonTable() {
                                     style={{ width: '15rem' }}
                                 />
                             </td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$5</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$5</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$5</td>
                         </tr>
@@ -71,6 +80,7 @@ function PriceComparisonTable() {
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr>
@@ -87,6 +97,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
@@ -105,6 +116,7 @@ function PriceComparisonTable() {
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}Your choice</td>
                             <td>-</td>
+                            <td>-</td>
                         </tr>
 
                         <tr>
@@ -120,6 +132,7 @@ function PriceComparisonTable() {
 
                                 />
                             </td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50/yr</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50/yr</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50/yr</td>
                         </tr>
@@ -138,7 +151,8 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$24/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
                         </tr>
 
                         <tr>
@@ -155,7 +169,8 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$12/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$24/yr</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$36/yr</td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -172,6 +187,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Fri</Trans></i>{' '}</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Sun</Trans></i></td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}><Trans>Mon-Sun</Trans></i></td>
                         </tr>
 
@@ -190,6 +206,7 @@ function PriceComparisonTable() {
                             </td>
                             <td><i className="fa fa-remove"></i></td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i></td>
                         </tr>
 
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
@@ -206,7 +223,8 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
-                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}512MB to 5GB of storage</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}<Trans>512MB to 5GB of storage</Trans></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}<Trans>Up to 1TB of storage</Trans></td>
                         </tr>
 
                         <tr>
@@ -223,6 +241,7 @@ function PriceComparisonTable() {
                                 />
                             </td>
                             <td><i className="fa fa-remove"></i></td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>$50</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>$50</td>
                         </tr>
 
@@ -241,6 +260,7 @@ function PriceComparisonTable() {
                             </td>
                             <td><i className="fa fa-remove"></i></td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50</td>
+                            <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50</td>
                         </tr>
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>
@@ -254,7 +274,14 @@ function PriceComparisonTable() {
 
 
                             <td>
-                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at $1,526 = ₦2,289,000 n with additional recurrent costs.</Trans> {' '}
+                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at $1,526 = ₦2,289,000 with additional recurrent costs.</Trans> {' '}
+
+                                <span style={{ color: 'red', fontStyle: 'italic' }}>
+                                    (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)
+                                </span>
+                            </td>
+                            <td>
+                                <b><Trans>Cost Details</Trans>: </b><Trans>Starting at $2,772 = ₦4,158,000 with additional recurrent costs.</Trans> {' '}
 
                                 <span style={{ color: 'red', fontStyle: 'italic' }}>
                                     (<b><Trans>Please note</Trans>:</b> <Trans>Prices may vary based on the project's complexity and market dynamics.</Trans>)
@@ -263,16 +290,26 @@ function PriceComparisonTable() {
                         </tr>
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td></td>
-                            <td>      <div className="call-box-bottom">
-                                <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
-                                    <Trans>Try Basic Plan</Trans>
-                                </Link>
-                            </div></td>
-                            <td>      <div className="call-box-bottom">
-                                <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
-                                    <Trans>Try Pro Plan</Trans>
-                                </Link>
-                            </div></td>
+                            <td>
+                                <div className="call-box-bottom">
+                                    <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
+                                        <Trans>Try Basic Plan</Trans>
+                                    </Link>
+                                </div></td>
+                            <td>
+                                <div className="call-box-bottom">
+                                    <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
+                                        <Trans>Try Pro Plan</Trans>
+                                    </Link>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="call-box-bottom">
+                                    <Link to="/contact" style={{ textDecoration: 'none' }} className="button">
+                                        <Trans>Try Enterprise Plan</Trans>
+                                    </Link>
+                                </div>
+                            </td>
                         </tr>
 
                     </tbody>
