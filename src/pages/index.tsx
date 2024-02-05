@@ -5,7 +5,9 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call/Call';
-import TeckStack from '../components/TechStack/TechStack'
+import TechStack from '../components/TechStack/TechStack'
+import ocubetech_dark from "../images/ocube.png"
+import ocubetech_white from "../images/ocube_white.png"
 // @ts-ignore
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Provider, useSelector } from 'react-redux';
@@ -153,10 +155,26 @@ const Home: React.FC<IHome> = (props) => {
 
 
           <div className="col-12 text-center" style={{ marginTop: '80px' }}>
-            <TeckStack />
+            <TechStack />
           </div>
 
         </div>
+      </div>
+
+      <div className="container text-center" style={{ marginBottom: '5rem', marginTop: '5rem' }}>
+        <h2 className="title-3 mb-3" style={{ textAlign: "center" }}><strong><Trans>Our Partner</Trans></strong></h2>
+        <a href="https://www.ocubetechub.com/">
+          {
+            darkMode === true ? (
+              <img src={ocubetech_white} style={{ width: '15rem' }} />
+
+            ) : (
+              <img src={ocubetech_dark} style={{ width: '15rem' }} />
+
+            )
+          }
+
+        </a>
       </div>
 
 
@@ -214,8 +232,10 @@ const Home: React.FC<IHome> = (props) => {
                 </div>
               </div>
             ))}
-
           </div>
+
+
+
         </div>
       </div>
     </Layout>
