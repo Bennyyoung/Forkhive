@@ -197,7 +197,7 @@ export default function Contact() {
 
             <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}><Trans>Hire Us</Trans></button><br />
           </form>
-          <p style={{ paddingTop: '20px' }}><Trans>Or send us an email to</Trans>&nbsp;<a href="mailto:forkhivetech@gmail.com"><Trans>forkhivetech@gmail.com</Trans></a></p>
+          <p style={{ paddingTop: '20px' }}><Trans>Or send us an email to</Trans>&nbsp;<a href="mailto:hello@forkhive.com"><Trans>hello@forkhive.com</Trans></a></p>
         </div>
 
 
