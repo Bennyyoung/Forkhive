@@ -9,7 +9,7 @@ module.exports = {
     contact: {
       phone1: '2349138636045',
       phone2: '+234 701 912 7578',
-      email: 'forkhivetech@gmail.com',
+      email: 'hello@forkhive.com',
     },
     menuLinks: [
       {
