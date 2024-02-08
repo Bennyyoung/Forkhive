@@ -16,9 +16,9 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th><Trans>Features</Trans></th>
-                            <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$580 = ₦870,000 </b></th>
-                            <th><Trans>Pro Plan</Trans><b> <br />$1,526 = ₦2,289,000 </b></th>
-                            <th><Trans>Enterprise Plan</Trans><b> <br />$2,772 = ₦4,158,000 </b></th>
+                            <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$167 - $580 = ₦250,500 - ₦870,000 </b></th>
+                            <th><Trans>Pro Plan</Trans><b> <br />$580 - $1,526 = ₦870,000 - ₦2,289,000 </b></th>
+                            <th><Trans>Enterprise Plan</Trans><b> <br />$1,526 - $2,772 = ₦2,289,000 - ₦4,158,000 </b></th>
                         </tr>
                     </thead>
 
