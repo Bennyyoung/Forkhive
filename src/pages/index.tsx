@@ -211,10 +211,10 @@ const Home: React.FC<IHome> = (props) => {
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong><Trans>Our Features</Trans></strong></h2>
-            {/* <MessengerCustomerChat
-              pageId="107730554053669"
-              appId="281696259640056"
-            /> */}
+            <MessengerCustomerChat
+              pageId="61555859938895"
+              appId="402142018992745"
+            />
           </div>
 
           {/* Everything in our features could be found in the data/features.json */}
