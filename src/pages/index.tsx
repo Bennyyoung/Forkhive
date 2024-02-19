@@ -166,10 +166,10 @@ const Home: React.FC<IHome> = (props) => {
         <a href="https://www.ocubetechub.com/">
           {
             darkMode === true ? (
-              <img src={ocubetech_white} style={{ width: '15rem' }} />
+              <img src={ocubetech_white} style={{ width: '8rem' }} />
 
             ) : (
-              <img src={ocubetech_dark} style={{ width: '15rem' }} />
+              <img src={ocubetech_dark} style={{ width: '8rem' }} />
 
             )
           }
