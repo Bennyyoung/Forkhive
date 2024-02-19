@@ -1,6 +1,7 @@
 import React from 'react'
 import rapid_miner_dark_bg from '../../images/rapid_miner_dark_bg.jpg'
 import rapid_miner_f2f7f8_bg from '../../images/rapid_miner_f2f7f8_bg.jpg'
+import rapid_miner from "../../images/rapid_miner.jpeg"
 import techStack from '../../data/techStack';
 import "./TechStack.css"
 import { Tooltip } from "react-tooltip";
@@ -23,7 +24,7 @@ const TechStack = () => {
               <img src={el.img} alt={el.text.toLowerCase()} />
               <br />
               {/* <h6></h6> */}
-              <strong>{el.text}</strong>
+              <span style={{ fontSize: '13px', fontWeight: 'bold' }}>{el.text}</span>
 
               <Tooltip
                 anchorSelect={`.grid-item_${index}`}
@@ -35,13 +36,15 @@ const TechStack = () => {
           ))
         }
         <div className='rapid-miner'>
-          {
+          <img src={rapid_miner} width="36px" height="36px" />
+          {/* {
             darkMode === true ?
               (<img src={rapid_miner_dark_bg} width="190px" height="60px" />)
               : (<img src={rapid_miner_f2f7f8_bg} width="190px" height="60px" />)
-          }
+          } */}
+          <br />
 
-          <h6><strong>RAPID MINER</strong></h6>
+          <span style={{ fontSize: '13px', fontWeight: 'bold' }}>RAPID MINER</span>
           <Tooltip
             anchorSelect={`.rapid-miner`}
             // @ts-ignore

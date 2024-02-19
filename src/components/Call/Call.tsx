@@ -57,7 +57,7 @@ const Call: React.FC<Call> = (props) => {
             <Trans>Get In Touch</Trans>
           </Link><br />
           <Link to='/contact' placeholder={undefined}>
-            <img src={diagonalArrow} width={'32rem'} height={'32rem'} style={{ marginLeft: '5rem', marginTop: '0.5rem' }} />
+            {/* <img src={diagonalArrow} width={'32rem'} height={'32rem'} style={{ marginLeft: '5rem', marginTop: '0.5rem' }} /> */}
 
           </Link>
         </div>

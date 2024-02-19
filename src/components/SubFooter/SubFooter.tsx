@@ -1,9 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Trans } from 'gatsby-plugin-react-i18next';
+import whatsapp_color from "../../images/whatsapp_color.svg"
+import phone_call from '../../images/phone_call.svg'
+
 
 const SubFooter = () => {
-const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -26,13 +29,19 @@ const data = useStaticQuery(graphql`
               <ul>
                 <li>
                   <strong><Trans>Phone 1</Trans>: </strong>
-                  {data.site.siteMetadata.contact.phone1}
+                  <a href={`http://wa.me/${data.site.siteMetadata.contact.phone1}`}>
+                    {/* {data.site.siteMetadata.contact.phone1} */}
+                    WhatsApp <img src={whatsapp_color} width={'18rem'} height={'18rem'} />
+                  </a>
                   <br />
                   <strong><Trans>Phone 2</Trans>: </strong>
-                  {data.site.siteMetadata.contact.phone2}
+                  <a href={`tel:${data.site.siteMetadata.contact.phone2}`}>
+                    {/* {data.site.siteMetadata.contact.phone2} */}
+                    Mobile Call <img src={phone_call} width={'18rem'} height={'18rem'} />
+                  </a>
                   <br />
                   <strong><Trans>Email</Trans>: </strong>{' '}
-                  <a style={{textDecoration: 'none'}} href={`mailto:${data.site.siteMetadata.contact.email}`}>
+                  <a href={`mailto:${data.site.siteMetadata.contact.email}`}>
                     {data.site.siteMetadata.contact.email}
                   </a>
                 </li>
