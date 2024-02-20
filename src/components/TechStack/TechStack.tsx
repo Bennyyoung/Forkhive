@@ -52,7 +52,7 @@ const TechStack = () => {
           <img src={galileo_AI} width="36px" height="36px" />
           <br />
 
-          <span style={{ fontSize: '13px', fontWeight: 'bold' }}>Galileo AI</span>
+          <span style={{ fontSize: '13px', fontWeight: 'bold' }}>GALILEO AI</span>
           <Tooltip
             anchorSelect={`.galileo_ai`}
             // @ts-ignore

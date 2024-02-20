@@ -212,7 +212,7 @@ const Home: React.FC<IHome> = (props) => {
           <div className="col-12">
             <h2 className="title-3 mb-4" style={{ textAlign: "center" }}><strong><Trans>Our Features</Trans></strong></h2>
             <MessengerCustomerChat
-              pageId="61555859938895"
+              pageId="214030708460636"
               appId="402142018992745"
             />
           </div>
