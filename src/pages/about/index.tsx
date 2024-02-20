@@ -49,7 +49,7 @@ const About: React.FC<IAbout> = (props) => {
                         </h2>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                        <p>
+                        <p className='container'>
                             <Trans>We're a forward-thinking Software Development Company specializing in</Trans> <strong style={{ color: '#eba937' }}><Trans>Front-End Development</Trans></strong>. <Trans>Passionate about innovation, we're extending our expertise into transformative realms</Trans> —
                             <strong style={{ color: '#eba937' }}>
                                 <Trans>Data Science</Trans>
@@ -57,18 +57,18 @@ const About: React.FC<IAbout> = (props) => {
                             <strong style={{ color: '#eba937' }}>
                                 <Trans>Artificial Intelligence</Trans>
                             </strong>, {' '}
-                            <strong style={{ color: '#eba937' }}> <Trans>and</Trans>
+                            <strong style={{ color: '#eba937' }}> <Trans>and</Trans>{' '}
                                 <Trans>Machine Learning</Trans>
                             </strong>
                         </p>
 
-                        <p>
+                        <p className='container'>
                             <Trans>
                                 Our commitment is to redefine digital possibilities through sleek and intuitive web interfaces while harnessing the power of advanced technologies. Whether crafting seamless user experiences or delving into the realms of AI and machine learning, we're dedicated to pushing boundaries and staying at the forefront of technological evolution.
                             </Trans>
                         </p>
 
-                        <p>
+                        <p className='container'>
                             <Trans>
                                 Join us on this exciting journey as we build the future of software solutions, blending aesthetics with intelligence for unparalleled digital experiences.
                             </Trans>
@@ -85,7 +85,7 @@ const About: React.FC<IAbout> = (props) => {
                             <Trans>Our</Trans> <strong><Trans>Vision & Mission</Trans></strong>
                         </h2>
                     </div>
-                    <div className='grid-container'>
+                    <div className='container grid-container'>
                         {about.map((edge, index) => (
                             <div key={index} className="mb-1">
                                 <div className={`card service feature ${darkMode ? 'dark-mode' : ''}`}>
@@ -107,40 +107,43 @@ const About: React.FC<IAbout> = (props) => {
                             <Trans>Our</Trans> <strong><Trans>Core Values</Trans></strong>
                         </h2>
                     </div>
-                    <div className='grid-container'>
-                        <div className="mb-1">
-                            <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
-                                <div className='feature-image'>
-                                    <img src={efficiency} width={'8rem'} height={'8rem'} />
-                                </div>
-                                <h5 style={{fontWeight: 'bold', fontSize: '1.25rem'}} className='feature-title'>
-                                    <Trans>Efficiency</Trans>
-                                </h5>
-                            </div>
-                        </div>
-                        <div className="mb-1">
-                            <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
-                                <div className='feature-image'>
-                                    <img src={timely} width={'8rem'} height={'8rem'} />
-                                </div>
-                                <h5 style={{fontWeight: 'bold', fontSize: '1.25rem'}} className='feature-title'>
-                                    <Trans>Timeliness</Trans>
-                                </h5>
-                            </div>
-                        </div>
-                        <div className="mb-1">
-                            <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
-                                <div className='feature-image'>
-                                    <img src={trust} width={'1rem'} height={'1rem'} />
-                                </div>
-                                <h5 style={{fontWeight: 'bold', fontSize: '1.25rem'}} className='feature-title'>
-                                    <Trans>Trust</Trans>
-                                </h5>
-                            </div>
-                        </div>
+                    {/* <img src={efficiency} width={'36px'} height={'36px'} />
 
+                    <img src={timely} width={'8rem'} height={'8rem'} />
+                    <img src={} width={'1rem'} height={'1rem'} />
+                    <h5 style={{ fontWeight: 'bold', fontSize: '1.25rem' }} className='feature-title'>
+                        <Trans></Trans>
+                    </h5>
+                    <h5 style={{ fontWeight: 'bold', fontSize: '1.25rem' }} className='feature-title'>
+                        <Trans></Trans>
+                    </h5> */}
 
+                </div>
+
+                <div style={{ textAlign: "center", display: 'flex', justifyContent: 'space-evenly' }} className='text-center'>
+                    <div className={`grid-item grid-item_0`}>
+                    <img src={efficiency} width={'36px'} height={'36px'} />
+                        <br />
+                        <span style={{ fontSize: '16px', fontWeight: 'bold' }}>
+                            <Trans>Efficiency</Trans>
+                        </span>
                     </div>
+                    <div className={`grid-item grid-item_1`}>
+                        <img src={timely} width={'36px'} height={'36px'} />
+                        <br />
+                        <span style={{ fontSize: '16px', fontWeight: 'bold' }}>
+                            <Trans>Timeliness</Trans>
+                        </span>
+                    </div>
+                    <div className={`grid-item grid-item_2`}>
+                        <img src={trust} width={'36px'} height={'36px'} />
+                        <br />
+                        <span style={{ fontSize: '16px', fontWeight: 'bold' }}>
+                            <Trans>Trust</Trans>
+                        </span>
+                    </div>
+
+
                 </div>
             </div>
         </Layout>

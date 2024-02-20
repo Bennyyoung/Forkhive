@@ -48,7 +48,7 @@ const Team: React.FC<ITeam> = (props) => {
       <div className="container pb-6">
         <div className="row">
           {teams.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-6 mb-1">
+            <div key={edge.node.frontmatter.path} className="container col-12 col-md-6 mb-1">
               <div className="team card-two">
                 <div className="card-header">
                   <div className="card-header-left">
