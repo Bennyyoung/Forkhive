@@ -6,7 +6,7 @@ const techStack = [
         content: 'Gatsby.js, a popular open-source framework for building modern web applications. Gatsby.js is based on React and uses GraphQL to pull data from various sources to generate static websites'
     },
     {
-        img: 'https://img.icons8.com/color/36/nestjs.png',
+        img: 'https://img.icons8.com/color/30/nestjs.png',
         text: 'NEST',
         content: 'NestJS is a framework for building scalable and efficient server-side applications. It is often used to develop web applications, APIs, and microservices using TypeScript or JavaScript. NestJS is built with a modular and extensible architecture and draws inspiration from Angular, which makes it familiar to developers who have experience with Angular'
     },
@@ -19,6 +19,11 @@ const techStack = [
         img: 'https://img.icons8.com/plasticine/30/000000/react.png',
         text: 'REACT',
         content: 'React, also known as React.js or ReactJS, is an open-source JavaScript library for building user interfaces or UI components. It was developed by Facebook and is widely used for creating interactive and dynamic user interfaces in web applications. React allows developers to build reusable UI components, making it easier to manage and update complex user interfaces.'
+    },
+    {
+        img: 'https://img.icons8.com/fluency/30/canva.png',
+        text: 'CANVA',
+        content: 'Canva is a web-based graphic design platform that allows users to create a wide variety of visual content such as presentations, posters, social media graphics, flyers, invitations, and more. It provides an intuitive drag-and-drop interface along with a vast library of templates, images, illustrations, icons, and fonts that users can use to customize their designs. '
     },
     {
         img: 'https://img.icons8.com/color/30/000000/react-native.png',
@@ -59,18 +64,18 @@ const techStack = [
     {
         img: 'https://img.icons8.com/color/30/000000/python.png',
         text: 'PYTHON',
-        content:'Python is a high-level, versatile, and interpreted programming language known for its readability and ease of use. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python has become one of the most popular programming languages, used in various domains such as web development, data science, artificial intelligence, scientific computing, automation, and more.'
+        content: 'Python is a high-level, versatile, and interpreted programming language known for its readability and ease of use. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python has become one of the most popular programming languages, used in various domains such as web development, data science, artificial intelligence, scientific computing, automation, and more.'
     },
     {
         img: 'https://img.icons8.com/color/30/000000/mongodb.png',
         text: 'MONGO DB',
-        content:'MongoDB is a cross-platform, document-oriented NoSQL (Not Only SQL) database program. It falls under the category of NoSQL databases because it does not use the traditional relational database management system (RDBMS) structure. Instead, MongoDB stores data in flexible, JSON-like documents known as BSON (Binary JSON) that can vary in structure, allowing for a dynamic and scalable approach to data storage.'
+        content: 'MongoDB is a cross-platform, document-oriented NoSQL (Not Only SQL) database program. It falls under the category of NoSQL databases because it does not use the traditional relational database management system (RDBMS) structure. Instead, MongoDB stores data in flexible, JSON-like documents known as BSON (Binary JSON) that can vary in structure, allowing for a dynamic and scalable approach to data storage.'
 
     },
     {
         img: 'https://img.icons8.com/color/30/000000/nodejs.png',
         text: 'NODE JS',
-        content:'Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute server-side JavaScript code. It is built on the V8 JavaScript runtime engine, which is the same engine that powers the Google Chrome browser. Node.js enables the development of scalable and high-performance web applications by using an event-driven, non-blocking I/O model.'
+        content: 'Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute server-side JavaScript code. It is built on the V8 JavaScript runtime engine, which is the same engine that powers the Google Chrome browser. Node.js enables the development of scalable and high-performance web applications by using an event-driven, non-blocking I/O model.'
 
     },
     // {
@@ -82,7 +87,7 @@ const techStack = [
     {
         img: 'https://img.icons8.com/color/30/000000/npm.png',
         text: 'NPM',
-        content:'NPM stands for Node Package Manager, and it is the default package manager for Node.js, a JavaScript runtime environment. NPM is used to manage and distribute packages (libraries and tools) written in JavaScript and intended for use with Node.js.'
+        content: 'NPM stands for Node Package Manager, and it is the default package manager for Node.js, a JavaScript runtime environment. NPM is used to manage and distribute packages (libraries and tools) written in JavaScript and intended for use with Node.js.'
 
     },
     // {
@@ -135,7 +140,7 @@ const techStack = [
     {
         img: 'https://img.icons8.com/color/30/000000/tableau-software.png',
         text: 'TABLEAU',
-        content:'Tableau is a powerful data visualization and business intelligence (BI) platform that enables users to connect to, visualize, and share insights from their data. It allows individuals and organizations to create interactive and dynamic dashboards, reports, and visualizations to gain valuable insights into their data.'
+        content: 'Tableau is a powerful data visualization and business intelligence (BI) platform that enables users to connect to, visualize, and share insights from their data. It allows individuals and organizations to create interactive and dynamic dashboards, reports, and visualizations to gain valuable insights into their data.'
     },
 
     // Editor
