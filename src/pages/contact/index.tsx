@@ -47,11 +47,11 @@ export default function Contact() {
 
       <div className="container">
         <div className="row">
-          <div className="col-12" style={{ paddingBottom: '20px' }}>
+          <div className="container col-12" style={{ paddingBottom: '20px' }}>
             <Call button={false} />
           </div>
         </div><br />
-        <div style={{ margin: "0", paddingBottom: '80px' }}>
+        <div className='container' style={{ margin: "0", paddingBottom: '80px' }}>
           <form
             onSubmit={handleSubmit}
           >

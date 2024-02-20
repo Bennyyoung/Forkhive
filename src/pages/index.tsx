@@ -108,7 +108,7 @@ const Home: React.FC<IHome> = (props) => {
               Our passion for innovation drives us to explore and expand into cutting-edge fields such as Data Science, Artificial Intelligence, and Machine Learning.
             </Trans> */}
           </p>
-          <div className="pb-5-lg">
+          <div className="container pb-5-lg">
             <Call button={true} />
           </div>
 
@@ -218,9 +218,9 @@ const Home: React.FC<IHome> = (props) => {
           </div>
 
           {/* Everything in our features could be found in the data/features.json */}
-          <div className='grid-container'>
+          <div className='container grid-container'>
             {json.map(edge => (
-              <div key={edge.node.id}>
+              <div key={edge.node.id} className='mt-3'>
                 <div className={`feature ${darkMode ? 'dark-mode' : ''}`}>
                   {edge.node.image && (
                     <div className="feature-image">
