@@ -34,9 +34,9 @@ const stringWithoutPTags = stringWithPTags.replace(/<\/?p>/g, '');
       <div className={`strip strip-white strip-diagonal ${darkMode ? 'dark-mode' : ''}`}>
         <div className="container pt-4 pt-md-10">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-8">
-              <div className="service service-single">
-                <h1 className="title"><Trans>{title}</Trans></h1>
+            <div className="container col-12 col-md-8">
+              <div className="container service service-single">
+                <h1><Trans>{title}</Trans></h1>
                 <div className="content"><Trans>{stringWithoutPTags}</Trans></div>
               </div>
             </div>
