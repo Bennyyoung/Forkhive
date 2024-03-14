@@ -25,9 +25,9 @@ function PriceComparisonTable() {
                     <tbody>
                         <tr>
                             <td><Trans></Trans></td>
-                            <td><Trans>2-3 months</Trans></td>
-                            <td><Trans>3-4 months</Trans></td>
                             <td><Trans>4-6 months</Trans></td>
+                            <td><Trans>3-4 months</Trans></td>
+                            <td><Trans>2-3 months</Trans></td>
                         </tr>
                         <tr>
                             <td>
