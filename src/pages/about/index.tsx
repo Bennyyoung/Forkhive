@@ -36,7 +36,7 @@ const About: React.FC<IAbout> = (props) => {
                 <div className="container" style={{ padding: '0px 120px' }}>
                     <div className="row">
                         <div style={{ fontWeight: 'bold' }} className="col-12">
-                            <h1><Trans>OVER 4 YEARS IN THE FIELD</Trans></h1>
+                            <h1 style={{ fontWeight: 'bold', textAlign: 'center', width: '100%' }}><Trans>OVER 4 YEARS IN THE FIELD</Trans></h1>
                         </div>
                     </div>
                 </div>

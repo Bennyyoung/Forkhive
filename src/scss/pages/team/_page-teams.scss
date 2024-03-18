@@ -1,8 +1,12 @@
 .page-teams {
   background-image: url('../images/undraw_hang_out_h9ud.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: opacity(0.4);
   background-size: 115%;
   background-position: 49px -40px;
+  backface-visibility: hidden;
+  // backdrop-filter: blur(150);
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;

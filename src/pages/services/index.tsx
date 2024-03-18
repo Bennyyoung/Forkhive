@@ -29,7 +29,7 @@ const Services: React.FC<IServices> = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1><Trans>Services</Trans></h1>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'center', width: '100%' }}><Trans>SERVICES</Trans></h1>
             </div>
           </div>
         </div>

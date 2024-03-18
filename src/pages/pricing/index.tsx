@@ -4,6 +4,7 @@ import Layout from '../../layouts/index';
 import PriceComparisonTable from '../../components/PriceComparisonTable/PriceComparisonTable'
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { graphql } from 'gatsby';
+import './style.css';
 
 const Mernstack = () => (
   <Layout bodyClass="page-pricing">
@@ -15,7 +16,7 @@ const Mernstack = () => (
           <h5 style={{ textAlign: 'left', wordSpacing: '0.2rem' }}>
             <Trans>Price Comparison Table</Trans>
           </h5>
-          <h4 style={{ textAlign: "center" }}><strong><Trans>Pricing Built For Businesses Of All Sizes</Trans></strong></h4>
+          <h4 className='pricing'><Trans>Pricing Built For Businesses Of All Sizes</Trans></h4>
         </div>
       </div>
     </div>
