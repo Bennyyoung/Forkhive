@@ -49,7 +49,7 @@ const Team: React.FC<ITeam> = (props) => {
 
       <div className="container pb-6">
       {/* <h4><Trans>Internal Team</Trans></h4> */}
-        <div style={{display: 'flex', textAlign: 'center'}}>
+        <div style={{textAlign: 'center'}} className='grid-container'>
           {teams.map(edge => (
             <div key={edge.node.frontmatter.path} className="container col-12 col-md-6 mb-1">
               <div className="team card-two">
@@ -61,7 +61,7 @@ const Team: React.FC<ITeam> = (props) => {
                           alt={edge.node.frontmatter.title}
                           className="img-fluid mb-2"
                           src={edge.node.frontmatter.image}
-                        />
+                        /><br />
                         <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '510' }}><Trans>{edge.node.frontmatter.jobtitle}</Trans></span>
                       </div>
                     )}

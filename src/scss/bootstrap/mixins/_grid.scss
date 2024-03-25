@@ -179,6 +179,15 @@
     gap: 20px;
     /* Adjust the gap between items as needed */
   }
+
+  .grid-container-2col {
+    display: grid !important;
+    grid-template-columns: 25rem 25rem !important;
+    /* Adjust the column width as needed */
+    margin: 0 auto;
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -186,6 +195,16 @@
     display: grid !important;
     grid-template-columns: 25rem 25rem 25rem !important;
     /* Adjust the column width as needed */
+    margin: 0 auto;
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+  }
+
+  .grid-container-2col {
+    display: grid !important;
+    grid-template-columns: 25rem 25rem !important;
+    /* Adjust the column width as needed */
+    margin: 0 auto;
     gap: 20px;
     /* Adjust the gap between items as needed */
   }

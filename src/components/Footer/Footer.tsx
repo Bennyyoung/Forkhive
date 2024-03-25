@@ -8,6 +8,8 @@ import { useTranslation, Trans, Link } from "gatsby-plugin-react-i18next"
 import { useSelector } from 'react-redux';
 import { RootAction, RootState } from '../../redux/store';
 import subfooter_forkhive_logo_dark_bg from '../../images/subfooter_forkhive_logo_dark_bg.jpg'
+import FORKHIVEblack from '../../images/FORKHIVE-black2.png'
+
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -48,7 +50,8 @@ const Footer = () => {
           <div className="col-12">
             <div className="footer">
               <Link to="/" placeholder={undefined}>
-                {<img alt="Figurit Homepage" src={subfooter_forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />
+                {              <img alt="logo_black_background" src={FORKHIVEblack} style={{ height: '55px', width: '100px' }} />
+
                 }
               </Link>
               <ul className="footer-menu">

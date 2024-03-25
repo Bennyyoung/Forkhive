@@ -12,6 +12,8 @@ import { Trans } from 'gatsby-plugin-react-i18next';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mdoqnkzo");
+  const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
+
   if (state.succeeded) {
     return (
       <Layout bodyClass="page-contact">
@@ -29,8 +31,6 @@ export default function Contact() {
       </Layout>
     );
   }
-
-  const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
 
   return (
     <Layout bodyClass="page-contact">
@@ -55,32 +55,6 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
           >
-            {/* <h3 className="mt-4"><Trans>Your request</Trans></h3>
-            <label className="container"><Trans>Create a product</Trans>
-              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Create a product" />
-              <span className="checkmark"></span>
-            </label>
-            <label className="container"><Trans>Enhance your team</Trans>
-              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Enhance your team" />
-              <span className="checkmark"></span>
-            </label>
-            <label className="container"><Trans>Training</Trans>
-              <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Training" />
-              <span className="checkmark"></span>
-            </label> */}
-
-            {/* <label for="training" style={{ fontSize: '20px', color: 'red', fontWeight: 'bold' }} >
-              Training
-            </label> */}
-
-            {/* <input type="radio" id="html" name="fav_language" value="HTML" />
-            <label for="html">HTML</label>
-
-            <input type="radio" id="css" name="fav_language" value="HTML" />
-            <label for="css">CSS</label><br />
-
-            <input type="radio" id="javascript" name="fav_language" value="HTML" />
-            <label for="javascript">JavaScript</label> */}
 
             <div>
               <p>
@@ -120,55 +94,6 @@ export default function Contact() {
                 <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Your Domain name" type="text" required name="Domain" ></input>
               </p>
             </div>
-
-            {/* <label>
-              <Trans>Starting Date</Trans>:
-            </label>
-            <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project Start Date"></input><br />
-
-            <label>
-              <Trans>Finishing Date</Trans>:
-            </label>
-            <input className={`${darkMode ? 'dark-mode' : ''} `} style={{ width: '50%' }} type="date" required name="Project End Date"></input>
-
-            <div>
-              <p>
-                <Trans>Attach a file (CV) Not mandatory</Trans>: 📂
-                <input className={`${darkMode ? 'dark-mode' : ''} `} placeholder="Attach your dream project here, lets build" name="Resume/CV" type="file" />
-              </p>
-            </div> */}
-
-            {/* <div>
-              <p>
-                <Trans>For the Training (Only for those undergoing the training)</Trans>
-              </p>
-
-              <label className="container"><Trans>Basic Web Design</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic Web Design" />
-                <span className="checkmark"></span>
-              </label>
-              <label className="container"><Trans>Basic UX Design</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Basic UX Design" />
-                <span className="checkmark"></span>
-              </label>
-              <label className="container"><Trans>HTML and CSS</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="HTML and CSS" />
-                <span className="checkmark"></span>
-              </label>
-              <label className="container"><Trans>JavaScript (React)</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="JavaScript (React)" />
-                <span className="checkmark"></span>
-              </label>
-              <label className="container"><Trans>Azure ML</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Azure ML" />
-                <span className="checkmark"></span>
-              </label>
-              <label className="container"><Trans>Python</Trans>
-                <input className={`${darkMode ? 'dark-mode' : ''} `} type="checkbox" name="Python" />
-                <span className="checkmark"></span>
-              </label>
-            </div> */}
-
             <div>
               <p>
                 <Trans>
@@ -193,48 +118,14 @@ export default function Contact() {
               </p>
             </div>
 
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
 
             <button className={`${darkMode ? 'dark-mode' : ''} `} type="submit" disabled={state.submitting}><Trans>Hire Us</Trans></button><br />
           </form>
           <p style={{ paddingTop: '20px' }}><Trans>Or send us an email to</Trans>&nbsp;<a href="mailto:hello@forkhive.com"><Trans>hello@forkhive.com</Trans></a></p>
         </div>
-
-
-        {/* <div className="col-8">
-          <h4 className="mt-4"><Trans>Business Hours</Trans></h4>
-          <table className="table table-sm opening-hours-table">
-            <tbody>
-              <tr>
-                <td className="day font-weight-bold"><Trans>Monday</Trans></td>
-                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
-              </tr>
-              <tr  className={`${darkMode ? 'dark-mode' : ''}`} >
-                <td className="day font-weight-bold"><Trans>Tuesday</Trans></td>
-                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold"><Trans>Wednesday</Trans></td>
-                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
-              </tr>
-              <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
-                <td className="day font-weight-bold"><Trans>Thursday</Trans></td>
-                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold"><Trans>Friday</Trans></td>
-                <td className="opens"><Trans>9:00am - 5:00pm</Trans></td>
-              </tr>
-              <tr  className={`${darkMode ? 'dark-mode' : ''}`}>
-                <td className="day font-weight-bold"><Trans>Saturday</Trans></td>
-                <td className="opens"><Trans>12:00pm - 5:00pm</Trans></td>
-              </tr>
-            </tbody>
-          </table>
-        </div> */}
       </div>
-
-    </Layout >
+    </Layout>
   )
 }
 

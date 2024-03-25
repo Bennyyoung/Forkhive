@@ -1,21 +1,22 @@
 .page-services {
-
-  background-size: 115%;
+  
+  // background-size: 15%;
   background-position: 49px -40px;
   @include media-breakpoint-up(sm) {
-    background-size: 90%;
+    // background-size: 40%;
     background-position: 159px -40px;
   }
   @include media-breakpoint-up(md) {
-    background-image: url('../images/undraw_Operating_system.inline.svg');
+    // background-image: url('../images/undraw_Operating_system.inline.svg');
+    // opacity: 1;
     background-repeat: no-repeat;
-    background-size: 45%;
+    // background-size: 35%;
     background-position: 199px -80px;
   }
   @include media-breakpoint-up(lg) {
     background-image: url('../images/undraw_Operating_system.inline.svg');
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 45%;
     background-position: 119% 60%;
   }
 }

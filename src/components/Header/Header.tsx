@@ -4,7 +4,8 @@ import Menu from '../Menu/Menu';
 import Hamburger from '../Hamburger/Hamburger';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import forkhive_logo_dark_bg from '../../images/forkhive_logo_dark_bg.jpg'
-import forkhive_logo_f2f7f8_bg from '../../images/forkhive_logo_f2f7f8_bg.png'
+import FORKHIVEwhite from '../../images/FORKHIVE-white2.png'
+import FORKHIVEblack from '../../images/FORKHIVE-black2.png'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
@@ -27,23 +28,23 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            {
-              darkMode === true ? 
-              (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />) 
-              : <img alt="Figurit Homepage" src={forkhive_logo_f2f7f8_bg} style={{ height: '55px', width: '100px' }} />
-            }
+            {darkMode === true ? (
+              <img alt="logo_black_background" src={FORKHIVEblack} style={{ height: '55px', width: '100px' }} />
+            ) : (
+              <img alt="logo_white_background" src={FORKHIVEwhite} style={{ height: '95px', width: '100px' }} />
+
+            )}
             {/* <h2 style={{ color: '#EBA937'}}>Forkhive</h2> */}
           </Link>
         </div>
         <div className="logo-mobile">
           <Link to="/">
-            {
-              darkMode === true ? 
-              (<img alt="Figurit Homepage" src={forkhive_logo_dark_bg} style={{ height: '50px', width: '100px' }} />) 
-              : <img alt="Figurit Homepage" src={forkhive_logo_f2f7f8_bg} style={{ height: '55px', width: '100px' }} />
+            {darkMode === true ? (
+              <img alt="logo_black_background" src={FORKHIVEblack} style={{ height: '55px', width: '100px' }} />
+            ) : (
 
-            }
-
+              <img alt="logo_white_background" src={FORKHIVEwhite} style={{ height: '95px', width: '100px' }} />
+            )}
           </Link>
         </div>
         <MenuMobile active={menuActive} />
