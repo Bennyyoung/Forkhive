@@ -48,8 +48,8 @@ const Team: React.FC<ITeam> = (props) => {
       </div>
 
       <div className="container pb-6">
-      {/* <h4><Trans>Internal Team</Trans></h4> */}
-        <div style={{textAlign: 'center'}} className='grid-container'>
+        {/* <h4><Trans>Internal Team</Trans></h4> */}
+        <div style={{ textAlign: 'center' }} className='grid-container'>
           {teams.map(edge => (
             <div key={edge.node.frontmatter.path} className="container col-12 col-md-6 mb-1">
               <div className="team card-two">
@@ -57,12 +57,35 @@ const Team: React.FC<ITeam> = (props) => {
                   <div className="card-header-left" >
                     {edge.node.frontmatter.image && (
                       <div className="card-image">
-                        <img
-                          alt={edge.node.frontmatter.title}
-                          className="img-fluid mb-2"
-                          src={edge.node.frontmatter.image}
-                        /><br />
-                        <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '510' }}><Trans>{edge.node.frontmatter.jobtitle}</Trans></span>
+                        <a target="_blank" href={edge.node.frontmatter.linkedinurl} style={{textDecoration: 'none'}}>
+                          <img
+                            alt={edge.node.frontmatter.title}
+                            className="img-fluid mb-2"
+                            src={edge.node.frontmatter.image}
+                          /><br />
+                          <ul className="card-meta">
+                            <li style={{ paddingBottom: '4px' }}>
+                              <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '510' }}>{edge.node.frontmatter.jobtitle}</span>
+                              {/* <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span> */}
+                            </li>
+                            {/* <li style={{ paddingBottom: '4px' }}>
+                            <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span>
+                          </li> */}
+                            {/* <li className={`${darkMode ? 'dark-mode' : ''}`} style={{ paddingBottom: '4px' }}><b>LinkedIn:</b>
+                            <a target="_blank" href={edge.node.frontmatter.linkedinurl}>
+                              {edge.node.frontmatter.linkedinurl}
+                            </a>
+                          </li>
+                          <li className={`${darkMode ? 'dark-mode' : ''}`} style={{ paddingBottom: '4px' }}><b>Twitter:</b>
+                            <a target="_blank" href={edge.node.frontmatter.twitterurl}>
+                              {edge.node.frontmatter.twitterurl}
+                            </a>
+                          </li>
+                          <li className={`${darkMode ? 'dark-mode' : ''}`}><b>Email:</b>
+                            <a href={`mailto: ${edge.node.frontmatter.email}`}>{edge.node.frontmatter.email}</a>
+                          </li> */}
+                          </ul>
+                        </a>
                       </div>
                     )}
                   </div>
