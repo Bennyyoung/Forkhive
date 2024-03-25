@@ -34,7 +34,7 @@ function PriceComparisonTable() {
                                 <a className='socialMedia'>
                                     <Trans>Developers Fee (3 or 5 or 7)</Trans>
 
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.socialMedia'
@@ -52,7 +52,7 @@ function PriceComparisonTable() {
                                 <a className='socialMedia'>
                                     <Trans>Integration of Social Media</Trans> (<i className="fa fa-facebook-f"></i> <i className="fa fa-twitter"></i> <i className="fa fa-instagram"></i> <i className="fa fa-whatsapp"></i>)
 
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.socialMedia'
@@ -69,7 +69,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className='ssl_tsl'><Trans>SSL/TLS Certificate</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.ssl_tsl'
@@ -86,7 +86,7 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="fee"><Trans>Hosting Fee</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.fee'
@@ -104,7 +104,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="cms"><Trans>CMS (Content Management System)</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.cms'
@@ -122,7 +122,7 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="cdr"><Trans>Domain Registration/Renewal/Maintenance</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.cdr'
@@ -140,7 +140,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="form_"><Trans>Form Submission</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.form_'
@@ -158,7 +158,7 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="support">
-                                    <Trans>12/5 or 24/7 Support</Trans> {' '}<i className="fa fa-question-circle"></i>
+                                    {/* <Trans>12/5 or 24/7 Support</Trans> {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.support'
@@ -176,7 +176,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="online"><Trans>Online Appointments and Reminders (Business Working hours)</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.online'
@@ -194,7 +194,7 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="ecommerce"><Trans>Ecommerce Functionality</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.ecommerce'
@@ -212,7 +212,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="database"><Trans>Database Integration</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.database'
@@ -230,7 +230,7 @@ function PriceComparisonTable() {
                         <tr>
                             <td>
                                 <a className="guidance"><Trans>Guidance and Analytics</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.guidance'
@@ -248,7 +248,7 @@ function PriceComparisonTable() {
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td>
                                 <a className="seo"><Trans>Search Engine Optimization (SEO)</Trans>
-                                    {' '}<i className="fa fa-question-circle"></i>
+                                    {/* {' '}<i className="fa fa-question-circle"></i> */}
                                 </a>
                                 <Tooltip
                                     anchorSelect='.seo'

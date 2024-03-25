@@ -1,12 +1,14 @@
 .page-teams {
-  background-image: url('../images/undraw_hang_out_h9ud.svg');
+  // background-image: url('../images/undraw_hang_out_h9ud.svg');
   background-repeat: no-repeat;
   background-position: center;
-  backdrop-filter: opacity(0.4);
+  // backdrop-filter: opacity(0.8);
   background-size: 115%;
   background-position: 49px -40px;
-  backface-visibility: hidden;
-  // backdrop-filter: blur(150);
+  // backface-visibility: hidden;
+  // backdrop-filter: blur(150px);
+  // fill-opacity: 0.1;
+
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;
@@ -18,5 +20,10 @@
   @include media-breakpoint-up(lg) {
     background-size: 60%;
     background-position: 130% -110px;
+  // backdrop-filter: opacity(0.1);
+  // fill-opacity: 0.1;
+  // backdrop-filter: blur(150px);
+
+
   }
 }

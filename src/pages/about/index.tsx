@@ -85,9 +85,9 @@ const About: React.FC<IAbout> = (props) => {
                             <Trans>Our</Trans> <strong><Trans>Vision & Mission</Trans></strong>
                         </h2>
                     </div>
-                    <div className='container grid-container'>
+                    <div className='grid-container-2col'>
                         {about.map((edge, index) => (
-                            <div key={index} className="mb-1">
+                            <div key={index} className="mb-1" style={{margin: '0 0.5rem'}}>
                                 <div className={`card service feature ${darkMode ? 'dark-mode' : ''}`}>
                                     <div className="card-content">
                                         <h5 style={{ fontWeight: 'bold', textAlign: 'center' }}><Trans>{edge.node.frontmatter.title}</Trans></h5>
