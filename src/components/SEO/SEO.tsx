@@ -1,9 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
-import forkhive_logo_f2f7f8_bg from '../../images/forkhive_logo_f2f7f8_bg.png'
-
-
+import FORKHIVEblack from '../../images/FORKHIVE-black2.png'
 
 interface ISEO {
   title?: string;
@@ -22,7 +20,7 @@ const SEO: React.FC<ISEO> = props => {
       <Helmet>
         {/* data.site.siteMetadata.title */}
         <title>{`${title}`}</title>
-        <link rel="icon" href={forkhive_logo_f2f7f8_bg} type="image/png" sizes="36x36" />
+        <link rel="icon" href={FORKHIVEblack} type="image/png" sizes="36x36" />
       </Helmet>
 
     </>
