@@ -1,13 +1,13 @@
 ---
-path: '/team/gabriel'
-title: 'Nworah Gabriel'
+path: '/team/giftMbah'
+title: 'Gift Mbah'
 date: 2019-12-29T15:09:08+10:00
 draft: false
-image: '/team/gabriel2.jpg'
-jobtitle: 'Intern (NestJS Stack)'
+image: '/team/giftMbah.png'
+jobtitle: 'Site Reliability Engineer (QA)'
 subtitle: 'Software Engineer (NestJS Stack)'
 email: ' leslie.bund@gmail.com '
-linkedinurl: ' https://www.linkedin.com/in/nworah-gabriel-chimzuruoke-b74121224/'
+linkedinurl: ' https://www.linkedin.com/in/mbah-chibuzor-gift-29426b163/'
 twitterurl: ' https://twitter.com/bund_cc'
 weight: 2
 ---
