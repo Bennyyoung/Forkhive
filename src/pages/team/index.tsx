@@ -17,6 +17,7 @@ interface ITeam extends PageProps {
           frontmatter: {
             title: string
             path: string
+            name: string
             image: string
             jobtitle: string
             subtitle: string
@@ -65,8 +66,8 @@ const Team: React.FC<ITeam> = (props) => {
                           /><br />
                           <ul className="card-meta">
                             <li style={{ paddingBottom: '4px' }}>
-                              <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '510' }}>{edge.node.frontmatter.jobtitle}</span>
-                              {/* <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span> */}
+                              <span className={`${darkMode ? 'dark-mode' : ''}`} style={{ fontWeight: '210' }}>{edge.node.frontmatter.title}</span><br />
+                              <span style={{ fontWeight: '510' }}>{edge.node.frontmatter.jobtitle}</span>
                             </li>
                             {/* <li style={{ paddingBottom: '4px' }}>
                             <span style={{ fontWeight: '210' }}>{edge.node.frontmatter.subtitle}</span>
@@ -112,6 +113,7 @@ export const query = graphql`
           frontmatter {
             title
             path
+            name
             image
             jobtitle
             subtitle
