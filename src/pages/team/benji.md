@@ -2,7 +2,7 @@
 path: '/team/benji'
 title: 'Benjamin Effiong'
 date: 2019-12-29T15:09:08+10:00
-draft: false
+draft: false,
 image: '/team/benjie.jpg'
 jobtitle: 'Founder and CEO'
 subtitle: 'Senior Frontend Software Engineer (React-TS, JS)'

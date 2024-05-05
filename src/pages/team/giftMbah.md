@@ -2,7 +2,7 @@
 path: '/team/giftMbah'
 title: 'Gift Mbah'
 date: 2019-12-29T15:09:08+10:00
-draft: false
+draft: false,
 image: '/team/giftMbah.png'
 jobtitle: 'Site Reliability Engineer (QA)'
 subtitle: 'Software Engineer (NestJS Stack)'
