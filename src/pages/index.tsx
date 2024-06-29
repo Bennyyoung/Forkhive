@@ -85,7 +85,20 @@ const Home: React.FC<IHome> = (props) => {
 
     <Layout bodyClass="page-home">
 
-      <SEO title="Home" meta={[]} keywords={[]} />
+      <SEO
+        title="Home"
+        meta={[
+          {
+            name: 'author',
+            content: 'Forkhive',
+          },
+          {
+            name: 'robots',
+            content: 'index,follow',
+          },
+        ]}
+        keywords={['software development', 'frontend development', 'data science', 'AI', 'ML']}
+      />
       <Helmet>
         <meta
           name="Forkhive"
