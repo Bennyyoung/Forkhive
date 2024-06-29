@@ -16,33 +16,7 @@ const Footer = () => {
 
   const darkMode = useSelector((state: RootState) => {
     return state.darkMode.darkMode
-  }); // Accessing darkMode from Redux store
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
-  // console.log('data', data) 
-
-  // const currentLanguageSelected = useSelector((state: RootState) => state.languageMode.languageMode)
-  // console.log('currentLanguageSelected', currentLanguageSelected)
-
-  // // Extracting translations for the current language
-  // const translations = data.locales.edges.find((edge: { node: { language: string; }; }) => edge.node.language === `${currentLanguageSelected}`)?.node.data;
-  // console.log('translations', translations)
-  // const parsedTranslations = JSON.parse(translations);
-  // if (translations) {
-  //   console.log('Home translation:', JSON.parse(translations).Home); // or translations.Home
-  // } else {
-  //   console.log('Translations not found or undefined');
-  // }
-
-
-
+  });
   return (
     <footer className="footer-strip">
       <div className="container">
@@ -50,7 +24,7 @@ const Footer = () => {
           <div className="col-12">
             <div className="footer">
               <Link to="/" placeholder={undefined}>
-                {              <img alt="logo_black_background" src={FORKHIVEblack} style={{ height: '55px', width: '100px' }} />
+                {<img alt="logo_black_background" src={FORKHIVEblack} style={{ height: '55px', width: '100px' }} />
 
                 }
               </Link>
