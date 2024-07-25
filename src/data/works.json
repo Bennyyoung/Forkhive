@@ -1,0 +1,61 @@
+[
+    {
+        "title": "A social network",
+        "image": "/works/lof_homepage_screenshot.jpg",
+        "website": "https://leagueoffriends.vercel.app/",
+        "name": "League of friends",
+        "description": "League of friends is a Nigerian social media service and image sharing designed to create status or class for people in form of discussion groups based on your interest",
+        "category": "Web App",
+        "date": "- 24 April 2021"
+
+    },
+    {
+        "title": "School management system",
+        "image": "/works/sunrise_homepage_screenshot.jpg",
+        "website": "https://skms.netlify.app/",
+        "name": "Sunrise Keepers School Management System",
+        "description": "A school management system to record staffs, students and expenses",
+        "category": "Web App",
+        "date": " - 23 Feb 2021"
+
+    },
+    {
+        "title": "Cakes and Confectionery",
+        "image": "/works/beebah_cakes_screenshot.jpg",
+        "website": "https://beebahcakes.netlify.app/",
+        "name": "Beebah cakes",
+        "description": "At Beebah cakes they sell a lot of delicious cakes for your events",
+        "category": "Web App",
+        "date": "- 21 June 2021"
+
+    },
+    {
+        "title": "Custom Health Care Solution",
+        "image": "/works/orismedlab_homepage.png",
+        "website": "https://www.orismedlab.com/",
+        "name": "Oris Medical Laboratory Diagnosis Services",
+        "description": "Oris Medical Laboratory Diagnosis Services delivers quality, affordable, and accessible diagnostic services throughout Nigeria",
+        "category": "Web App",
+        "date": "- 21 June 2021"
+
+    },
+    {
+        "title": "A Marketplace Platform",
+        "image": "/works/crop&carry.png",
+        "website": "https://cropncarry-website.vercel.app/",
+        "name": "Crop n Carry",
+        "description": "Crop n Carry shop from local markets and deliver fresh produce, meat, and more to your door.",
+        "category": "Mobile App",
+        "date": "- 21 June 2021"
+    },
+    {
+        "title": "A Non-profit Organisation",
+        "image": "/works/mbf_homepage.png",
+        "website": "https://leagueoffriends.vercel.app/",
+        "name": "MaryCharis Benevolence Foundation",
+        "description": "MBF is a non-profit, non-political, dispositioned to do good, charitable, kind, altruistic, individual (s) and groups supported, faith based organization, dedicated to providing needed humanitarian care and to assist the less-privileged, widows, fatherless and orphans (minor) and vulnerable.",
+        "category": "Web App",
+        "date": "- 21 June 2021"
+
+    }
+]

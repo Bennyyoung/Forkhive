@@ -16,7 +16,7 @@ function PriceComparisonTable() {
                     <thead className="thead-dark">
                         <tr>
                             <th><Trans>Features</Trans></th>
-                            <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$167 - $580 = ₦250,500 - ₦870,000 </b></th>
+                            <th><Trans>Basic Plan (Budget Applications)</Trans><b> <br />$167 - $580 = ₦300,000 - ₦870,000 </b></th>
                             <th><Trans>Pro Plan</Trans><b> <br />$580 - $1,526 = ₦870,000 - ₦2,289,000 </b></th>
                             <th><Trans>Enterprise Plan</Trans><b> <br />$1,526 - $2,772 = ₦2,289,000 - ₦4,158,000 </b></th>
                         </tr>
@@ -262,6 +262,24 @@ function PriceComparisonTable() {
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50</td>
                             <td><i className={`fa fa-check ${darkMode ? 'dark-mode' : ''}`}></i>{' '}$50</td>
                         </tr>
+                        <tr className={`${darkMode ? 'dark-mode' : ''}`}>
+                            <td>
+                                <a className="seo"><Trans>Examples</Trans>
+                                </a>
+                            </td>
+                            <td>
+                                <Trans>Simple E-commerce Store, Personal Blog, Budget Tracker, Event Management App, To-Do List App
+                                </Trans>
+                            </td>
+                            <td>
+                                <Trans>Social Networking App, Advanced E-commerce Store, Health & Fitness App, Food Delivery App, Travel Booking App
+                                </Trans>
+                            </td>
+                            <td>
+                                <Trans>Comprehensive CRM System, Enterprise Resource Planning (ERP) System, Marketplace Platform, Custom Healthcare Solution, Fintech Application
+                                </Trans>
+                            </td>
+                        </tr>
                         <tr>
                             <td><b><Trans>Price Range</Trans></b></td>
                             <td>
@@ -288,6 +306,7 @@ function PriceComparisonTable() {
                                 </span>
                             </td>
                         </tr>
+                        
                         <tr className={`${darkMode ? 'dark-mode' : ''}`}>
                             <td></td>
                             <td>

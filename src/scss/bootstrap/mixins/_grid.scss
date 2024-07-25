@@ -23,6 +23,8 @@
 .col-single {
   transition: transform 0.3s ease;
 
+  border-radius: 20px;
+  margin: 0.2rem;
 
   a {
     h5 {
@@ -35,11 +37,14 @@
   }
 
   // background-color: #fff;
-  border-radius: 20px;
-  margin: 0.2rem
+ 
 }
 
 .col-single:nth-child(1):hover {
+  background-color: #7913e5;
+  color: #fff !important;
+
+  border-radius: 20px;
   a {
 
     h5,
@@ -49,13 +54,14 @@
   }
 
   // color: red !important;
-  background-color: #7913e5;
-  color: #fff !important;
-
-  border-radius: 20px;
+  
 }
 
 .col-single:nth-child(2):hover {
+  background-color: #2295f2;
+  color: #fff !important;
+
+  border-radius: 20px;
   a {
 
     h5,
@@ -65,10 +71,7 @@
   }
 
 
-  background-color: #2295f2;
-  color: #fff !important;
-
-  border-radius: 20px;
+ 
 }
 
 .grid-container {
@@ -77,21 +80,10 @@
 }
 
 .col-single:nth-child(3):hover {
-  a {
-
-    h5,
-    p {
-      color: #fff
-    }
-  }
-
   background-color: #39c277 !important;
   color: #fff !important;
 
   border-radius: 20px;
-}
-
-.col-single:nth-child(4):hover {
   a {
 
     h5,
@@ -100,13 +92,14 @@
     }
   }
 
+ 
+}
+
+.col-single:nth-child(4):hover {
   background-color: #e5489b !important;
   color: #fff !important;
 
   border-radius: 20px;
-}
-
-.col-single:nth-child(5):hover {
   a {
 
     h5,
@@ -115,10 +108,23 @@
     }
   }
 
+  
+}
+
+.col-single:nth-child(5):hover {
   background-color: #0c1825 !important;
   color: #fff !important;
 
   border-radius: 20px;
+  a {
+
+    h5,
+    p {
+      color: #fff
+    }
+  }
+
+ 
 }
 
 // .col-single:nth-child(6):hover {

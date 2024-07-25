@@ -1,6 +1,16 @@
 import path from 'path';
 import { GatsbyNode } from 'gatsby'
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      draft: Boolean
+    }
+  `;
+  createTypes(typeDefs);
+};
+
 interface GraphqlData {
   services: {
     edges: Array<{

@@ -6,24 +6,19 @@ const techStack = [
         content: 'Gatsby.js, a popular open-source framework for building modern web applications. Gatsby.js is based on React and uses GraphQL to pull data from various sources to generate static websites'
     },
     {
-        img: 'https://img.icons8.com/color/30/nestjs.png',
-        text: 'NEST',
-        content: 'NestJS is a framework for building scalable and efficient server-side applications. It is often used to develop web applications, APIs, and microservices using TypeScript or JavaScript. NestJS is built with a modular and extensible architecture and draws inspiration from Angular, which makes it familiar to developers who have experience with Angular'
-    },
+        img: 'https://img.icons8.com/plasticine/30/000000/react.png',
+        text: 'REACT',
+        content: 'React, also known as React.js or ReactJS, is an open-source JavaScript library for building user interfaces or UI components. It was developed by Facebook and is widely used for creating interactive and dynamic user interfaces in web applications. React allows developers to build reusable UI components, making it easier to manage and update complex user interfaces.'
+    },  
     {
         img: 'https://img.icons8.com/fluency/30/vite.png',
         text: 'VITE',
         content: 'Vite is a build tool and development server that is designed to optimize the development experience for modern web applications, particularly those using frameworks like React, Vue, and others. Vite is known for its fast startup time and efficient development workflow.'
     },
     {
-        img: 'https://img.icons8.com/plasticine/30/000000/react.png',
-        text: 'REACT',
-        content: 'React, also known as React.js or ReactJS, is an open-source JavaScript library for building user interfaces or UI components. It was developed by Facebook and is widely used for creating interactive and dynamic user interfaces in web applications. React allows developers to build reusable UI components, making it easier to manage and update complex user interfaces.'
-    },
-    {
-        img: 'https://img.icons8.com/fluency/30/canva.png',
-        text: 'CANVA',
-        content: 'Canva is a web-based graphic design platform that allows users to create a wide variety of visual content such as presentations, posters, social media graphics, flyers, invitations, and more. It provides an intuitive drag-and-drop interface along with a vast library of templates, images, illustrations, icons, and fonts that users can use to customize their designs. '
+        img: 'https://img.icons8.com/color/30/firebase.png',
+        text: 'FIREBASE',
+        content: 'Firebase is a platform developed by Google for creating mobile and web applications. It provides a variety of tools and services to help developers build high-quality apps, including real-time databases, authentication, analytics, cloud storage, and hosting. Firebase simplifies backend development and offers real-time data syncing, which is particularly useful for applications requiring live updates and seamless user experiences. Its integration with other Google services and easy-to-use SDKs make it a popular choice among developers.'
     },
     {
         img: 'https://img.icons8.com/color/30/000000/react-native.png',
@@ -135,12 +130,18 @@ const techStack = [
     //     content:'Netlify is a cloud platform that provides a range of services for building, deploying, and managing modern web projects. It is particularly known for its simplicity, automation, and integration with popular static site generators and modern web development workflows. Netlify supports both static and serverless (function-as-a-service) architectures, making it a popular choice for web developers and teams.'
 
     // },
+    
 
     // Data Science
     {
         img: 'https://img.icons8.com/color/30/000000/tableau-software.png',
         text: 'TABLEAU',
         content: 'Tableau is a powerful data visualization and business intelligence (BI) platform that enables users to connect to, visualize, and share insights from their data. It allows individuals and organizations to create interactive and dynamic dashboards, reports, and visualizations to gain valuable insights into their data.'
+    },
+    {
+        img: 'https://img.icons8.com/color/30/chatgpt.png',
+        text: 'GPT',
+        content: 'GPT (Generative Pre-trained Transformer) is a language model developed by OpenAI. It is capable of understanding and generating human-like text based on the input it receives. The model has been trained on diverse internet text, enabling it to perform a wide range of natural language processing tasks, such as text generation, translation, summarization, and question-answering. GPT-4, the latest version, offers improved performance, understanding, and generation capabilities.'
     },
 
     // Editor

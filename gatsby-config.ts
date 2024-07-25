@@ -28,10 +28,10 @@ module.exports = {
         name: 'About',
         link: '/about',
       },
-      //  {
-      //    name: 'Works',
-      //    link: '/our-works',
-      //  },
+       {
+         name: 'Works',
+         link: '/our-works',
+       },
       // {
       //   name: 'Blogs',
       //   link: '/blog',
@@ -58,7 +58,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
-    'gatsby-plugin-react-helmet',
+    // 'gatsby-plugin-react-helmet',
     `gatsby-plugin-transition-link`,
     {
       resolve: 'gatsby-source-filesystem',
@@ -127,6 +127,10 @@ module.exports = {
           },
           {
             matchPath: "/pricing",
+            languages: languages
+          },
+          {
+            matchPath: "/our-works",
             languages: languages
           }
 
