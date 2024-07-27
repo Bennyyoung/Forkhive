@@ -5,7 +5,13 @@
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;
+    .work-container{
+      display: flex;
+    }
+    
   }
+ 
+  
   @include media-breakpoint-up(md) {
     background-size: 70%;
     background-position: 100% -50px;
@@ -13,6 +19,22 @@
   @include media-breakpoint-up(lg) {
     background-size: 70%;
     background-position: 100% -20px;
+  }
+
+  @media (max-width: 575.98px) {
+    .work-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .work-box{
+      margin: 0 auto;
+      max-width: 40vh;
+    }
+    .work-title{
+      text-align: center;
+      
+    }
+
   }
   a {
     transition: all 0.5s ease-in-out;
@@ -34,8 +56,6 @@
   }
 
   .work-img img :hover {
-    // max-width: 100%;
-    // height: auto;
     transition: all 0.5s ease-in-out;
 
   }
@@ -57,4 +77,10 @@
     color: #eba937;
     font-weight: 500;
   }
+  .work-title{
+    font-size: min(3vh, 1rem);
+    white-space: nowrap;
+  }
+
+ 
 }
