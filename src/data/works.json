@@ -1,0 +1,32 @@
+[
+    
+    {
+        "title": "Custom Health Care Solution",
+        "image": "/works/orismedlab_homepage.png",
+        "website": "https://www.orismedlab.com/",
+        "name": "Oris Medical Laboratory Diagnosis Services",
+        "description": "Oris Medical Laboratory Diagnosis Services delivers quality, affordable, and accessible diagnostic services throughout Nigeria",
+        "category": "Web App",
+        "date": "- 21 June 2021"
+
+    },
+    {
+        "title": "A Marketplace Platform",
+        "image": "/works/crop&carry.png",
+        "website": "https://cropncarry-website.vercel.app/",
+        "name": "Crop n Carry",
+        "description": "Crop n Carry shop from local markets and deliver fresh produce, meat, and more to your door.",
+        "category": "Mobile App",
+        "date": "- 21 June 2021"
+    },
+    {
+        "title": "A Non-profit Organisation",
+        "image": "/works/mbf_homepage.png",
+        "website": "https://leagueoffriends.vercel.app/",
+        "name": "MaryCharis Benevolence Foundation",
+        "description": "MBF is a non-profit, non-political, dispositioned to do good, charitable, kind, altruistic, individual (s) and groups supported, faith based organization, dedicated to providing needed humanitarian care and to assist the less-privileged, widows, fatherless and orphans (minor) and vulnerable.",
+        "category": "Web App",
+        "date": "- 21 June 2021"
+
+    }
+]
